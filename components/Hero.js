@@ -8,12 +8,7 @@ function Hero() {
 			<div
 				className='relative flex items-center justify-center'
 				style={{ minHeight: '100vh' }}>
-				<Image
-					className='absolute'
-					src='/hero.jpg'
-					layout='fill'
-					objectFit='cover'
-				/>
+				<Image src='/hero.jpg' layout='fill' objectFit='cover' />
 				<span className='absolute w-full h-full bg-black opacity-70 ' />
 
 				<Link href='/'>

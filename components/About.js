@@ -4,10 +4,10 @@ import Image from 'next/image';
 function About() {
 	return (
 		<section className=' bg-black'>
-			<div className='container mx-auto px-4 py-36 flex items-center justify-center flex-wrap  text-gray-300'>
+			<div className='container bg-gray-400 text-gray-300'>
 				<Image
 					src='/about.jpg'
-					width={500}
+					width={300}
 					height={300}
 					objectFit='cover'
 				/>
