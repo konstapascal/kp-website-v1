@@ -3,22 +3,19 @@ import React from 'react';
 function Projects() {
 	return (
 		<section className=' bg-gray-300'>
-			<div className='container bg-gray-500'>
-				<div className='flex flex-wrap justify-center text-center pb-10'>
-					<div className='w-full lg:w-6/12 px-4'>
-						<h2 className='text-4xl font-semibold uppercase'>
-							Some of my{' '}
-							<span className='text-green-400 bg-black px-2 py-1'>
-								PROJECTS
-							</span>
-						</h2>
-						<p className='text-lg leading-relaxed mt-6 mb-8'>
-							Here are some of the projects I have worked on, click the
-							links for more information.
-						</p>
-					</div>
-				</div>
-				<div className='flex flex-wrap justify-center gap-24'>
+			<div className='container py-32 px-6'>
+				<p className=' font-semibold '>Some of my </p>
+				<h3 className='text-green-400 text-4xl bg-black py-2 px-4 font-semibold inline-block'>
+					PROJECTS
+				</h3>
+				<p className='text-lg leading-relaxed mt-6 mb-16'>
+					Here are some of the projects I have worked on, click the links
+					for more information.
+				</p>
+
+				{/* ---------- CARDS ---------- */}
+
+				<div className='flex flex-wrap justify-center gap-20'>
 					<div className=''>
 						<img
 							alt='...'
@@ -26,8 +23,8 @@ function Projects() {
 							className='shadow-lg rounded max-w-full mx-auto'
 							style={{ width: '250px' }}
 						/>
-						<div className='pt-6 text-center'>
-							<h5 className='text-xl font-bold'>Chestnut</h5>
+						<div className='pt-4 text-center'>
+							<h5 className='text-2xl font-bold'>Chestnut</h5>
 							<p className='mt-1 text-sm text-gray-500 uppercase font-semibold'>
 								Educational PKI Web Application
 							</p>
@@ -40,8 +37,8 @@ function Projects() {
 							className='shadow-lg rounded max-w-full mx-auto'
 							style={{ width: '250px' }}
 						/>
-						<div className='pt-6 text-center'>
-							<h5 className='text-xl font-bold'>KP-WEBSITE</h5>
+						<div className='pt-4 text-center'>
+							<h5 className='text-2xl font-bold'>KP-WEBSITE</h5>
 							<p className='mt-1 text-sm text-gray-500 uppercase font-semibold'>
 								My personal website and blog
 							</p>
@@ -54,8 +51,8 @@ function Projects() {
 							className='shadow-lg rounded max-w-full mx-auto'
 							style={{ width: '250px' }}
 						/>
-						<div className='pt-6 text-center'>
-							<h5 className='text-xl font-bold'>Project 3</h5>
+						<div className='pt-4 text-center'>
+							<h5 className='text-2xl font-bold'>Project 3</h5>
 							<p className='mt-1 text-sm text-gray-500 uppercase font-semibold'>
 								Project 3 description{' '}
 							</p>
