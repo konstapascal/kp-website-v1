@@ -7,8 +7,8 @@ function About() {
 			<div className='container bg-gray-400 text-gray-300'>
 				<Image
 					src='/about.jpg'
-					width={300}
-					height={300}
+					width={600}
+					height={400}
 					objectFit='cover'
 				/>
 
