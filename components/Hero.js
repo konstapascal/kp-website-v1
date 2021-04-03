@@ -37,7 +37,7 @@ function Hero() {
 									Lorem ipsum, dolor sit amet consectetur adipisicing
 									elit. Animi impedit sint voluptatem eaque provident
 									incidunt libero pariatur, labore porro facilis veniam
-									nihil laboriosam temporibus vitae non autem.
+									nihil laboriosam temporibus vitae.
 								</p>
 							</div>
 						</div>
