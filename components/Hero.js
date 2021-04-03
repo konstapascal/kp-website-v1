@@ -1,5 +1,6 @@
 import React from 'react';
 import Link from 'next/link';
+import Image from 'next/image';
 
 function Hero() {
 	return (
@@ -7,23 +8,22 @@ function Hero() {
 			<div
 				className='relative flex items-center justify-center'
 				style={{ minHeight: '100vh' }}>
-				<div
-					className='absolute w-full h-full bg-cover'
-					style={{
-						backgroundImage:
-							'url(https://images.unsplash.com/photo-1534445817031-c529c7186f30?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80)'
-					}}
+				<Image
+					className='absolute'
+					src='/hero.jpg'
+					layout='fill'
+					objectFit='cover'
 				/>
 				<span className='absolute w-full h-full bg-black opacity-70 ' />
 
 				<Link href='/'>
-					<a className='text-3xl absolute font-bold text-green-400 top-0 left-0 m-12'>
+					<a className='text-2xl absolute font-bold text-green-400 top-0 left-0 m-4'>
 						KP-WEBSITE
 					</a>
 				</Link>
 
 				<Link href='/blog'>
-					<a className='text-xl absolute text-gray-200 top-0 right-0 m-12 py-2 px-6 border-2 border-green-400'>
+					<a className='text-lg absolute text-gray-300 top-0 right-0 m-4 py-2 px-4 border-2 border-green-400 hover:bg-green-400 hover:text-gray-900  transition ease-in duration-150'>
 						Blog
 					</a>
 				</Link>
@@ -32,13 +32,13 @@ function Hero() {
 					<div className='items-center flex flex-wrap'>
 						<div className='w-full lg:w-6/12 px-4 ml-auto mr-auto text-center'>
 							<div>
-								<h1 className='text-gray-200 text-3xl'>
+								<h1 className='text-2xl text-gray-300 '>
 									Hello, this is{' '}
 								</h1>
-								<p className='text-green-400 font-semibold text-5xl'>
+								<p className='text-green-400 font-semibold text-4xl'>
 									Konstantinos Pascal
 								</p>
-								<p className='mt-8 text-lg text-gray-400'>
+								<p className='mt-8 text-md text-gray-400'>
 									Lorem ipsum, dolor sit amet consectetur adipisicing
 									elit. Animi impedit sint voluptatem eaque provident
 									incidunt libero pariatur, labore porro facilis veniam

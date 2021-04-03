@@ -1,20 +1,20 @@
 import React from 'react';
 import Link from 'next/link';
+import Image from 'next/image';
 
 function Blog() {
 	return (
 		<section>
 			<div
-				className='relative pt-16 pb-32 flex content-center items-center justify-center'
+				className='relative flex items-center justify-center'
 				style={{ minHeight: '100vh' }}>
-				<div
-					className='absolute top-0 w-full h-full bg-cover'
-					style={{
-						backgroundImage:
-							'url(https://images.unsplash.com/photo-1534445817031-c529c7186f30?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80)'
-					}}>
-					<span className='w-full h-full absolute opacity-70 bg-black'></span>
-				</div>
+				<Image
+					className='absolute'
+					src='/hero.jpg'
+					layout='fill'
+					objectFit='cover'
+				/>
+				<span className='w-full h-full absolute opacity-70 bg-black'></span>
 				<Link href='/'>
 					<a className='text-3xl absolute font-bold text-green-400 top-0 left-0 p-10'>
 						KP-WEBSITE

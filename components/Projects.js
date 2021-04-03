@@ -2,7 +2,7 @@ import React from 'react';
 
 function Projects() {
 	return (
-		<section className='py-36 bg-gray-200'>
+		<section className='py-36 bg-gray-300'>
 			<div className='container mx-auto'>
 				<div className='flex flex-wrap justify-center text-center pb-10'>
 					<div className='w-full lg:w-6/12 px-4'>
