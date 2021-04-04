@@ -4,10 +4,10 @@ import Image from 'next/image';
 function About() {
 	return (
 		<section className=' bg-black'>
-			<div className='container text-gray-300 py-32 px-6'>
-				<p className='text-green-400 font-semibold'>About myself</p>
-				<h3 className='text-4xl uppercase font-bold'>Technologies</h3>
-				<p className='mt-4 text-lg leading-relaxed'>
+			<div className='container text-gray-300 py-24 px-6'>
+				<p className='text-green-400 font-semibold'>Some of my</p>
+				<h3 className='text-3xl uppercase font-semibold'>Technologies</h3>
+				<p className='mt-4 text-md leading-relaxed'>
 					Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus,
 					cumque. Veritatis sapiente ipsam necessitatibus non veniam ut eum
 					commodi sed eaque sequi.

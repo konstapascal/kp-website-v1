@@ -3,24 +3,24 @@ import React from 'react';
 function Projects() {
 	return (
 		<section className=' bg-gray-300'>
-			<div className='container py-32 px-6'>
+			<div className='container py-24 px-6'>
 				<p className=' font-semibold '>Some of my </p>
-				<h3 className='text-green-400 text-4xl bg-black py-2 px-4 font-semibold inline-block'>
+				<h3 className='text-green-400 text-3xl font-semibold bg-black py-2 px-4 inline-block'>
 					PROJECTS
 				</h3>
-				<p className='text-lg leading-relaxed mt-6 mb-16'>
+				<p className='text-md leading-relaxed mt-6 mb-16'>
 					Here are some of the projects I have worked on, click the links
 					for more information.
 				</p>
 
 				{/* ---------- CARDS ---------- */}
 
-				<div className='flex flex-wrap justify-center gap-20'>
-					<div className=''>
+				<div className='flex flex-wrap justify-center'>
+					<div className='mb-12'>
 						<img
 							alt='...'
 							src='https://images.unsplash.com/photo-1600201172395-c8165f448b39?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=634&q=80'
-							className='shadow-lg rounded max-w-full mx-auto'
+							className='shadow-xl rounded max-w-full mx-auto'
 							style={{ width: '250px' }}
 						/>
 						<div className='pt-4 text-center'>
@@ -30,11 +30,11 @@ function Projects() {
 							</p>
 						</div>
 					</div>
-					<div className=''>
+					<div className='mb-12'>
 						<img
 							alt='...'
 							src='https://images.unsplash.com/photo-1526572195979-0f8a7ea44489?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=634&q=80'
-							className='shadow-lg rounded max-w-full mx-auto'
+							className='shadow-xl rounded max-w-full mx-auto'
 							style={{ width: '250px' }}
 						/>
 						<div className='pt-4 text-center'>
@@ -48,7 +48,7 @@ function Projects() {
 						<img
 							alt='...'
 							src='https://images.unsplash.com/photo-1567013127542-490d757e51fc?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=634&q=80'
-							className='shadow-lg rounded max-w-full mx-auto'
+							className='shadow-xl rounded max-w-full mx-auto'
 							style={{ width: '250px' }}
 						/>
 						<div className='pt-4 text-center'>
