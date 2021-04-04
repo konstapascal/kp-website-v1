@@ -3,7 +3,7 @@ import React from 'react';
 function Projects() {
 	return (
 		<section className=' bg-gray-300'>
-			<div className='container py-24 px-6'>
+			<div className='container py-24 border-2 border-black'>
 				<p className=' font-semibold '>Some of my </p>
 				<h3 className='text-green-400 text-3xl rounded-sm font-semibold bg-black py-2 px-4 inline-block'>
 					PROJECTS

@@ -1,10 +1,15 @@
 import React from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
+import Head from 'next/head';
 
 function Blog() {
 	return (
 		<section>
+			<Head>
+				<title>kp-blog</title>
+				<link rel='icon' href='/favicon.png' />
+			</Head>
 			<div
 				className='relative flex items-center justify-center'
 				style={{ minHeight: '100vh' }}>

@@ -24,7 +24,9 @@ function Hero() {
 					</Link>
 				</nav>
 
-				<div className='container absolute top-1/3'>
+				<div
+					className='container absolute top-1/4'
+					id='hero-description-container'>
 					<div className='text-center m-auto w-11/12 md:w-7/12 lg:w-6/12'>
 						<div>
 							<h1 className='text-xl md:text-2xl lg:text-3xl text-gray-200 '>
@@ -33,36 +35,36 @@ function Hero() {
 							<p className='text-green-400 font-semibold text-3xl md:text-4xl lg:text-5xl'>
 								Konstantinos Pascal
 							</p>
-							<p className='mt-6 text-md md:text-lg text-gray-300'>
+							<p className='mt-4 lg:mt-6 text-md md:text-lg text-gray-300'>
 								I am a new developer always excited to learn! Most
 								interested in web development with a passion for both
 								the frontend and the backend!
 							</p>
 						</div>
 					</div>
-					<div className='flex justify-center mt-6'>
+					<div className='flex justify-center mt-4 lg:mt-6'>
 						<div className='mr-1 cursor-pointer'>
-							<Link href='https://github.com/konstapascal'>
+							<a href='https://github.com/konstapascal'>
 								<Image
 									src='/github-square-brands.svg'
 									width={40}
 									height={40}
 								/>
-							</Link>
+							</a>
 						</div>
 						<div className='ml-1 cursor-pointer'>
-							<Link href='https://duckduckgo.com/'>
+							<a href='https://duckduckgo.com/'>
 								<Image
 									src='/linkedin-brands.svg'
 									href='#'
 									width={40}
 									height={40}
 								/>
-							</Link>
+							</a>
 						</div>
 					</div>
 				</div>
-				<div className='absolute bottom-2'>
+				<div className='absolute bottom-2 hidden md:block' id='down-arrow'>
 					<Image src='/chevron-down-solid.svg' width={40} height={40} />
 				</div>
 			</div>
