@@ -3,9 +3,15 @@ import About from '../components/About';
 import Projects from '../components/Projects';
 import Footer from '../components/Footer';
 
+import Head from 'next/head';
+
 export default function Home() {
 	return (
 		<>
+			<Head>
+				<title>kp-website</title>
+				<link rel='icon' href='/favicon.png' />
+			</Head>
 			<Hero />
 			<About />
 			<Projects />

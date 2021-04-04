@@ -5,7 +5,7 @@ function Projects() {
 		<section className=' bg-gray-300'>
 			<div className='container py-24 px-6'>
 				<p className=' font-semibold '>Some of my </p>
-				<h3 className='text-green-400 text-3xl font-semibold bg-black py-2 px-4 inline-block'>
+				<h3 className='text-green-400 text-3xl rounded-sm font-semibold bg-black py-2 px-4 inline-block'>
 					PROJECTS
 				</h3>
 				<p className='text-md leading-relaxed mt-6 mb-16'>
