@@ -27,7 +27,7 @@ function Hero() {
 				</nav>
 
 				<div
-					className='container absolute top-1/4'
+					className='container border-2 border-white absolute top-1/4'
 					id='hero-description-container'>
 					<div className='text-center m-auto w-11/12 md:w-7/12 lg:w-6/12'>
 						<div>
