@@ -1,3 +1,4 @@
+// hides scrollbar, maintains functionality
 body::-webkit-scrollbar {
 	width: 0;
 	height: 0;

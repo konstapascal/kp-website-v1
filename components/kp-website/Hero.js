@@ -2,6 +2,8 @@ import React from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
 
+import { Link as ScrollLink } from 'react-scroll';
+
 function Hero() {
 	return (
 		<section>
@@ -44,7 +46,10 @@ function Hero() {
 					</div>
 					<div className='flex justify-center mt-4 lg:mt-6'>
 						<div className='mr-1 cursor-pointer'>
-							<a href='https://github.com/konstapascal'>
+							<a
+								href='https://github.com/konstapascal'
+								target='_blank'
+								rel='noopener noreferrer'>
 								<Image
 									src='/github-square-brands.svg'
 									width={40}
@@ -53,10 +58,12 @@ function Hero() {
 							</a>
 						</div>
 						<div className='ml-1 cursor-pointer'>
-							<a href='https://duckduckgo.com/'>
+							<a
+								href='https://duckduckgo.com/'
+								target='_blank'
+								rel='noopener noreferrer'>
 								<Image
 									src='/linkedin-brands.svg'
-									href='#'
 									width={40}
 									height={40}
 								/>
@@ -64,8 +71,14 @@ function Hero() {
 						</div>
 					</div>
 				</div>
-				<div className='absolute bottom-2 hidden md:block' id='down-arrow'>
-					<Image src='/chevron-down-solid.svg' width={40} height={40} />
+				<div className='absolute hidden md:block cursor-pointer bottom-4 animate-bounce'>
+					<ScrollLink
+						to='about-section'
+						smooth={true}
+						duration={1000}
+						offset={-100}>
+						<Image src='/chevron-down-solid.svg' width={40} height={40} />
+					</ScrollLink>
 				</div>
 			</div>
 		</section>

@@ -1,9 +1,9 @@
-import React, { useEffect } from 'react';
+import React from 'react';
 
-import Hero from '../components/Hero';
-import About from '../components/About';
-import Projects from '../components/Projects';
-import Footer from '../components/Footer';
+import Hero from '../components/kp-website/Hero';
+import About from '../components/kp-website/About';
+import Projects from '../components/kp-website/Projects';
+import Footer from '../components/kp-website/Footer';
 
 import Head from 'next/head';
 
