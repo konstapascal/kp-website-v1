@@ -20,14 +20,14 @@ function Hero() {
 						</a>
 					</Link>
 					<Link href='/blog'>
-						<a className='text-md md:text-lg lg:text-xl  text-gray-300  border-2 rounded-sm px-4 py-2 border-green-400 hover:bg-green-400 hover:text-gray-900  transition ease-in duration-150'>
+						<a className='text-md md:text-lg lg:text-xl  text-gray-300  border-2 rounded-sm px-4 py-2 border-green-400 hover:bg-green-400 hover:text-gray-900  transition ease-in duration-100'>
 							Blog
 						</a>
 					</Link>
 				</nav>
 
 				<div
-					className='container border-2 border-white absolute top-1/4'
+					className='container absolute top-1/4'
 					id='hero-description-container'>
 					<div className='text-center m-auto w-11/12 md:w-7/12 lg:w-6/12'>
 						<div>
@@ -51,7 +51,7 @@ function Hero() {
 								target='_blank'
 								rel='noopener noreferrer'>
 								<Image
-									src='/github-square-brands.svg'
+									src='/svg/github-square-brands.svg'
 									width={40}
 									height={40}
 								/>
@@ -63,7 +63,7 @@ function Hero() {
 								target='_blank'
 								rel='noopener noreferrer'>
 								<Image
-									src='/linkedin-brands.svg'
+									src='/svg/linkedin-brands.svg'
 									width={40}
 									height={40}
 								/>
@@ -71,13 +71,17 @@ function Hero() {
 						</div>
 					</div>
 				</div>
-				<div className='absolute hidden md:block cursor-pointer bottom-4 animate-bounce'>
+				<div className='absolute hidden lg:block cursor-pointer bottom-4 animate-bounce'>
 					<ScrollLink
 						to='about-section'
 						smooth={true}
 						duration={1000}
-						offset={-100}>
-						<Image src='/chevron-down-solid.svg' width={40} height={40} />
+						offset={-90}>
+						<Image
+							src='/svg/chevron-down-solid.svg'
+							width={40}
+							height={40}
+						/>
 					</ScrollLink>
 				</div>
 			</div>

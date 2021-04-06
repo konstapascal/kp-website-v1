@@ -1,9 +1,8 @@
 import React from 'react';
 
-import Hero from '../components/kp-website/Hero';
-import About from '../components/kp-website/About';
-import Projects from '../components/kp-website/Projects';
-import Footer from '../components/kp-website/Footer';
+import HomeHero from '../components/kp-website/HomeHero';
+import HomeAbout from '../components/kp-website/HomeAbout';
+import HomeProjects from '../components/kp-website/HomeProjects';
 
 import Head from 'next/head';
 
@@ -14,10 +13,9 @@ export default function Home() {
 				<title>kp-website</title>
 				<link rel='icon' href='/favicon.png' />
 			</Head>
-			<Hero />
-			<About />
-			<Projects />
-			<Footer />
+			<HomeHero />
+			<HomeAbout />
+			<HomeProjects />
 		</>
 	);
 }

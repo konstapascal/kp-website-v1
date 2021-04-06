@@ -1,11 +1,10 @@
 import React from 'react';
 import Image from 'next/image';
-import Link from 'next/link';
 
 function Footer() {
 	return (
 		<footer className=' bg-black'>
-			<div className='container text-center py-20 border-2 border-gray-100'>
+			<div className='container text-center p-6 py-24 lg:py-28'>
 				<p className='text-xl font-semibold text-gray-300'>
 					Find me on any of these platforms.{' '}
 				</p>
@@ -13,7 +12,7 @@ function Footer() {
 					<div className='mr-1 cursor-pointer'>
 						<a href='https://github.com/konstapascal'>
 							<Image
-								src='/github-square-brands.svg'
+								src='/svg/github-square-brands.svg'
 								width={40}
 								height={40}
 							/>
@@ -22,7 +21,7 @@ function Footer() {
 					<div className='ml-1 cursor-pointer'>
 						<a href='https://duckduckgo.com/'>
 							<Image
-								src='/linkedin-brands.svg'
+								src='/svg/linkedin-brands.svg'
 								href='#'
 								width={40}
 								height={40}
