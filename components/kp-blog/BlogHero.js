@@ -7,7 +7,7 @@ function Hero() {
 		<section>
 			<div
 				className='relative flex items-center justify-center'
-				style={{ minHeight: '25vh' }}>
+				style={{ minHeight: '50vh' }}>
 				<Image
 					className='absolute'
 					src='/hero.jpg'
@@ -27,6 +27,15 @@ function Hero() {
 						</a>
 					</Link>
 				</nav>
+				<div className='absolute container text-center text-gray-300'>
+					<p className='text-green-400 font-semibold text-3xl md:text-4xl lg:text-5xl'>
+						Welcome to my blog!
+					</p>
+					<p className='mt-4 lg:mt-6 text-md md:text-lg text-gray-300'>
+						Here you can expect weekly articles on Javascript, tailored
+						for both begginers and advanced!
+					</p>
+				</div>
 			</div>
 		</section>
 	);
