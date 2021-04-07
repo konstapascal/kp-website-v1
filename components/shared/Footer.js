@@ -4,7 +4,7 @@ import Image from 'next/image';
 function Footer() {
 	return (
 		<footer className=' bg-black'>
-			<div className='container text-center p-6 py-24 lg:py-28'>
+			<div className='lg:py-28 container p-6 py-24 text-center'>
 				<p className='text-xl font-semibold text-gray-300'>
 					Find me on any of these platforms.{' '}
 				</p>
@@ -30,9 +30,9 @@ function Footer() {
 					</div>
 				</div>
 
-				<p className='text-sm text-gray-400 font-semibold mt-6'>
+				<p className='mt-6 text-sm font-semibold text-gray-400'>
 					Made by{' '}
-					<span className='text-green-400 font-semibold'>
+					<span className='font-semibold text-green-400'>
 						Konstantinos Pascal
 					</span>
 				</p>

@@ -4,12 +4,12 @@ import Image from 'next/image';
 function About() {
 	return (
 		<section className=' bg-black'>
-			<div className='container text-gray-300 p-6 py-24 lg:py-28 text-center'>
-				<p className='text-green-400 font-semibold' id='about-section'>
+			<div className='lg:py-28 container p-6 py-24 text-center text-gray-300'>
+				<p className='font-semibold text-green-400' id='about-section'>
 					Some of my
 				</p>
-				<h3 className='text-3xl uppercase font-semibold'>Technologies</h3>
-				<p className='mt-4 text-md leading-relaxed'>
+				<h3 className='text-3xl font-semibold uppercase'>Technologies</h3>
+				<p className='text-md md:text-lg lg:text-xl mt-4 leading-relaxed'>
 					Focusing on web development means I am very comfortable with the
 					modern web languages, frameworks and technologies.
 				</p>
