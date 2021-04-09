@@ -9,16 +9,18 @@ function ProjectCard({ title, description, src, labels }) {
 				src={`${src}`}
 				width='250'
 				height='375'
-				className=' rounded-sm shadow-xl'
+				className='rounded shadow-xl'
 			/>
-			<h5 className='mt-4 text-2xl font-bold'>{title}</h5>
-			<p className='mt-1 text-sm font-semibold text-gray-500 uppercase'>
+			<h5 className='mt-4 text-2xl text-[#1E1F1C] dark:text-gray-200 text-gray-900 font-bold transition duration-200 ease-in'>
+				{title}
+			</h5>
+			<p className='dark:text-gray-400 mt-1 text-sm font-semibold text-gray-500 uppercase transition duration-200 ease-in'>
 				{description}
 			</p>
 
 			<div className='mt-2'>
 				{labels.map(label => {
-					return <Label content={`${label}`} />;
+					return <Label key={`${label}`} content={`${label}`} />;
 				})}
 			</div>
 		</div>

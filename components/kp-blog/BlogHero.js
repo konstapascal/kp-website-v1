@@ -10,24 +10,25 @@ function Hero() {
 				style={{ minHeight: '50vh' }}>
 				<Image
 					className='absolute'
-					src='/blog-hero-2.jpg'
+					src='/blog-hero.jpg'
 					layout='fill'
 					objectFit='cover'
+					objectPosition='top'
 				/>
-				<span className='absolute w-full h-full bg-black opacity-50' />
+				<span className='opacity-60 absolute w-full h-full bg-black' />
 				<nav className='md:p-6 lg:p-8 absolute inset-x-0 top-0 flex items-center justify-between p-4'>
 					<Link href='/blog'>
-						<a className='md:text-2xl lg:text-3xl text-xl font-bold text-green-400'>
+						<a className='md:text-2xl lg:text-3xl text-xl font-bold tracking-wide text-green-400 bg-[#1E1F1C] px-4 py-2 bg-opacity-50 '>
 							KP-BLOG
 						</a>
 					</Link>
 					<Link href='/'>
-						<a className='text-md md:text-lg lg:text-xl hover:bg-green-400 hover:text-gray-900 px-4 py-2 text-gray-300 transition duration-100 ease-in border-2 border-green-400 rounded-sm'>
-							Home
+						<a className='md:text-md lg:text-lg hover:text transform-gpu hover:scale-105 px-4 py-2 text-sm font-semibold tracking-wider text-gray-300 transition duration-100 ease-in border-2 border-green-400 rounded-sm'>
+							KP-WEBSITE
 						</a>
 					</Link>
 				</nav>
-				<div className='top-1/3 md:p-10 container absolute min-w-full p-2 text-center text-gray-300 bg-black bg-opacity-50'>
+				<div className='top-1/4 sm:top-1/3 container absolute min-w-full px-6 py-10 text-center text-gray-300 bg-[#1E1F1C] bg-opacity-50'>
 					<p className='md:text-4xl lg:text-5xl text-3xl font-semibold text-green-400'>
 						Welcome to my blog!
 					</p>

@@ -9,26 +9,31 @@ function Hero() {
 		<section>
 			<div className='relative flex items-center justify-center min-h-screen'>
 				{/* ---------- BACKGROUND AND FILTER ---------- */}
-				<Image src='/hero.jpg' layout='fill' objectFit='cover' />
-				<span className='absolute w-full h-full bg-black opacity-50' />
+				<Image
+					src='/hero.jpg'
+					layout='fill'
+					objectFit='cover'
+					objectPosition='top'
+				/>
+				<span className='opacity-60 absolute w-full h-full bg-black' />
 
 				{/* ---------- LOGO AND BLOG BUTTON / NAV ---------- */}
 				<nav className='md:p-6 lg:p-8 absolute inset-x-0 top-0 flex items-center justify-between p-4'>
 					<Link href='/'>
-						<a className='md:text-2xl lg:text-3xl text-xl font-bold text-green-400'>
+						<a className='md:text-2xl lg:text-3xl text-xl rounded-[0.2rem] font-bold tracking-wide text-green-400 bg-[#1E1F1C] px-4 py-2 bg-opacity-50'>
 							KP-WEBSITE
 						</a>
 					</Link>
 					<Link href='/blog'>
-						<a className='text-md md:text-lg lg:text-xl hover:bg-green-400 hover:text-gray-900 px-4 py-2 text-gray-300 transition duration-100 ease-in border-2 border-green-400 rounded-sm'>
-							Blog
+						<a className='md:text-md lg:text-lg hover:text px-4 py-2 text-sm font-semibold tracking-wider text-gray-300 transition duration-100 ease-in border-2 border-green-400 rounded-[0.2rem] transform-gpu hover:scale-105'>
+							KP-BLOG
 						</a>
 					</Link>
 				</nav>
 
 				{/* ---------- HEADINGS, DESCRIPTION, LINKS ---------- */}
 				<div
-					className='container absolute min-w-full px-6 py-10 bg-black bg-opacity-50'
+					className='container absolute min-w-full px-6 py-10 bg-[#1E1F1C] bg-opacity-30'
 					style={{ top: '30%' }}>
 					<div className='sm:w-2/3 md:w-7/12 lg:w-1/2 xl:w-5/12 m-auto text-center'>
 						<h1 className='md:text-xl lg:text-2xl text-lg font-semibold text-gray-200'>

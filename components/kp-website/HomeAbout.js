@@ -3,10 +3,10 @@ import Image from 'next/image';
 
 function About() {
 	return (
-		<section className=' bg-black' id='about-section'>
+		<section className=' bg-[#1E1F1C]' id='about-section'>
 			<div className=' lg:w-2/3 2xl:w-1/2 py-28 container px-6 text-center text-gray-300'>
 				<p className='font-semibold text-green-400'>Some of my</p>
-				<h3 className='inline-block px-4 py-2 text-3xl font-semibold uppercase'>
+				<h3 className='inline-block px-4 py-2 text-3xl font-semibold text-gray-200 uppercase'>
 					Skillsets
 				</h3>
 				<p className='text-md md:text-lg lg:text-xl my-8 leading-relaxed'>

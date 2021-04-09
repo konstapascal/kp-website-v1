@@ -1,9 +1,19 @@
 import '../styles/tailwind.css';
 import '../styles/globals.css';
 
-import Footer from '../components/shared/Footer';
-
 function MyApp({ Component, pageProps }) {
+	function handleClick() {
+		const html = document.querySelector('html');
+		const toggle = document.querySelector('#toggle');
+
+		toggle.classList.toggle('left-0');
+		toggle.classList.toggle('right-0');
+		toggle.classList.toggle('ml-1');
+		toggle.classList.toggle('mr-1');
+
+		html.classList.toggle('dark');
+	}
+
 	return (
 		<>
 			{/* TODO: DELETE THIS LATER */}
@@ -29,10 +39,18 @@ function MyApp({ Component, pageProps }) {
 			</div>
 			{/* TODO: DELETE THIS LATER */}
 
+			{/* DARKMODE TOGGLE */}
+			<span
+				className='bottom-10 right-2 fixed z-50'
+				onClick={() => handleClick()}>
+				<span className='block w-12 h-6 bg-gray-400 rounded-full shadow-inner'></span>
+				<span
+					id='toggle'
+					className='absolute inset-y-0 left-0 w-4 h-4 mt-1 ml-1 bg-white rounded-full'></span>
+			</span>
+
 			<Component {...pageProps} />
-			<Footer />
 		</>
 	);
 }
-
 export default MyApp;

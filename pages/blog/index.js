@@ -1,7 +1,8 @@
 import Head from 'next/head';
 import React from 'react';
 import BlogHero from '../../components/kp-blog/BlogHero';
-import BlogPostList from '../../components/kp-blog/BlogPostList';
+import BlogPosts from '../../components/kp-blog/BlogPosts';
+import Footer from '../../components/shared/Footer';
 
 function Blog() {
 	return (
@@ -11,7 +12,8 @@ function Blog() {
 				<link rel='icon' href='/favicon.png' />
 			</Head>
 			<BlogHero />
-			<BlogPostList />
+			<BlogPosts />
+			<Footer />
 		</>
 	);
 }
