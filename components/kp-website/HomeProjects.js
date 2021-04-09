@@ -3,7 +3,7 @@ import ProjectCard from '../shared/ProjectCard';
 
 function Projects() {
 	return (
-		<section className='dark:bg-[#272822] transition duration-300 ease-in bg-gray-300'>
+		<section className='dark:bg-[#272822] transition duration-300 ease-in bg-gray-200'>
 			<div className=' py-28 container px-6 text-center'>
 				<p className=' dark:text-gray-300 font-semibold text-gray-900 transition duration-300 ease-in'>
 					Some of my
