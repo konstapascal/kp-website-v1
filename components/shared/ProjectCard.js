@@ -1,5 +1,6 @@
 import React from 'react';
 import Image from 'next/image';
+import Label from './Label';
 
 function ProjectCard({ title, description, src, labels }) {
 	return (
@@ -10,19 +11,16 @@ function ProjectCard({ title, description, src, labels }) {
 				height='375'
 				className=' rounded-sm shadow-xl'
 			/>
-			<h5 className='text-2xl font-bold'>{title}</h5>
+			<h5 className='mt-4 text-2xl font-bold'>{title}</h5>
 			<p className='mt-1 text-sm font-semibold text-gray-500 uppercase'>
 				{description}
 			</p>
-			{labels.map(label => {
-				return (
-					<span
-						key={`${label}`}
-						className='inline-block px-2 py-1 mr-1 text-xs font-semibold text-green-600 uppercase bg-green-200 rounded'>
-						{label}
-					</span>
-				);
-			})}
+
+			<div className='mt-2'>
+				{labels.map(label => {
+					return <Label content={`${label}`} />;
+				})}
+			</div>
 		</div>
 	);
 }

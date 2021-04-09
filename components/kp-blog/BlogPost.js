@@ -1,13 +1,27 @@
 import React from 'react';
+import Label from '../shared/Label';
 
 function BlogPost() {
 	return (
-		<div className='p-4'>
-			<p className='md:text-3xl hover:bg-black hover:text-green-400 inline-block p-2 text-2xl font-semibold transition duration-100 ease-in rounded-sm cursor-pointer'>
+		<div className='my-14'>
+			<p className='md:text-4xl hover:underline inline-block text-2xl font-semibold cursor-pointer'>
 				Blog post title
 			</p>
-			<p className='p-2 text-gray-700'>06 April 2021</p>
-			<p className='text-md md:text-lg lg:text-xl p-2'>
+			<p className=' mt-2 text-gray-700'>
+				by{' '}
+				<span className='hover:text-blue-500 hover:underline cursor-pointer'>
+					Konstantinos Pascal
+				</span>{' '}
+				on <span>06 April 2021</span>
+			</p>
+
+			<div className='mt-2'>
+				<Label content='JS' />
+				<Label content='SQL' />
+				<Label content='NODE' />
+			</div>
+
+			<p className='text-md md:text-lg lg:text-xl mt-4'>
 				Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore
 				ullam esse excepturi nam, cumque illum, numquam quia fuga
 				necessitatibus, non officia nesciunt vero voluptatem architecto
@@ -16,5 +30,4 @@ function BlogPost() {
 		</div>
 	);
 }
-
 export default BlogPost;

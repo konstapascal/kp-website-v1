@@ -4,15 +4,16 @@ import ProjectCard from '../shared/ProjectCard';
 function Projects() {
 	return (
 		<section className=' bg-gray-300'>
-			<div className='lg:py-28 container p-6 py-24 text-center'>
-				<p className=' font-semibold'>Some of my </p>
-				<h3 className='inline-block px-4 py-2 text-3xl font-semibold text-green-400 bg-black rounded-sm'>
-					PROJECTS
-				</h3>
-				<p className='text-md md:text-lg lg:text-xl mt-6 mb-6 leading-relaxed'>
+			<div className=' py-28 container px-6 text-center'>
+				<p className='font-semibold'>Some of my</p>
+				<p className='inline-block px-4 py-2 text-3xl font-semibold text-green-400 uppercase bg-black rounded-sm'>
+					Projects
+				</p>
+				<p className='text-md md:text-lg lg:text-xl my-8 leading-relaxed'>
 					Here are some of the projects I have worked on, click the links
 					for more information.
 				</p>
+
 				{/* ---------- CARDS ---------- */}
 				<div className='flex flex-wrap justify-center'>
 					<ProjectCard

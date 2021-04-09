@@ -31,7 +31,7 @@ function Hero() {
 					<p className='md:text-4xl lg:text-5xl text-3xl font-semibold text-green-400'>
 						Welcome to my blog!
 					</p>
-					<p className='lg:mt-6 text-md md:text-lg mt-4 text-gray-300'>
+					<p className='text-md md:text-lg lg:text-xl lg:mt-6 mt-4 text-gray-300'>
 						Here you can expect weekly articles on Javascript, tailored
 						for both begginers and advanced!
 					</p>

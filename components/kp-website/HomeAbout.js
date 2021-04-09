@@ -3,24 +3,24 @@ import Image from 'next/image';
 
 function About() {
 	return (
-		<section className=' bg-black'>
-			<div className='lg:py-28 container p-6 py-24 text-center text-gray-300'>
-				<p className='font-semibold text-green-400' id='about-section'>
-					Some of my
-				</p>
-				<h3 className='text-3xl font-semibold uppercase'>Technologies</h3>
-				<p className='text-md md:text-lg lg:text-xl mt-4 leading-relaxed'>
+		<section className=' bg-black' id='about-section'>
+			<div className=' lg:w-2/3 2xl:w-1/2 py-28 container px-6 text-center text-gray-300'>
+				<p className='font-semibold text-green-400'>Some of my</p>
+				<h3 className='inline-block px-4 py-2 text-3xl font-semibold uppercase'>
+					Skillsets
+				</h3>
+				<p className='text-md md:text-lg lg:text-xl my-8 leading-relaxed'>
 					Focusing on web development means I am very comfortable with the
 					modern web languages, frameworks and technologies.
 				</p>
-				<ul className='mt-8'>
-					<li className='py-2'>
+				<ul className='py-2'>
+					<li className=''>
 						<h4 className='text-xl'>HTML, CSS, JS</h4>
 					</li>
 					<li className='py-2'>
 						<h4 className='text-xl'>Node, Express, React, Next </h4>
 					</li>
-					<li className='py-2'>
+					<li className=''>
 						<h4 className='text-xl'>Tailwind</h4>
 					</li>
 				</ul>
@@ -35,7 +35,7 @@ function About() {
 								height={50}
 							/>
 						</div>
-						<div className='ml-4'>
+						<div className='lg:mx-6 mx-4'>
 							<Image
 								src='/svg/css3-alt-brands.svg'
 								alt='CSS3 Logo'
@@ -43,7 +43,7 @@ function About() {
 								height={50}
 							/>
 						</div>
-						<div className=' ml-4'>
+						<div className=''>
 							<Image
 								src='/svg/js-square-brands.svg'
 								alt='JS Logo'
@@ -61,7 +61,7 @@ function About() {
 								height={50}
 							/>
 						</div>
-						<div className='ml-4'>
+						<div className='lg:ml-6 ml-4'>
 							<Image
 								src='/svg/react-brands.svg'
 								alt='CSS3 Logo'
@@ -75,5 +75,4 @@ function About() {
 		</section>
 	);
 }
-
 export default About;
