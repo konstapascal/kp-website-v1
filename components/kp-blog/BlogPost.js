@@ -3,7 +3,7 @@ import Label from '../shared/Label';
 
 function BlogPost() {
 	return (
-		<div className='my-14 transition duration-200 ease-in'>
+		<div className='my-14'>
 			<p className='md:text-4xl dark:text-gray-200 hover:underline inline-block text-2xl font-semibold text-gray-900 transition duration-200 ease-in cursor-pointer'>
 				Blog post title
 			</p>
