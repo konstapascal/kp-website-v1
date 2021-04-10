@@ -4,7 +4,7 @@ function Label({ content }) {
 	return (
 		<span
 			key={`${content}`}
-			className='dark:bg-green-600 dark:text-green-100 inline-block px-2 py-1 m-[2px] text-xs font-bold tracking-wide text-green-700 uppercase transition duration-300 ease-in bg-green-200 rounded'>
+			className='bg-green-600 text-green-100 inline-block px-2 py-1 m-[2px] text-xs font-bold tracking-wide uppercase rounded'>
 			{content}
 		</span>
 	);

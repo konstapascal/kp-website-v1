@@ -1,32 +1,13 @@
 import '../styles/tailwind.css';
 import '../styles/globals.css';
 
-import { useEffect } from 'react';
-
 import Footer from '../components/shared/Footer';
 
 function MyApp({ Component, pageProps }) {
-	// dark by default
-	useEffect(() => {
-		document.querySelector('html').classList.add('dark');
-	}, []);
-
-	function handleClick() {
-		const html = document.querySelector('html');
-		const toggle = document.querySelector('#toggle');
-
-		toggle.classList.toggle('left-0');
-		toggle.classList.toggle('right-0');
-		toggle.classList.toggle('ml-1');
-		toggle.classList.toggle('mr-1');
-
-		html.classList.toggle('dark');
-	}
-
 	return (
 		<>
 			{/* TODO: DELETE THIS LATER */}
-			<div className='text-md fixed bottom-0 right-0 z-50 p-2 font-bold text-center text-black'>
+			<div className='text-md fixed bottom-0 right-0 z-50 p-4 font-bold text-center text-black'>
 				<p className='sm:hidden px-1 bg-yellow-400 rounded'>
 					XS (0px to 640px)
 				</p>
@@ -47,16 +28,6 @@ function MyApp({ Component, pageProps }) {
 				</span>
 			</div>
 			{/* TODO: DELETE THIS LATER */}
-
-			{/* DARKMODE TOGGLE */}
-			<span
-				className='bottom-10 right-2 fixed z-50'
-				onClick={() => handleClick()}>
-				<span className=' block w-12 h-6 bg-gray-400 rounded-full'></span>
-				<span
-					id='toggle'
-					className='absolute inset-y-0 left-0 w-4 h-4 mt-1 ml-1 bg-white rounded-full'></span>
-			</span>
 
 			<Component {...pageProps} />
 			<Footer />

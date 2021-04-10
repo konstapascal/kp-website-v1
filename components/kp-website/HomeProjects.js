@@ -3,15 +3,13 @@ import ProjectCard from '../shared/ProjectCard';
 
 function Projects() {
 	return (
-		<section className='dark:bg-[#272822] transition duration-300 ease-in bg-gray-200'>
+		<section className='bg-[#272822] border-b-2 border-green-400'>
 			<div className=' py-28 container px-6 text-center'>
-				<p className=' dark:text-gray-300 font-semibold text-gray-900 transition duration-300 ease-in'>
-					Some of my
-				</p>
-				<p className='inline-block px-4 py-2 text-3xl font-semibold text-green-400 uppercase bg-[#1E1F1C]  rounded-[0.2rem]'>
+				<p className=' font-semibold text-gray-300'>Some of my</p>
+				<p className='inline-block  text-4xl font-semibold text-green-400 uppercase rounded-[0.2rem]'>
 					Projects
 				</p>
-				<p className='text-md md:text-lg lg:text-xl dark:text-gray-300 my-8 leading-relaxed text-gray-900 transition duration-300 ease-in'>
+				<p className=' text-md md:text-lg lg:text-xl my-16 leading-relaxed text-gray-300'>
 					Here are some of the projects I have worked on, click the links
 					for more information.
 				</p>

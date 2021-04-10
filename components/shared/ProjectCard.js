@@ -4,16 +4,14 @@ import Label from './Label';
 
 function ProjectCard({ title, description, src, labels }) {
 	return (
-		<div className='m-8'>
-			<Image src={`${src}`} width='250' height='375' />
-			<h1 className='mt-4 text-2xl text-[#1E1F1C] dark:text-gray-200 text-gray-900 font-bold transition duration-300 ease-in'>
-				{title}
-			</h1>
-			<p className='dark:text-gray-400 mt-1 text-sm font-semibold text-gray-500 uppercase transition duration-300 ease-in'>
+		<div className='bg-[#1E1F1C]  px-12 py-8 m-8 border-b-2 border-r-2 border-green-400 rounded'>
+			{/* <Image src={`${src}`} width='250' height='375' /> */}
+			<h1 className=' text-2xl text-gray-200'>{title}</h1>
+			<p className=' mt-1 text-sm font-semibold text-gray-400 uppercase'>
 				{description}
 			</p>
 
-			<div className='mt-2'>
+			<div className='mt-4'>
 				{labels.map(label => {
 					return <Label key={`${label}`} content={`${label}`} />;
 				})}
