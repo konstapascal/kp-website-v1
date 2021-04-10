@@ -17,7 +17,7 @@ function Projects() {
 				</p>
 
 				{/* ---------- CARDS ---------- */}
-				<div className='flex flex-wrap justify-center'>
+				<div className=' flex flex-wrap justify-center'>
 					<ProjectCard
 						title='Chestnut'
 						description='Educational PKI Web App'

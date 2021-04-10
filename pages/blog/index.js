@@ -2,7 +2,6 @@ import Head from 'next/head';
 import React from 'react';
 import BlogHero from '../../components/kp-blog/BlogHero';
 import BlogPosts from '../../components/kp-blog/BlogPosts';
-import Footer from '../../components/shared/Footer';
 
 function Blog() {
 	return (
@@ -13,7 +12,6 @@ function Blog() {
 			</Head>
 			<BlogHero />
 			<BlogPosts />
-			<Footer />
 		</>
 	);
 }

@@ -1,7 +1,16 @@
 import '../styles/tailwind.css';
 import '../styles/globals.css';
 
+import { useEffect } from 'react';
+
+import Footer from '../components/shared/Footer';
+
 function MyApp({ Component, pageProps }) {
+	// dark by default
+	useEffect(() => {
+		document.querySelector('html').classList.add('dark');
+	}, []);
+
 	function handleClick() {
 		const html = document.querySelector('html');
 		const toggle = document.querySelector('#toggle');
@@ -43,13 +52,14 @@ function MyApp({ Component, pageProps }) {
 			<span
 				className='bottom-10 right-2 fixed z-50'
 				onClick={() => handleClick()}>
-				<span className='block w-12 h-6 bg-gray-400 rounded-full shadow-inner'></span>
+				<span className=' block w-12 h-6 bg-gray-400 rounded-full'></span>
 				<span
 					id='toggle'
 					className='absolute inset-y-0 left-0 w-4 h-4 mt-1 ml-1 bg-white rounded-full'></span>
 			</span>
 
 			<Component {...pageProps} />
+			<Footer />
 		</>
 	);
 }
