@@ -19,7 +19,7 @@ function Hero() {
 						</a>
 					</Link>
 				</nav>
-				<div className='top-1/4 sm:top-1/3 container absolute min-w-full px-6 py-6 text-center'>
+				<div className='container absolute text-center border'>
 					<p className='md:text-4xl lg:text-5xl text-3xl font-semibold text-green-400'>
 						Welcome to my blog!
 					</p>

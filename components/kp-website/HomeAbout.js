@@ -4,18 +4,18 @@ import Image from 'next/image';
 function About() {
 	return (
 		<section
-			className=' bg-[#1E1F1C] border-b-2 border-green-400'
+			className=' bg-[#2F312C] border-b-2 border-green-400'
 			id='about-section'>
-			<div className=' lg:w-2/3 2xl:w-1/2 py-28 container px-6 text-center text-gray-300'>
+			<div className=' container text-center text-gray-300 border'>
 				<p className='font-semibold text-gray-300'>Some of my</p>
 				<h3 className='inline-block text-4xl font-semibold text-green-400 uppercase'>
 					Skillsets
 				</h3>
-				<p className='text-md md:text-lg lg:text-xl my-16 leading-relaxed'>
+				<p className='text-md md:text-lg lg:text-xl leading-relaxed'>
 					Focusing on web development means I am very comfortable with the
 					modern web languages, frameworks and technologies.
 				</p>
-				<ul className=' mb-16'>
+				<ul className=''>
 					<li className=''>
 						<h4 className='text-xl'>HTML, CSS, JS</h4>
 					</li>
@@ -27,7 +27,7 @@ function About() {
 					</li>
 				</ul>
 
-				<div className='mt-8'>
+				<div className=''>
 					<div className='flex justify-center'>
 						<div className=''>
 							<Image
@@ -37,7 +37,7 @@ function About() {
 								height={50}
 							/>
 						</div>
-						<div className='lg:mx-6 mx-4'>
+						<div className=''>
 							<Image
 								src='/svg/css3-alt-brands.svg'
 								alt='CSS3 Logo'
@@ -54,7 +54,7 @@ function About() {
 							/>
 						</div>
 					</div>
-					<div className='flex justify-center mt-4'>
+					<div className=' flex justify-center'>
 						<div className=''>
 							<Image
 								src='/svg/node-js-brands.svg'
@@ -63,7 +63,7 @@ function About() {
 								height={50}
 							/>
 						</div>
-						<div className='lg:ml-6 ml-4'>
+						<div className=''>
 							<Image
 								src='/svg/react-brands.svg'
 								alt='CSS3 Logo'

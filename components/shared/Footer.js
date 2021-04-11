@@ -4,12 +4,12 @@ import Image from 'next/image';
 function Footer() {
 	return (
 		<footer className=' bg-[#1E1F1C]'>
-			<div className=' py-28 container px-6 text-center'>
+			<div className=' container text-center text-gray-300 border'>
 				<p className='text-xl font-semibold text-gray-300'>
 					Find me on any of these platforms.{' '}
 				</p>
-				<div className='flex justify-center mt-4'>
-					<div className='mr-1 cursor-pointer'>
+				<div className=' flex justify-center'>
+					<div className=' cursor-pointer'>
 						<a href='https://github.com/konstapascal'>
 							<Image
 								src='/svg/github-square-brands.svg'
@@ -18,7 +18,7 @@ function Footer() {
 							/>
 						</a>
 					</div>
-					<div className='ml-1 cursor-pointer'>
+					<div className=' cursor-pointer'>
 						<a href='https://duckduckgo.com/'>
 							<Image
 								src='/svg/linkedin-brands.svg'
@@ -30,7 +30,7 @@ function Footer() {
 					</div>
 				</div>
 
-				<p className='mt-6 text-sm font-semibold text-gray-400'>
+				<p className='text-sm font-semibold text-gray-400'>
 					Made by{' '}
 					<span className='font-semibold text-green-400'>
 						Konstantinos Pascal

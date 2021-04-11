@@ -3,8 +3,8 @@ import BlogPost from './BlogPost';
 
 function BlogPosts() {
 	return (
-		<section className=' bg-[#272822] border-b-2 border-green-400'>
-			<div className='lg:w-2/3 2xl:w-1/2 container px-6 py-20'>
+		<section className=' bg-[#2F312C] border-b-2 border-green-400'>
+			<div className='container border'>
 				<BlogPost />
 				<BlogPost />
 				<BlogPost />

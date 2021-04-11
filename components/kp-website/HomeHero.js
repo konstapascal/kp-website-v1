@@ -8,10 +8,10 @@ import { WindupChildren, Pause, Pace } from 'windups';
 import fadeIn from '../../lib/fadeIn';
 
 function Hero() {
-	useEffect(() => {
-		fadeIn('#description', 2500);
-		fadeIn('#links', 3000);
-	}, []);
+	// useEffect(() => {
+	// 	fadeIn('#description', 2500);
+	// 	fadeIn('#links', 3000);
+	// }, []);
 
 	return (
 		<section>
@@ -32,54 +32,52 @@ function Hero() {
 
 				{/* ---------- HEADINGS, DESCRIPTION, LINKS ---------- */}
 				<div
-					className=' container absolute min-w-full px-6 py-10'
-					style={{ top: '25%' }}>
-					<div className='sm:w-2/3 md:w-7/12 lg:w-1/2 xl:w-5/12 m-auto text-center'>
-						<WindupChildren>
-							<Pace ms={50}>
-								<h1 className='md:text-xl lg:text-2xl text-lg font-semibold text-gray-100'>
-									{'Hello, this is..'}
-								</h1>
-							</Pace>
-							<Pause ms={750} />
-							<p className='md:text-4xl lg:text-5xl text-3xl font-semibold text-green-400'>
-								{'Konstantinos Pascal'}
-							</p>
-						</WindupChildren>
-						<p
-							id='description'
-							className='lg:my-8 text-md md:text-lg lg:text-xl my-4 text-gray-200 transition-opacity duration-1000 opacity-0'>
-							I am a new developer always excited to learn! Most
-							interested in web development with a passion for both the
-							frontend and the backend!
-						</p>
-						<div
-							className=' flex justify-center pt-4 transition-opacity duration-1000 opacity-0'
-							id='links'>
-							<div className=' mr-1 cursor-pointer'>
-								<a
-									href='https://github.com/konstapascal'
-									target='_blank'
-									rel='noopener noreferrer'>
-									<Image
-										src='/svg/github-square-brands.svg'
-										width={40}
-										height={40}
-									/>
-								</a>
-							</div>
-							<div className='ml-1 cursor-pointer'>
-								<a
-									href='https://duckduckgo.com/'
-									target='_blank'
-									rel='noopener noreferrer'>
-									<Image
-										src='/svg/linkedin-brands.svg'
-										width={40}
-										height={40}
-									/>
-								</a>
-							</div>
+					className=' container absolute text-center border'
+					style={{ top: '27.5%' }}>
+					{/* <WindupChildren> */}
+					{/* <Pace ms={50}> */}
+					<h1 className='md:text-xl lg:text-2xl text-2xl font-semibold text-gray-100'>
+						{'Hello, this is..'}
+					</h1>
+					{/* </Pace> */}
+					{/* <Pause ms={750} /> */}
+					<p className='md:text-4xl lg:text-5xl font-semibold text-green-400'>
+						{'Konstantinos Pascal'}
+					</p>
+					{/* </WindupChildren> */}
+					<p
+						id='description'
+						className='lg:my-8 text-md md:text-lg lg:text-xl my-4 text-gray-200 transition-opacity duration-1000'>
+						I am a new developer always excited to learn! Most interested
+						in web development with a passion for both the frontend and
+						the backend!
+					</p>
+					<div
+						className=' flex justify-center pt-4 transition-opacity duration-1000'
+						id='links'>
+						<div className=' mr-1 cursor-pointer'>
+							<a
+								href='https://github.com/konstapascal'
+								target='_blank'
+								rel='noopener noreferrer'>
+								<Image
+									src='/svg/github-square-brands.svg'
+									width={40}
+									height={40}
+								/>
+							</a>
+						</div>
+						<div className='ml-1 cursor-pointer'>
+							<a
+								href='https://duckduckgo.com/'
+								target='_blank'
+								rel='noopener noreferrer'>
+								<Image
+									src='/svg/linkedin-brands.svg'
+									width={40}
+									height={40}
+								/>
+							</a>
 						</div>
 					</div>
 				</div>
