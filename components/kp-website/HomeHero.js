@@ -3,29 +3,19 @@ import Link from 'next/link';
 import Image from 'next/image';
 
 import { Link as ScrollLink } from 'react-scroll';
-import { WindupChildren } from 'windups';
+import { WindupChildren, Pause, Pace } from 'windups';
+
+import fadeIn from '../../lib/fadeIn';
 
 function Hero() {
 	useEffect(() => {
-		setTimeout(() => {
-			document
-				.querySelector('#links')
-				.classList.replace('opacity-0', 'opacity-100');
-		}, 4500);
+		fadeIn('#description', 2500);
+		fadeIn('#links', 3000);
 	}, []);
 
 	return (
 		<section>
 			<div className='relative flex items-center justify-center bg-[#1E1F1C] min-h-screen border-b-2 border-green-400'>
-				{/* ---------- BACKGROUND AND FILTER ---------- */}
-				{/* <Image
-					src='/hero-forest.jpg'
-					layout='fill'
-					objectFit='cover'
-					objectPosition='bottom'
-				/> */}
-				{/* <span className=' absolute w-full h-full bg-[#1E1F1C]' /> */}
-
 				{/* ---------- LOGO AND BLOG BUTTON / NAV ---------- */}
 				<nav className='md:p-6 lg:p-8 absolute inset-x-0 top-0 flex items-center justify-between p-4'>
 					<Link href='/'>
@@ -46,21 +36,25 @@ function Hero() {
 					style={{ top: '25%' }}>
 					<div className='sm:w-2/3 md:w-7/12 lg:w-1/2 xl:w-5/12 m-auto text-center'>
 						<WindupChildren>
-							<h1 className='md:text-xl lg:text-2xl text-lg font-semibold text-gray-100'>
-								{'Hello, this is..'}
-							</h1>
+							<Pace ms={50}>
+								<h1 className='md:text-xl lg:text-2xl text-lg font-semibold text-gray-100'>
+									{'Hello, this is..'}
+								</h1>
+							</Pace>
+							<Pause ms={750} />
 							<p className='md:text-4xl lg:text-5xl text-3xl font-semibold text-green-400'>
 								{'Konstantinos Pascal'}
 							</p>
-
-							<p className='lg:my-8 text-md md:text-lg lg:text-xl my-4 text-gray-200'>
-								{`I am a new developer always excited to learn! Most
-									interested in web development with a passion for both
-									the frontend and the backend!`}
-							</p>
 						</WindupChildren>
+						<p
+							id='description'
+							className='lg:my-8 text-md md:text-lg lg:text-xl my-4 text-gray-200 transition-opacity duration-1000 opacity-0'>
+							I am a new developer always excited to learn! Most
+							interested in web development with a passion for both the
+							frontend and the backend!
+						</p>
 						<div
-							className=' flex justify-center pt-4 transition-opacity duration-300 opacity-0'
+							className=' flex justify-center pt-4 transition-opacity duration-1000 opacity-0'
 							id='links'>
 							<div className=' mr-1 cursor-pointer'>
 								<a

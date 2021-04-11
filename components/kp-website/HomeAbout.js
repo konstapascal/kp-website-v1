@@ -15,7 +15,7 @@ function About() {
 					Focusing on web development means I am very comfortable with the
 					modern web languages, frameworks and technologies.
 				</p>
-				<ul className='mb-16'>
+				<ul className=' mb-16'>
 					<li className=''>
 						<h4 className='text-xl'>HTML, CSS, JS</h4>
 					</li>
