@@ -15,7 +15,7 @@ function Hero() {
 
 	return (
 		<section>
-			<div className='relative flex items-center justify-center bg-[#1E1F1C] min-h-screen border-b-2 border-green-400'>
+			<div className='bg-mainColor-dark relative flex items-center justify-center min-h-screen border-b-2 border-green-400'>
 				{/* ---------- LOGO AND BLOG BUTTON / NAV ---------- */}
 				<nav className='md:p-6 lg:p-8 absolute inset-x-0 top-0 flex items-center justify-between p-4'>
 					<Link href='/'>
@@ -41,7 +41,7 @@ function Hero() {
 					</h1>
 					{/* </Pace> */}
 					{/* <Pause ms={750} /> */}
-					<p className='md:text-4xl lg:text-5xl font-semibold text-green-400'>
+					<p className='md:text-4xl lg:text-5xl text-accentColor-light font-semibold'>
 						{'Konstantinos Pascal'}
 					</p>
 					{/* </WindupChildren> */}

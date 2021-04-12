@@ -4,6 +4,18 @@ module.exports = {
 	theme: {
 		container: {
 			center: true
+		},
+		extend: {
+			colors: {
+				main: {
+					light: '#222D39',
+					dark: '#131920'
+				},
+				accent: {
+					light: '#4DBBFF',
+					dark: '#005E99'
+				}
+			}
 		}
 	},
 	variants: {

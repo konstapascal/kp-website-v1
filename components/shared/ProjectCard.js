@@ -4,7 +4,7 @@ import Label from './Label';
 
 function ProjectCard({ title, description, src, labels }) {
 	return (
-		<div className='bg-[#1E1F1C]  px-12 py-8 m-8 border-b-2 border-r-2 border-green-400 rounded '>
+		<div className='bg-[#1E1F1C]  px-12 py-8 m-8 border-b-2 border-r-2 border-accent-light rounded '>
 			<h1 className=' hover:underline text-2xl text-gray-200 cursor-pointer'>
 				{title}
 			</h1>
