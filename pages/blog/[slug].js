@@ -6,6 +6,7 @@ import { promises as fs } from 'fs';
 import path from 'path';
 
 function Post({ posts }) {
+	console.log(posts);
 	return (
 		<>
 			<Head>
@@ -14,14 +15,16 @@ function Post({ posts }) {
 			</Head>
 			<BlogHero />
 
-			<div className=' bg-main-light'>
-				{posts.map(post => (
-					<div className='p-6 text-gray-100'>
-						<h3>{post.filename}</h3>
-						<p>{post.content}</p>
-					</div>
-				))}
-			</div>
+			<div className=' bg-main-light'></div>
+
+			<section className=' bg-main-light py-16'>
+				<div className=' lg:max-w-3xl container'>
+					<p className=' hover:underline inline-block text-4xl font-semibold text-gray-100 cursor-pointer'>
+						{posts.title}
+					</p>
+					<p className='text-white'>{posts.fileContents}</p>
+				</div>
+			</section>
 		</>
 	);
 }
@@ -42,19 +45,13 @@ export async function getStaticPaths() {
 
 export async function getStaticProps(props) {
 	const postsDirectory = path.join(process.cwd(), 'data/blog_posts_data');
+	const filePath = path.join(postsDirectory, props.params.slug);
 
-	const posts = props.params.paths.map(async filename => {
-		const filePath = path.join(postsDirectory, filename);
-		const fileContents = await fs.readFile(filePath, 'utf8');
+	const fileContents = await fs.readFile(filePath, 'utf8');
 
-		return {
-			filename,
-			content: fileContents
-		};
-	});
 	return {
 		props: {
-			posts: await Promise.all(posts)
+			posts: { fileContents }
 		}
 	};
 }
