@@ -4,22 +4,23 @@ import Image from 'next/image';
 function About() {
 	return (
 		<section
-			className=' bg-[#2F312C] border-b-2 border-green-400'
+			className=' bg-main-light py-28 border-b-2 border-green-400'
 			id='about-section'>
-			<div className=' container text-center text-gray-300 border'>
-				<p className='font-semibold text-gray-300'>Some of my</p>
-				<h3 className='inline-block text-4xl font-semibold text-green-400 uppercase'>
+			<div className=' lg:max-w-4xl container px-4 text-center text-gray-100'>
+				<p className='font-semibold text-gray-100'>Some of my</p>
+				<h3 className='lg:text-5xl inline-block text-4xl font-semibold text-green-400 uppercase'>
 					Skillsets
 				</h3>
-				<p className='text-md md:text-lg lg:text-xl leading-relaxed'>
+				<p className='text-md md:text-lg lg:text-xl mt-10 leading-relaxed text-gray-100'>
 					Focusing on web development means I am very comfortable with the
 					modern web languages, frameworks and technologies.
 				</p>
-				<ul className=''>
+
+				<ul className='m-10'>
 					<li className=''>
 						<h4 className='text-xl'>HTML, CSS, JS</h4>
 					</li>
-					<li className='py-2'>
+					<li className=''>
 						<h4 className='text-xl'>Node, Express, React, Next </h4>
 					</li>
 					<li className=''>
@@ -37,7 +38,7 @@ function About() {
 								height={50}
 							/>
 						</div>
-						<div className=''>
+						<div className='mx-2'>
 							<Image
 								src='/svg/css3-alt-brands.svg'
 								alt='CSS3 Logo'
@@ -54,19 +55,19 @@ function About() {
 							/>
 						</div>
 					</div>
-					<div className=' flex justify-center'>
-						<div className=''>
+					<div className=' flex justify-center mt-1'>
+						<div className='mr-1'>
 							<Image
 								src='/svg/node-js-brands.svg'
-								alt='HTML5 Logo'
+								alt='Node Logo'
 								width={50}
 								height={50}
 							/>
 						</div>
-						<div className=''>
+						<div className='ml-1'>
 							<Image
 								src='/svg/react-brands.svg'
-								alt='CSS3 Logo'
+								alt='React Logo'
 								width={50}
 								height={50}
 							/>

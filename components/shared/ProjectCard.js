@@ -4,8 +4,10 @@ import Label from './Label';
 
 function ProjectCard({ title, description, src, labels }) {
 	return (
-		<div className='bg-[#1E1F1C]  px-12 py-8 m-8 border-b-2 border-r-2 border-accent-light rounded '>
-			<h1 className=' hover:underline text-2xl text-gray-200 cursor-pointer'>
+		<div
+			key={title}
+			className='bg-main-dark lg:max-w-md lg:m-4 w-full py-8 my-4 border-b-2 border-r-2 border-green-400 rounded'>
+			<h1 className=' hover:underline text-2xl text-gray-100 cursor-pointer'>
 				{title}
 			</h1>
 			<p className=' mt-1 text-sm font-semibold text-gray-400 uppercase'>

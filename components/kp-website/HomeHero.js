@@ -8,14 +8,14 @@ import { WindupChildren, Pause, Pace } from 'windups';
 import fadeIn from '../../lib/fadeIn';
 
 function Hero() {
-	// useEffect(() => {
-	// 	fadeIn('#description', 2500);
-	// 	fadeIn('#links', 3000);
-	// }, []);
+	useEffect(() => {
+		fadeIn('#description', 2500);
+		fadeIn('#links', 3000);
+	}, []);
 
 	return (
 		<section>
-			<div className='bg-mainColor-dark relative flex items-center justify-center min-h-screen border-b-2 border-green-400'>
+			<div className='bg-main-dark relative flex items-center justify-center min-h-screen border-b-2 border-green-400'>
 				{/* ---------- LOGO AND BLOG BUTTON / NAV ---------- */}
 				<nav className='md:p-6 lg:p-8 absolute inset-x-0 top-0 flex items-center justify-between p-4'>
 					<Link href='/'>
@@ -24,7 +24,7 @@ function Hero() {
 						</a>
 					</Link>
 					<Link href='/blog'>
-						<a className='md:text-md lg:text-lg hover:underline px-4  py-2 text-sm font-semibold tracking-wider text-gray-200  border-2 border-green-400 rounded-[0.2rem]'>
+						<a className='md:text-md lg:text-lg hover:underline px-4  py-2 text-sm font-semibold tracking-wider text-gray-100  border-2 border-green-400 rounded-[0.2rem]'>
 							KP-BLOG
 						</a>
 					</Link>
@@ -32,53 +32,53 @@ function Hero() {
 
 				{/* ---------- HEADINGS, DESCRIPTION, LINKS ---------- */}
 				<div
-					className=' container absolute text-center border'
+					className=' lg:max-w-4xl container absolute px-4 text-center'
 					style={{ top: '27.5%' }}>
-					{/* <WindupChildren> */}
-					{/* <Pace ms={50}> */}
-					<h1 className='md:text-xl lg:text-2xl text-2xl font-semibold text-gray-100'>
-						{'Hello, this is..'}
-					</h1>
-					{/* </Pace> */}
-					{/* <Pause ms={750} /> */}
-					<p className='md:text-4xl lg:text-5xl text-accentColor-light font-semibold'>
-						{'Konstantinos Pascal'}
-					</p>
-					{/* </WindupChildren> */}
+					<WindupChildren>
+						<Pace ms={50}>
+							<div className='inline-block text-left'>
+								<h1 className='lg:text-2xl text-xl font-semibold text-gray-100'>
+									{'Hello, this is..'}
+								</h1>
+								<p className='lg:text-5xl text-4xl font-semibold text-green-400'>
+									{'Konstantinos Pascal'}
+								</p>
+							</div>
+						</Pace>
+						<Pause ms={750} />
+					</WindupChildren>
 					<p
 						id='description'
-						className='lg:my-8 text-md md:text-lg lg:text-xl my-4 text-gray-200 transition-opacity duration-1000'>
+						className='lg:mt-8 lg:mb-10 text-md md:text-lg lg:text-xl mt-6 mb-10 text-gray-100 transition-opacity duration-1000 opacity-0'>
 						I am a new developer always excited to learn! Most interested
 						in web development with a passion for both the frontend and
 						the backend!
 					</p>
 					<div
-						className=' flex justify-center pt-4 transition-opacity duration-1000'
+						className=' flex justify-center transition-opacity duration-1000 opacity-0'
 						id='links'>
-						<div className=' mr-1 cursor-pointer'>
-							<a
-								href='https://github.com/konstapascal'
-								target='_blank'
-								rel='noopener noreferrer'>
-								<Image
-									src='/svg/github-square-brands.svg'
-									width={40}
-									height={40}
-								/>
-							</a>
-						</div>
-						<div className='ml-1 cursor-pointer'>
-							<a
-								href='https://duckduckgo.com/'
-								target='_blank'
-								rel='noopener noreferrer'>
-								<Image
-									src='/svg/linkedin-brands.svg'
-									width={40}
-									height={40}
-								/>
-							</a>
-						</div>
+						<a
+							className=' mr-1 cursor-pointer'
+							href='https://github.com/konstapascal'
+							target='_blank'
+							rel='noopener noreferrer'>
+							<Image
+								src='/svg/github-square-brands.svg'
+								width={40}
+								height={40}
+							/>
+						</a>
+						<a
+							className='ml-1 cursor-pointer'
+							href='https://duckduckgo.com/'
+							target='_blank'
+							rel='noopener noreferrer'>
+							<Image
+								src='/svg/linkedin-brands.svg'
+								width={40}
+								height={40}
+							/>
+						</a>
 					</div>
 				</div>
 
