@@ -3,32 +3,31 @@ import Label from '../shared/Label';
 
 import Link from 'next/link';
 
-function BlogPost(props) {
+function BlogPost({ title, excerpt, date, author, labels, url }) {
 	return (
-		<div className='px-4 py-6'>
-			<Link href={`/blog/${props.url}`}>
-				<p className=' hover:underline inline-block text-4xl font-semibold text-gray-100 cursor-pointer'>
-					{props.title}
+		<div className='p-6'>
+			<Link href={`/blog/${url}`}>
+				<p className=' hover:underline hover:text-green-400 lg:text-4xl inline-block text-3xl font-semibold text-gray-100 cursor-pointer'>
+					{title}
 				</p>
 			</Link>
-			;
+
 			<p className=' mt-2 text-gray-400'>
 				by{' '}
-				<span className='hover:text-blue-400 hover:underline font-semibold cursor-pointer'>
-					Konstantinos Pascal
+				<span className='hover:text-green-400 hover:underline font-semibold cursor-pointer'>
+					{author}
 				</span>{' '}
-				on <span>06 April 2021</span>
+				on <span>{date}</span>
 			</p>
-			<p className='text-md md:text-lg lg:text-xl mt-4 text-gray-100'>
-				Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore
-				ullam esse excepturi nam, cumque illum, numquam quia fuga
-				necessitatibus, non officia nesciunt vero voluptatem architecto
-				voluptatum aperiam quasi. Sapiente, eaque.
-			</p>
+			<Link href={`/blog/${url}`}>
+				<p className='text-md md:text-lg lg:text-xl mt-4 text-gray-100 cursor-pointer'>
+					{excerpt}
+				</p>
+			</Link>
 			<div className='mt-4'>
-				<Label content='JS' />
-				<Label content='SQL' />
-				<Label content='NODE' />
+				{labels.map(label => {
+					return <Label content={label}></Label>;
+				})}
 			</div>
 		</div>
 	);

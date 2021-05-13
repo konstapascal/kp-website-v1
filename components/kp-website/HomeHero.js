@@ -9,8 +9,8 @@ import fadeIn from '../../lib/fadeIn';
 
 function Hero() {
 	useEffect(() => {
-		fadeIn('#description', 2500);
-		fadeIn('#links', 3000);
+		fadeIn('#description', 1250);
+		fadeIn('#links', 1750);
 	}, []);
 
 	return (
@@ -35,7 +35,7 @@ function Hero() {
 					className=' lg:max-w-4xl container absolute px-4 text-center'
 					style={{ top: '27.5%' }}>
 					<WindupChildren>
-						<Pace ms={50}>
+						<Pace ms={25}>
 							<div className='inline-block text-left'>
 								<h1 className='lg:text-2xl text-xl font-semibold text-gray-100'>
 									{'Hello, this is..'}
@@ -45,14 +45,16 @@ function Hero() {
 								</p>
 							</div>
 						</Pace>
-						<Pause ms={750} />
+						<Pause ms={500} />
 					</WindupChildren>
 					<p
 						id='description'
 						className='lg:mt-8 lg:mb-10 text-md md:text-lg lg:text-xl mt-6 mb-10 text-gray-100 transition-opacity duration-1000 opacity-0'>
 						I am a new developer always excited to learn! Most interested
-						in web development with a passion for both the frontend and
-						the backend!
+						in web development with a passion for both the{' '}
+						<span className=' font-bold text-green-400'>frontend</span>{' '}
+						and the{' '}
+						<span className='font-bold text-green-400'>backend!</span>{' '}
 					</p>
 					<div
 						className=' flex justify-center transition-opacity duration-1000 opacity-0'

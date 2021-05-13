@@ -1,12 +1,11 @@
 import React from 'react';
-import Image from 'next/image';
 import Label from './Label';
 
 function ProjectCard({ title, description, src, labels }) {
 	return (
 		<div
 			key={title}
-			className='bg-main-dark lg:max-w-md lg:m-4 w-full py-8 my-4 border-b-2 border-r-2 border-green-400 rounded'>
+			className='bg-main-dark lg:max-w-md lg:m-4 w-full py-8 my-2 border-b-2 border-r-2 border-green-400 rounded'>
 			<h1 className=' hover:underline text-2xl text-gray-100 cursor-pointer'>
 				{title}
 			</h1>

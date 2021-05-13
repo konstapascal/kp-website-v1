@@ -6,7 +6,7 @@ function Hero() {
 		<section>
 			<div
 				className='bg-main-dark relative flex items-center justify-center border-b-2 border-green-400'
-				style={{ minHeight: '40vh' }}>
+				style={{ minHeight: '45vh' }}>
 				<nav className='md:p-6 lg:p-8 absolute inset-x-0 top-0 flex items-center justify-between p-4'>
 					<Link href='/blog'>
 						<a className='md:text-2xl lg:text-3xl px-4 py-2 text-xl font-bold tracking-wide text-green-400'>
