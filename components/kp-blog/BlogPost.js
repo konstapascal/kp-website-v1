@@ -26,7 +26,12 @@ function BlogPost({ title, excerpt, date, author, labels, url }) {
 			</Link>
 			<div className='mt-4'>
 				{labels.map(label => {
-					return <Label content={label}></Label>;
+					return (
+						<Label
+							key={`${label}-` + Math.floor(Math.random() * 1000) + 1}
+							content={label}
+						/>
+					);
 				})}
 			</div>
 		</div>

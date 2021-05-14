@@ -17,7 +17,7 @@ function Post({ post: { data, content } }) {
 			</Head>
 			<BlogHero />
 
-			<section className=' bg-main-light py-24'>
+			<section className=' bg-main-light pt-16 pb-24'>
 				<div className=' lg:max-w-3xl container'>
 					<div className='p-6'>
 						<p className=' inline-block text-4xl font-semibold text-gray-100'>
@@ -71,7 +71,7 @@ export async function getStaticProps({ params }) {
 
 	return {
 		props: {
-			post: { ...fileData }
+			post: fileData
 		}
 	};
 }

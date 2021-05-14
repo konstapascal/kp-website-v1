@@ -20,6 +20,7 @@ function Projects() {
 				<div className=' flex flex-wrap justify-center'>
 					{projects.map(project => (
 						<ProjectCard
+							key={project.id}
 							title={project.title}
 							description={project.description}
 							src={project.src}

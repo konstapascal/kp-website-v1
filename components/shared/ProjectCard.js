@@ -3,10 +3,8 @@ import Label from './Label';
 
 function ProjectCard({ title, description, src, labels }) {
 	return (
-		<div
-			key={title}
-			className='bg-main-dark lg:max-w-md lg:m-4 w-full py-8 my-2 border-b-2 border-r-2 border-green-400 rounded'>
-			<h1 className=' hover:underline text-2xl text-gray-100 cursor-pointer'>
+		<div className='bg-main-dark lg:max-w-md lg:m-4 lg:shadow-2xl s w-full py-8 my-2 text-center border-b-2 border-r-2 border-green-400 rounded shadow-md'>
+			<h1 className=' hover:underline hover:text-green-400 inline-block text-2xl text-gray-100 cursor-pointer'>
 				{title}
 			</h1>
 			<p className=' mt-1 text-sm font-semibold text-gray-400 uppercase'>
@@ -15,7 +13,12 @@ function ProjectCard({ title, description, src, labels }) {
 
 			<div className='mt-4'>
 				{labels.map(label => {
-					return <Label key={`${label}`} content={`${label}`} />;
+					return (
+						<Label
+							key={`${label}-` + Math.floor(Math.random() * 1000) + 1}
+							content={`${label}`}
+						/>
+					);
 				})}
 			</div>
 		</div>

@@ -6,11 +6,14 @@ import { Link as ScrollLink } from 'react-scroll';
 import { WindupChildren, Pause, Pace } from 'windups';
 
 import fadeIn from '../../lib/fadeIn';
+import blink from '../../lib/blink';
 
 function Hero() {
 	useEffect(() => {
 		fadeIn('#description', 1250);
+		setTimeout(() => blink('#blinking_letter', 530), 1250);
 		fadeIn('#links', 1750);
+		fadeIn('#scroll-down-arrow', 2250);
 	}, []);
 
 	return (
@@ -41,7 +44,10 @@ function Hero() {
 									{'Hello, this is..'}
 								</h1>
 								<p className='lg:text-5xl text-4xl font-semibold text-green-400'>
-									{'Konstantinos Pascal'}
+									{'Konstantinos Pasca'}
+									<span id='blinking_letter' className='opacity-100'>
+										l
+									</span>
 								</p>
 							</div>
 						</Pace>
@@ -85,8 +91,14 @@ function Hero() {
 				</div>
 
 				{/* ---------- SCROLL DOWN ARROW ---------- */}
-				<div className='lg:block bottom-4 animate-bounce absolute hidden cursor-pointer'>
-					<ScrollLink to='about-section' smooth={true} duration={1000}>
+				<div
+					id='scroll-down-arrow'
+					className='lg:block bottom-4 animate-bounce absolute hidden transition-opacity duration-1000 opacity-0 cursor-pointer'>
+					<ScrollLink
+						to='about-section'
+						offset={-2}
+						smooth={true}
+						duration={1000}>
 						<Image
 							src='/svg/chevron-down-solid.svg'
 							width={40}

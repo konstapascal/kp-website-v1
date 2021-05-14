@@ -8,6 +8,9 @@ function MyApp({ Component, pageProps }) {
 		<>
 			{/* TODO: DELETE THIS LATER */}
 			<div className='text-md fixed bottom-0 right-0 z-50 p-4 font-bold text-center text-black'>
+				<div className='mb-1 text-gray-100'>
+					<a href='#'>UP</a>
+				</div>
 				<p className='sm:hidden px-1 bg-yellow-400 rounded'>
 					XS (0px to 640px)
 				</p>
@@ -27,6 +30,7 @@ function MyApp({ Component, pageProps }) {
 					2XL (1536px+)
 				</span>
 			</div>
+
 			{/* TODO: DELETE THIS LATER */}
 
 			<Component {...pageProps} />

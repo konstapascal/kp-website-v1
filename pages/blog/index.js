@@ -9,7 +9,7 @@ import path from 'path';
 
 import { read } from 'gray-matter';
 
-function Blog({ filesMetadata }) {
+function Blog({ filesMetadataArr }) {
 	return (
 		<>
 			<Head>
@@ -18,11 +18,12 @@ function Blog({ filesMetadata }) {
 			</Head>
 			<BlogHero />
 
-			<section className=' bg-main-light py-24'>
+			<section className=' bg-main-light pt-16 pb-24'>
 				<div className=' lg:max-w-3xl container'>
-					{filesMetadata.map(file => {
+					{filesMetadataArr.map(file => {
 						return (
 							<BlogPost
+								key={file.data.title}
 								title={file.data.title}
 								excerpt={file.data.excerpt}
 								date={file.data.date}
@@ -45,20 +46,23 @@ function Blog({ filesMetadata }) {
 	);
 }
 
-// TODO: consider using async fs function
 export async function getStaticProps() {
 	const postsDirectory = path.join(process.cwd(), 'data/blog_posts_data');
 	const posts = await readdir(postsDirectory);
-	let filesMetadata = [];
+
+	let filesMetadataArr = [];
+
 	posts.forEach(post => {
-		const fileMetadata = read(`${postsDirectory}\\${post}`);
-		filesMetadata.push(fileMetadata);
+		const postMetadata = read(`${postsDirectory}\\${post}`);
+		filesMetadataArr.push(postMetadata);
 	});
-	filesMetadata.forEach(file => {
+
+	filesMetadataArr.forEach(file => {
 		delete file.content;
 		delete file.orig;
 		delete file.path;
 	});
-	return { props: { filesMetadata } };
+
+	return { props: { filesMetadataArr } };
 }
 export default Blog;
