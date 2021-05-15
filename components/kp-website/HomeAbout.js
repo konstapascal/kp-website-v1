@@ -16,7 +16,7 @@ function About() {
 					modern web languages, frameworks and technologies.
 				</p>
 
-				<ul className='m-10'>
+				<ul className=' inline-block m-10'>
 					<li className=''>
 						<h4 className='text-xl'>HTML, CSS, JS</h4>
 					</li>

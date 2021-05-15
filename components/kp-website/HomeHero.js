@@ -10,10 +10,16 @@ import blink from '../../lib/blink';
 
 function Hero() {
 	useEffect(() => {
-		fadeIn('#description', 1250);
-		setTimeout(() => blink('#blinking_letter', 530), 1250);
-		fadeIn('#links', 1750);
-		fadeIn('#scroll-down-arrow', 2250);
+		const desc = document.querySelector('#description');
+		const links = document.querySelector('#links');
+		const down = document.querySelector('#scroll-down-arrow');
+		const letter = document.querySelector('#blinking-letter');
+
+		fadeIn(desc, 1250);
+		fadeIn(links, 1750);
+		fadeIn(down, 2250);
+
+		setTimeout(() => blink(letter, 530), 2000);
 	}, []);
 
 	return (
@@ -45,14 +51,17 @@ function Hero() {
 								</h1>
 								<p className='lg:text-5xl text-4xl font-semibold text-green-400'>
 									{'Konstantinos Pasca'}
-									<span id='blinking_letter' className='opacity-100'>
-										l
-									</span>
 								</p>
 							</div>
 						</Pace>
 						<Pause ms={500} />
 					</WindupChildren>
+					<span
+						id='blinking-letter'
+						className='lg:text-5xl text-4xl font-semibold text-green-400 duration-75 opacity-0'>
+						l
+					</span>
+
 					<p
 						id='description'
 						className='lg:mt-8 lg:mb-10 text-md md:text-lg lg:text-xl mt-6 mb-10 text-gray-100 transition-opacity duration-1000 opacity-0'>
@@ -94,11 +103,7 @@ function Hero() {
 				<div
 					id='scroll-down-arrow'
 					className='lg:block bottom-4 animate-bounce absolute hidden transition-opacity duration-1000 opacity-0 cursor-pointer'>
-					<ScrollLink
-						to='about-section'
-						offset={-2}
-						smooth={true}
-						duration={1000}>
+					<ScrollLink to='about-section' smooth={true} duration={1000}>
 						<Image
 							src='/svg/chevron-down-solid.svg'
 							width={40}
