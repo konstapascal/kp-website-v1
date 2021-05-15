@@ -18,18 +18,18 @@ function Blog({ filesMetadataArr }) {
 			</Head>
 			<BlogHero />
 
-			<section className=' bg-main-light pt-16 pb-24'>
+			<section className=' bg-main-light py-28'>
 				<div className=' lg:max-w-3xl container'>
 					{filesMetadataArr.map(file => {
 						return (
 							<BlogPost
-								key={file.data.title}
-								title={file.data.title}
-								excerpt={file.data.excerpt}
-								date={file.data.date}
-								author={file.data.author}
-								labels={file.data.labels}
-								url={file.data.url}
+								key={file.title}
+								title={file.title}
+								excerpt={file.excerpt}
+								date={file.date}
+								author={file.author}
+								labels={file.labels}
+								url={file.url}
 							/>
 						);
 					})}
@@ -45,22 +45,19 @@ function Blog({ filesMetadataArr }) {
 		</>
 	);
 }
-
 export async function getStaticProps() {
 	const postsDirectory = path.join(process.cwd(), 'data/blog_posts_data');
 	const posts = await readdir(postsDirectory);
 
-	let filesMetadataArr = [];
+	const tempArr = [];
 
 	posts.forEach(post => {
 		const postMetadata = read(`${postsDirectory}\\${post}`);
-		filesMetadataArr.push(postMetadata);
+		tempArr.push(postMetadata);
 	});
 
-	filesMetadataArr.forEach(file => {
-		delete file.content;
-		delete file.orig;
-		delete file.path;
+	const filesMetadataArr = tempArr.map(post => {
+		return { ...post.data };
 	});
 
 	return { props: { filesMetadataArr } };

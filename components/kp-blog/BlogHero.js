@@ -17,7 +17,7 @@ function Hero() {
 						</a>
 					</Link>
 				</nav>
-				<div className=' lg:max-w-4xl top-[35%] lg:top-[30%] container absolute text-center'>
+				<div className=' lg:max-w-4xl top-[37.5%] lg:top-[30%] container absolute text-center'>
 					<p className=' lg:text-5xl text-4xl font-semibold text-green-400'>
 						Welcome to my blog!
 					</p>

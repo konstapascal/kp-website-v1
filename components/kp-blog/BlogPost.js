@@ -5,7 +5,7 @@ import Link from 'next/link';
 
 function BlogPost({ title, excerpt, date, author, labels, url }) {
 	return (
-		<div className='p-6'>
+		<div className=' first:mt-0 my-14 px-6 duration-200'>
 			<Link href={`/blog/${url}`}>
 				<p className=' hover:underline hover:text-green-400 lg:text-4xl inline-block text-3xl font-semibold text-gray-100 cursor-pointer'>
 					{title}
