@@ -19,7 +19,7 @@ function Hero() {
 		fadeIn(links, 1750);
 		fadeIn(down, 2250);
 
-		setTimeout(() => blink(letter, 530), 1750);
+		setTimeout(() => blink(letter, 530), 500);
 	}, []);
 
 	return (

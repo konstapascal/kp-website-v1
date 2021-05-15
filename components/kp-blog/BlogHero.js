@@ -4,7 +4,7 @@ import Link from 'next/link';
 function Hero() {
 	return (
 		<section>
-			<div className='bg-main-dark border-green-4 h-72 relative flex items-center justify-center border-b-2'>
+			<div className='bg-main-dark border-green-4 h-72 relative flex items-center justify-center border-b-2 border-green-400'>
 				<nav className='md:p-6 lg:p-8 absolute inset-x-0 top-0 flex items-center justify-between p-4'>
 					<Link href='/blog'>
 						<a className='md:text-2xl lg:text-3xl px-4 py-2 text-xl font-bold tracking-wide text-green-400'>
@@ -18,7 +18,7 @@ function Hero() {
 					</Link>
 				</nav>
 				<div className=' lg:max-w-4xl top-[37.5%] lg:top-[30%] container absolute text-center'>
-					<p className=' lg:text-5xl text-4xl font-semibold text-green-400'>
+					<p className=' text-4xl font-semibold text-green-400'>
 						Welcome to my blog!
 					</p>
 					<p className='text-md md:text-lg lg:text-xl lg:mt-6 lg:max-w-3xl px-4 mx-auto mt-4 text-gray-100'>

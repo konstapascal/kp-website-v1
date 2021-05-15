@@ -3,7 +3,7 @@ import Image from 'next/image';
 
 function Footer() {
 	return (
-		<footer className=' bg-main-dark py-20 border-t-2 border-green-400'>
+		<footer className=' bg-main-dark pb-28 pt-24 border-t-2 border-green-400'>
 			<div className=' container text-center text-gray-100'>
 				<p className='text-xl font-semibold text-gray-100'>
 					Find me on any of these platforms.{' '}

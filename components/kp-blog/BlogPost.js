@@ -5,7 +5,7 @@ import Link from 'next/link';
 
 function BlogPost({ title, excerpt, date, author, labels, url }) {
 	return (
-		<div className=' first:mt-0 my-14 px-6 duration-200'>
+		<div className=' first:mt-0 last:mb-0 my-14 px-6'>
 			<Link href={`/blog/${url}`}>
 				<p className=' hover:underline hover:text-green-400 lg:text-4xl inline-block text-3xl font-semibold text-gray-100 cursor-pointer'>
 					{title}
@@ -14,13 +14,13 @@ function BlogPost({ title, excerpt, date, author, labels, url }) {
 
 			<p className=' mt-2 text-gray-400'>
 				by{' '}
-				<span className='hover:text-green-400 hover:underline font-semibold cursor-pointer'>
+				<span className='hover:underline font-semibold text-green-400 cursor-pointer'>
 					{author}
 				</span>{' '}
 				on <span>{date}</span>
 			</p>
 			<Link href={`/blog/${url}`}>
-				<p className='text-md md:text-lg lg:text-xl mt-4 text-gray-100 cursor-pointer'>
+				<p className='text-md lg:text-lg mt-4 text-gray-100 cursor-pointer'>
 					{excerpt}
 				</p>
 			</Link>

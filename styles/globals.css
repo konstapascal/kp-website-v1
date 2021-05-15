@@ -20,17 +20,32 @@
 .prose h3,
 .prose h4,
 .prose strong,
-.prose blockquote,
-.prose code,
-.prose code::before,
-.prose code::after {
+.prose blockquote {
 	color: #f3f4f6;
 }
 
+.prose code,
+.prose code::before,
+.prose code::after {
+	color: #34d399;
+}
+
 .prose li::before {
-	color: red;
+	color: #34d399 !important;
+}
+
+.prose ul > li::before {
+	background-color: #34d399;
 }
 
 .prose ol > li::before {
 	color: #9ca3af;
+}
+
+.prose hr {
+	border-color: #34d399;
+}
+
+.prose blockquote {
+	border-left-color: #34d399;
 }

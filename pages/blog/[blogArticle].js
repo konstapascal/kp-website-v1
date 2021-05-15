@@ -27,7 +27,7 @@ function Post({ postData, postContent }) {
 
 					<p className=' mt-2 text-gray-400'>
 						by{' '}
-						<span className='hover:text-green-400 hover:underline font-semibold cursor-pointer'>
+						<span className='hover:underline font-semibold text-green-400 cursor-pointer'>
 							{postData.author}
 						</span>{' '}
 						on <span>{postData.date}</span>
@@ -47,6 +47,7 @@ function Post({ postData, postContent }) {
 		</>
 	);
 }
+
 export async function getStaticPaths() {
 	const postsDirectory = join(process.cwd(), 'data/blog_posts_data');
 	const filenames = await readdir(postsDirectory);
@@ -59,10 +60,12 @@ export async function getStaticPaths() {
 		fallback: false
 	};
 }
+
 export async function getStaticProps({ params }) {
 	const postsDirectory = join(process.cwd(), 'data/blog_posts_data');
 	const filePath = join(postsDirectory, params.blogArticle + '.md');
 	const postData = read(filePath);
+
 	const postContent = await serialize(postData.content);
 	return {
 		props: {
@@ -71,4 +74,5 @@ export async function getStaticProps({ params }) {
 		}
 	};
 }
+
 export default Post;

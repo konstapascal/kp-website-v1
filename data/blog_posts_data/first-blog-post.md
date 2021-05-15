@@ -16,8 +16,6 @@ You will like those projects!
 
 ---
 
-# h1 Heading 8-)
-
 ## h2 Heading
 
 ### h3 Heading
@@ -29,8 +27,6 @@ You will like those projects!
 ###### h6 Heading
 
 ## Horizontal Rules
-
----
 
 ---
 
@@ -88,11 +84,6 @@ Ordered
 
 4. You can use sequential numbers...
 5. ...or keep all the numbers as `1.`
-
-Start numbering with offset:
-
-57. foo
-1. bar
 
 ## Code
 
