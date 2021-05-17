@@ -1,7 +1,7 @@
 ---
 title: First Blog Post
-excerpt: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Praesent elementum facilisis leo vel fringilla est ullamcorper eget. At imperdiet dui accumsan sit amet nulla facilities morbi tempus.
-date: 'March 3rd, 2020'
+excerpt:
+date: '2009-06-30' # ISO Format
 author: Konstantinos Pascal
 labels: ['JS', 'NODE']
 url: 'first-blog-post'
@@ -27,8 +27,6 @@ You will like those projects!
 ###### h6 Heading
 
 ## Horizontal Rules
-
----
 
 ---
 

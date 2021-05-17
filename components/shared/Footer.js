@@ -3,20 +3,28 @@ import Image from 'next/image';
 
 function Footer() {
 	return (
-		<footer className=' bg-main-dark pb-28 pt-24 border-t-2 border-green-400'>
+		<footer className=' bg-main-dark pt-16 pb-20 border-t-2 border-green-400'>
 			<div className=' container text-center text-gray-100'>
 				<p className='text-xl font-semibold text-gray-100'>
 					Find me on any of these platforms.{' '}
 				</p>
 				<div className=' flex justify-center m-6'>
-					<a className='mr-1' href='https://github.com/konstapascal'>
+					<a
+						className='ml-1'
+						href='https://github.com/konstapascal'
+						target='_blank'
+						rel='noopener noreferrer'>
 						<Image
 							src='/svg/github-square-brands.svg'
 							width={40}
 							height={40}
 						/>
 					</a>
-					<a className='ml-1' href='https://duckduckgo.com/'>
+					<a
+						className='ml-1'
+						href='https://duckduckgo.com/'
+						target='_blank'
+						rel='noopener noreferrer'>
 						<Image
 							src='/svg/linkedin-brands.svg'
 							href='#'

@@ -1,7 +1,7 @@
 ---
 title: Preview Mode for Static Generation
 excerpt: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Praesent elementum facilisis leo vel fringilla est ullamcorper eget. At imperdiet dui accumsan sit amet nulla facilities morbi tempus
-date: 'May 2nd, 2020'
+date: '2012-06-29' # ISO Format
 author: Konstantinos Pascal
 labels: ['JS', 'NODE', 'SQL']
 url: 'preview-mode-for-static-generation'

@@ -3,7 +3,7 @@ import Link from 'next/link';
 
 function Blog() {
 	return (
-		<section className=' bg-main-light pt-28'>
+		<section className=' bg-main-light pt-32'>
 			<div className=' lg:max-w-4xl container px-4 text-center text-gray-100'>
 				<p className='font-semibold text-gray-100'>Check out my</p>
 
