@@ -1,5 +1,3 @@
-import React from 'react';
-
 import HomeHero from '../components/kp-website/HomeHero';
 import HomeAbout from '../components/kp-website/HomeAbout';
 import HomeProjects from '../components/kp-website/HomeProjects';

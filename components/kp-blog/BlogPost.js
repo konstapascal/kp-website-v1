@@ -1,4 +1,3 @@
-import React from 'react';
 import Label from '../shared/Label';
 
 import Link from 'next/link';

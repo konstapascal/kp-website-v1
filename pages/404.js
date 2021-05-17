@@ -1,7 +1,3 @@
-import React from 'react';
-
-import Footer from '../components/shared/Footer';
-
 import Image from 'next/image';
 import { useRouter } from 'next/router';
 

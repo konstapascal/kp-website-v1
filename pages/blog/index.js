@@ -1,5 +1,5 @@
 import Head from 'next/head';
-import React from 'react';
+
 import BlogHero from '../../components/kp-blog/BlogHero';
 import BlogPost from '../../components/kp-blog/BlogPost';
 import Link from 'next/link';
