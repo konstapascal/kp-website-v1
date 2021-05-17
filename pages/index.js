@@ -6,6 +6,7 @@ import HomeProjects from '../components/kp-website/HomeProjects';
 import HomeBlog from '../components/kp-website/HomeBlog';
 
 import Head from 'next/head';
+import Footer from '../components/shared/Footer';
 
 export default function Home() {
 	return (
@@ -18,6 +19,7 @@ export default function Home() {
 			<HomeBlog />
 			<HomeAbout />
 			<HomeProjects />
+			<Footer />
 		</>
 	);
 }

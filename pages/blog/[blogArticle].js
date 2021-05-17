@@ -11,6 +11,7 @@ import { serialize } from 'next-mdx-remote/serialize';
 import { MDXRemote } from 'next-mdx-remote';
 
 import makeAnchorsNewTab from '../../lib/makeAnchorsNewTab';
+import Footer from '../../components/shared/Footer';
 
 function Post({ postData, postContent }) {
 	useEffect(() => {
@@ -52,6 +53,8 @@ function Post({ postData, postContent }) {
 					</div>
 				</div>
 			</section>
+
+			<Footer />
 		</>
 	);
 }

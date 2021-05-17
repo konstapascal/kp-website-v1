@@ -8,6 +8,7 @@ import { readdir } from 'fs/promises';
 import path from 'path';
 
 import { read } from 'gray-matter';
+import Footer from '../../components/shared/Footer';
 
 function Blog({ filesMetadataArr }) {
 	return (
@@ -26,7 +27,7 @@ function Blog({ filesMetadataArr }) {
 								key={file.title}
 								title={file.title}
 								excerpt={file.excerpt}
-								date={new Date(file.date).toUTCString().slice(0, 16)}
+								date={new Date(file.date).toUTCString().slice(5, 16)}
 								author={file.author}
 								labels={file.labels}
 								url={file.url}
@@ -42,6 +43,8 @@ function Blog({ filesMetadataArr }) {
 					</div>
 				</div>
 			</section>
+
+			<Footer />
 		</>
 	);
 }
@@ -60,7 +63,7 @@ export async function getStaticProps() {
 		.map(post => {
 			return { ...post.data };
 		})
-		// sort by dat
+		// sort by date
 		.sort((a, b) => {
 			return new Date(b.date) - new Date(a.date);
 		});

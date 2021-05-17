@@ -2,8 +2,6 @@ import '../styles/tailwind.css';
 import '../styles/globals.css';
 import '../styles/nprogress.css';
 
-import Footer from '../components/shared/Footer';
-
 import NProgress from 'nprogress';
 import Router from 'next/router';
 
@@ -64,7 +62,6 @@ function MyApp({ Component, pageProps }) {
 			</div> */}
 			{/* TODO: DELETE THIS LATER */}
 			<Component {...pageProps} />
-			<Footer />
 		</>
 	);
 }
