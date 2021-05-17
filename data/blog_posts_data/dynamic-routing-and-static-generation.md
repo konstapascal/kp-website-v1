@@ -1,7 +1,7 @@
 ---
 title: Dynamic Routing and Static Generation
 excerpt: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Praesent elementum facilisis leo vel fringilla est ullamcorper eget. At imperdiet dui accumsan sit amet nulla facilities morbi tempus.
-date: '2012-06-30' # ISO Format
+date: '2012-06-30' # ISO Format without time and Z
 author: Konstantinos Pascal
 labels: ['JS', 'NODE', 'SEMANTIC', 'JAVA']
 url: 'dynamic-routing-and-static-generation'

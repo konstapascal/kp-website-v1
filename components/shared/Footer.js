@@ -8,7 +8,7 @@ function Footer() {
 				<p className='text-xl font-semibold text-gray-100'>
 					Find me on any of these platforms.{' '}
 				</p>
-				<div className=' flex justify-center m-6'>
+				<div className=' flex justify-center m-8'>
 					<a
 						className='ml-1'
 						href='https://github.com/konstapascal'

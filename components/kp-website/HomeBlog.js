@@ -3,8 +3,8 @@ import Link from 'next/link';
 
 function Blog() {
 	return (
-		<section className=' bg-main-light pt-32'>
-			<div className=' lg:max-w-4xl container px-4 text-center text-gray-100'>
+		<section className=' bg-main-light lg:pt-32 px-4 pt-20'>
+			<div className=' lg:max-w-4xl container text-center text-gray-100'>
 				<p className='font-semibold text-gray-100'>Check out my</p>
 
 				<Link href='/blog'>
@@ -13,7 +13,7 @@ function Blog() {
 					</h3>
 				</Link>
 
-				<p className='text-md md:text-lg lg:text-xl mt-10 leading-relaxed text-gray-100'>
+				<p className='text-md md:text-lg lg:text-xl mt-8 leading-relaxed text-gray-100'>
 					I also write about Javascript and web development, check out my
 					<Link href='/blog'>
 						<span className='font-semibold text-green-400 cursor-pointer'>

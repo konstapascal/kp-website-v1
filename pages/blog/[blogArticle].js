@@ -25,8 +25,8 @@ function Post({ postData, postContent }) {
 			</Head>
 			<BlogHero />
 
-			<section className=' bg-main-light pt-16 pb-24'>
-				<div className=' container max-w-3xl p-6'>
+			<section className=' bg-main-light lg:px-0 lg:py-32 px-4 py-24'>
+				<div className=' container max-w-3xl'>
 					<p className=' lg:text-4xl text-3xl font-semibold text-gray-100'>
 						{postData.title}
 					</p>
@@ -55,7 +55,6 @@ function Post({ postData, postContent }) {
 		</>
 	);
 }
-
 export async function getStaticPaths() {
 	const postsDirectory = join(process.cwd(), 'data/blog_posts_data');
 	const filenames = await readdir(postsDirectory);
@@ -68,7 +67,6 @@ export async function getStaticPaths() {
 		fallback: false
 	};
 }
-
 export async function getStaticProps({ params }) {
 	const postsDirectory = join(process.cwd(), 'data/blog_posts_data');
 	const filePath = join(postsDirectory, params.blogArticle + '.md');
@@ -83,5 +81,4 @@ export async function getStaticProps({ params }) {
 		}
 	};
 }
-
 export default Post;

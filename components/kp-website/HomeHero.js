@@ -33,16 +33,14 @@ function Hero() {
 						</a>
 					</Link>
 					<Link href='/blog'>
-						<a className='lg:text-md hover:underline px-4  py-2 font-semibold tracking-wider text-gray-100  border-2 border-green-400 rounded-[0.2rem]'>
+						<a className='text-sm hover:underline px-4  py-2 font-semibold tracking-wider text-gray-100  border-2 border-green-400 rounded-[0.2rem]'>
 							BLOG
 						</a>
 					</Link>
 				</nav>
 
 				{/* ---------- HEADINGS, DESCRIPTION, LINKS ---------- */}
-				<div
-					className=' lg:max-w-4xl container absolute px-4 text-center'
-					style={{ top: '27.5%' }}>
+				<div className=' lg:max-w-4xl container absolute px-4 top-[27.5%] text-center'>
 					<WindupChildren>
 						<Pace ms={25}>
 							<div className='inline-block text-left'>
@@ -64,7 +62,7 @@ function Hero() {
 
 					<p
 						id='description'
-						className='lg:mt-8 lg:mb-10 text-md md:text-lg lg:text-xl mt-6 mb-10 text-gray-100 transition-opacity duration-1000 opacity-0'>
+						className='text-md md:text-lg lg:text-xl mt-8 mb-10 text-gray-100 transition-opacity duration-1000 opacity-0'>
 						I am a new developer always excited to learn! Most interested
 						in web development with a passion for both the{' '}
 						<span className=' font-bold text-green-400'>frontend</span>{' '}

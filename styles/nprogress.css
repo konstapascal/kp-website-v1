@@ -34,17 +34,20 @@
 #nprogress .spinner {
 	display: block;
 	position: fixed;
+	background-color: rgba(30, 31, 28, 0.9);
+	padding: 8px;
+	border-radius: 0.2rem;
 	z-index: 1031;
-	top: 15px;
-	right: 15px;
+	bottom: 16px;
+	left: 16px;
 }
 
 #nprogress .spinner-icon {
-	width: 18px;
-	height: 18px;
+	width: 28px;
+	height: 28px;
 	box-sizing: border-box;
 
-	border: solid 2px transparent;
+	border: solid 3px transparent;
 	border-top-color: #34d399;
 	border-left-color: #34d399;
 	border-radius: 50%;

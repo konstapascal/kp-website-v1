@@ -11,7 +11,11 @@ import { useEffect } from 'react';
 
 function MyApp({ Component, pageProps }) {
 	useEffect(() => {
-		NProgress.configure({ showSpinner: false });
+		NProgress.configure({
+			minimum: 0.2,
+			trickleRate: 0.04,
+			trickleSpeed: 600
+		});
 
 		const delay = 250; // ms
 		let timer;
@@ -59,7 +63,6 @@ function MyApp({ Component, pageProps }) {
 				</span>
 			</div> */}
 			{/* TODO: DELETE THIS LATER */}
-
 			<Component {...pageProps} />
 			<Footer />
 		</>

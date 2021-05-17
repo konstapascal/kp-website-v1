@@ -1,7 +1,7 @@
 ---
 title: Learn How to Pre-render Pages Using Static Generation with Next.js
 excerpt: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Praesent elementum facilisis leo vel fringilla est ullamcorper eget. At imperdiet dui accumsan sit amet nulla facilities morbi tempus.
-date: '2015-06-30' # ISO Format
+date: '2015-06-30' # ISO Format without time and Z
 author: Konstantinos Pascal
 labels: ['NEXT', 'NODE', 'CSS']
 url: 'learn-how-to-pre-render-pages-using-static-generation-with-nextjs'

@@ -3,18 +3,20 @@ import Image from 'next/image';
 
 function About() {
 	return (
-		<section className=' bg-main-light py-32' id='about-section'>
-			<div className=' lg:max-w-4xl container px-4 text-center text-gray-100'>
+		<section
+			className=' bg-main-light lg:py-32 px-4 py-20'
+			id='about-section'>
+			<div className=' lg:max-w-4xl container text-center text-gray-100'>
 				<p className='font-semibold text-gray-100'>Some of my</p>
 				<h3 className='lg:text-5xl inline-block text-4xl font-semibold text-green-400 uppercase'>
 					Skillsets
 				</h3>
-				<p className='text-md md:text-lg lg:text-xl mt-10 leading-relaxed text-gray-100'>
+				<p className='text-md md:text-lg lg:text-xl mt-8 leading-relaxed text-gray-100'>
 					Focusing on web development means I am very comfortable with the
 					modern web languages, frameworks and technologies.
 				</p>
 
-				<ul className=' inline-block m-10'>
+				<ul className=' inline-block my-8'>
 					<li className=''>
 						<h4 className='text-xl'>HTML, CSS, JS</h4>
 					</li>
