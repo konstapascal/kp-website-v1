@@ -17,10 +17,11 @@ function Blog({ filesMetadataArr }) {
 				<title>kp-blog</title>
 				<link rel='icon' href='/favicon.png' />
 			</Head>
+
 			<BlogHero />
 
 			<section className=' bg-main-light lg:px-0 lg:py-32 px-4 py-24'>
-				<div className=' lg:max-w-3xl container'>
+				<div className=' lg:max-w-3xl container text-gray-100'>
 					{filesMetadataArr.map(file => {
 						return (
 							<BlogPost
@@ -36,7 +37,7 @@ function Blog({ filesMetadataArr }) {
 					})}
 					<div className='mt-16 text-center'>
 						<Link href={`/`}>
-							<a className=' hover:underline hover:text-green-400 text-2xl font-semibold text-gray-100 cursor-pointer'>
+							<a className=' hover:underline hover:text-green-400 text-2xl font-semibold cursor-pointer'>
 								Back to Website{' '}
 							</a>
 						</Link>
@@ -63,7 +64,7 @@ export async function getStaticProps() {
 		.map(post => {
 			return { ...post.data };
 		})
-		// sort by date
+		// sort by dat
 		.sort((a, b) => {
 			return new Date(b.date) - new Date(a.date);
 		});

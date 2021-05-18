@@ -3,7 +3,7 @@ import Link from 'next/link';
 function Hero() {
 	return (
 		<section>
-			<div className='bg-main-dark border-green-4 h-[350px] sm:h-72 relative flex items-center justify-center border-b-2 border-green-400'>
+			<div className='bg-main-dark border-green-4 h-80 md:h-72 relative flex items-end justify-center border-b-2 border-green-400'>
 				<nav className='md:px-6 md:pt-6 lg:px-8 lg:pt-8 absolute inset-x-0 top-0 flex items-center justify-between px-4 pt-4'>
 					<Link href='/blog'>
 						<a className='lg:text-3xl text-2xl rounded-[0.2rem] font-bold tracking-wide text-green-400 px-4 py-2'>
@@ -16,11 +16,11 @@ function Hero() {
 						</a>
 					</Link>
 				</nav>
-				<div className=' lg:max-w-3xl container top-[37.5%] lg:px-0 px-4 lg:top-[30%] absolute text-center xl:text-left '>
-					<p className=' text-4xl font-semibold text-green-400'>
+				<div className='lg:max-w-3xl lg:px-0 xl:text-left container px-4 mb-16 text-center'>
+					<p className=' lg:text-4xl text-3xl font-semibold text-green-400'>
 						Welcome to my blog!
 					</p>
-					<p className='text-md md:text-lg lg:text-xl mt-4 text-gray-100'>
+					<p className='lg:text-xl mt-4 text-lg text-gray-100'>
 						Here you can expect weekly articles on Javascript, tailored
 						for both begginers and advanced!
 					</p>

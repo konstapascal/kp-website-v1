@@ -100,7 +100,7 @@ function Hero() {
 				{/* ---------- SCROLL DOWN ARROW ---------- */}
 				<div
 					id='scroll-down-arrow'
-					className='lg:block bottom-4 animate-bounce absolute hidden transition-opacity duration-1000 opacity-0 cursor-pointer'>
+					className='lg:block bottom-6 absolute hidden transition-opacity duration-1000 opacity-0 cursor-pointer'>
 					<ScrollLink to='about-section' smooth={true} duration={1000}>
 						<Image
 							src='/svg/chevron-down-solid.svg'
