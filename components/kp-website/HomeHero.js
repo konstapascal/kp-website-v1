@@ -13,18 +13,26 @@ function Hero() {
 		const desc = document.querySelector('#description');
 		const links = document.querySelector('#links');
 		const down = document.querySelector('#scroll-down-arrow');
-		const letter = document.querySelector('#blinking-letter');
+
+		blink(530, 1000);
 
 		fadeIn(desc, 1250);
 		fadeIn(links, 1750);
 		fadeIn(down, 2250);
-
-		setTimeout(() => blink(letter, 530), 500);
 	}, []);
 
 	return (
 		<section>
-			<div className='bg-main-dark relative flex items-center justify-center min-h-screen border-b-2 border-green-400'>
+			<div className='bg-main-dark relative flex items-center justify-center min-h-screen overflow-hidden border-b-2 border-green-400'>
+				{/* ---------- BACKGROUND WATERMARK ---------- */}
+				<div
+					id='watermark'
+					className=' text-main-light text-[20rem]  whitespace-nowrap select-none  font-bold absolute opacity-50  -mt-40'>
+					<p>
+						FULLSTACK <br /> WEBDEV
+					</p>
+				</div>
+
 				{/* ---------- LOGO AND BLOG BUTTON / NAV ---------- */}
 				<nav className='md:p-6 lg:p-8 absolute inset-x-0 top-0 flex items-center justify-between p-4'>
 					<Link href='/'>
@@ -40,7 +48,7 @@ function Hero() {
 				</nav>
 
 				{/* ---------- HEADINGS, DESCRIPTION, LINKS ---------- */}
-				<div className=' lg:max-w-4xl container absolute px-4 top-[27.5%] text-center'>
+				<div className=' lg:max-w-4xl container absolute px-4 -mt-40 text-center'>
 					<WindupChildren>
 						<Pace ms={25}>
 							<div className='inline-block text-left'>
@@ -49,16 +57,16 @@ function Hero() {
 								</h1>
 								<p className='lg:text-5xl text-4xl font-semibold text-green-400'>
 									{'Konstantinos Pasca'}
+									<span
+										id='blinking-letter'
+										className='lg:text-5xl text-4xl font-semibold text-green-400 duration-75 opacity-100'>
+										l
+									</span>
 								</p>
 							</div>
 						</Pace>
 						<Pause ms={500} />
 					</WindupChildren>
-					<span
-						id='blinking-letter'
-						className='lg:text-5xl text-4xl font-semibold text-green-400 duration-75 opacity-0'>
-						l
-					</span>
 
 					<p
 						id='description'

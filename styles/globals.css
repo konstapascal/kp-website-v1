@@ -49,3 +49,7 @@
 .prose blockquote {
 	border-left-color: #34d399;
 }
+
+#watermark {
+	line-height: 0.75;
+}
