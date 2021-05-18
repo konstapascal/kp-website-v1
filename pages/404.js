@@ -10,8 +10,8 @@ function Error404() {
 				<div className='flex flex-col items-center justify-center min-h-screen font-semibold text-gray-100'>
 					<div className=' -mt-60 text-center'>
 						<p className=' lg:text-6xl text-4xl'>
-							<span className='text-accent-light'>404</span> - Page not
-							found!
+							Error <span className='text-accent-light'>404</span> - Page
+							not found!
 						</p>
 						<div
 							className='hover:text-accent-light mt-10 cursor-pointer'

@@ -2,7 +2,7 @@ import Link from 'next/link';
 
 function Hero() {
 	return (
-		<section>
+		<section id='blog-section'>
 			<div className='bg-main-dark border-green-4 h-80 md:h-72 relative flex items-end justify-center border-b-2 border-green-400'>
 				<nav className='md:px-6 md:pt-6 lg:px-8 lg:pt-8 absolute inset-x-0 top-0 flex items-center justify-between px-4 pt-4'>
 					<Link href='/blog'>
