@@ -17,27 +17,15 @@ function Hero() {
 
 		blink(530, 1250);
 
-		fadeIn(head, 1000);
-		fadeIn(desc, 1250);
-		fadeIn(links, 1750);
-		fadeIn(down, 2250);
+		fadeIn(head, 750);
+		fadeIn(desc, 1000);
+		fadeIn(links, 1500);
+		fadeIn(down, 2000);
 	}, []);
 
 	return (
 		<section>
 			<div className='bg-main-dark relative flex items-center justify-center min-h-screen overflow-hidden border-b-2 border-green-400'>
-				{/* ---------- BACKGROUND WATERMARK ---------- */}
-				<div
-					id='watermark'
-					className=' text-main-light text-[15rem] whitespace-nowrap absolute -mt-48 select-none font-extrabold text-center opacity-50 '>
-					<WindupChildren>
-						<Pace ms={25}>
-							<p>FRONT & BACK</p>
-							<p>DEVELOPER</p>
-						</Pace>
-					</WindupChildren>
-				</div>
-
 				{/* ---------- LOGO AND BLOG BUTTON / NAV ---------- */}
 				<nav className='md:p-6 lg:p-8 absolute inset-x-0 top-0 flex items-center justify-between p-4'>
 					<Link href='/'>
@@ -46,14 +34,26 @@ function Hero() {
 						</a>
 					</Link>
 					<Link href='/blog'>
-						<a className='text-sm lg:text-lg hover:underline px-4  py-2 font-semibold tracking-wider text-gray-100  border-2 border-green-400 rounded-[0.2rem]'>
+						<a className='text-sm lg:text-lg hover:underline px-4 py-2 font-semibold tracking-wider text-gray-100  border-2 border-green-400 rounded-[0.2rem]'>
 							BLOG
 						</a>
 					</Link>
 				</nav>
 
+				{/* ---------- BACKGROUND WATERMARK ---------- */}
+				<div
+					id='watermark'
+					className=' text-main-light transform -rotate-12 lg:rotate-0 whitespace-nowrap top-[27.5%] sm:top-[25%] md:top-[22.5%] absolute text-8xl sm:text-9xl md:text-[10rem] font-extrabold lg:top-[20%] lg:text-[15rem] text-center opacity-50 select-none'>
+					<WindupChildren>
+						<Pace ms={25}>
+							<p>FRONT & BACK</p>
+							<p>DEVELOPER</p>
+						</Pace>
+					</WindupChildren>
+				</div>
+
 				{/* ---------- HEADINGS, DESCRIPTION, LINKS ---------- */}
-				<div className=' lg:max-w-3xl lg:text-left container absolute px-4 -mt-40 text-center'>
+				<div className=' lg:max-w-3xl lg:text-left top-1/4 container absolute px-4 text-center'>
 					<div
 						className=' transition-opacity duration-1000 opacity-0'
 						id='heading'>
@@ -85,7 +85,7 @@ function Hero() {
 						className=' lg:justify-start flex items-center justify-center transition-opacity duration-1000 opacity-0'
 						id='links'>
 						<a
-							className='text-sm lg:text-lg px-4 py-2    font-semibold tracking-wider text-gray-100  border-2 border-green-400 rounded-[0.2rem]'
+							className='text-sm lg:text-lg px-4 py-2 font-semibold tracking-wider text-gray-100  border-2 border-green-400 rounded-[0.2rem]'
 							href='/kp-resume.pdf'
 							download>
 							RESUME
@@ -120,7 +120,7 @@ function Hero() {
 				{/* ---------- SCROLL DOWN ARROW ---------- */}
 				<div
 					id='scroll-down-arrow'
-					className='lg:block bottom-6 absolute hidden transition-opacity duration-1000 opacity-0 cursor-pointer'>
+					className='lg:block bottom-2 absolute hidden transition-opacity duration-1000 opacity-0 cursor-pointer'>
 					<ScrollLink
 						to='about-section'
 						smooth={true}
