@@ -27,7 +27,7 @@ function Hero() {
 		<section>
 			<div className='bg-main-dark relative flex items-center justify-center min-h-screen overflow-hidden border-b-2 border-green-400'>
 				{/* ---------- LOGO AND BLOG BUTTON / NAV ---------- */}
-				<nav className='md:p-6 lg:p-8 absolute inset-x-0 top-0 flex items-center justify-between p-4'>
+				<nav className='md:pt-6 md:px-6 lg:pt-8 lg:px-8 absolute inset-x-0 top-0 flex items-center justify-between px-4 pt-4'>
 					<Link href='/'>
 						<a className=' lg:text-3xl text-2xl rounded-[0.2rem] font-bold tracking-wide text-green-400 px-4 py-2 '>
 							KP-WEBSITE
