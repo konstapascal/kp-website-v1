@@ -15,7 +15,7 @@ function Hero() {
 		const links = document.querySelector('#links');
 		const down = document.querySelector('#scroll-down-arrow');
 
-		blink(530, 1250);
+		blink(530, 750);
 
 		fadeIn(head, 750);
 		fadeIn(desc, 1000);
@@ -64,7 +64,7 @@ function Hero() {
 							Konstantinos Pasca
 							<span
 								id='blinking-letter'
-								className='lg:text-5xl text-4xl font-semibold text-green-400 duration-75 opacity-100'>
+								className='lg:text-5xl text-4xl font-semibold text-green-400 duration-75 opacity-0'>
 								l
 							</span>
 						</p>
