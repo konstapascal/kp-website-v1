@@ -17,7 +17,6 @@ function Blog({ filesMetadataArr }) {
 				<title>kp-blog</title>
 				<link rel='icon' href='/favicon.png' />
 			</Head>
-
 			<BlogHero />
 
 			<section className=' bg-main-light lg:px-0 lg:py-32 px-4 py-24'>
