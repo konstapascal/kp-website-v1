@@ -1,5 +1,4 @@
 import React, { useEffect } from 'react';
-import Link from 'next/link';
 import Image from 'next/image';
 
 import { Link as ScrollLink } from 'react-scroll';
@@ -7,6 +6,8 @@ import { WindupChildren, Pace } from 'windups';
 
 import fadeIn from '../../lib/fadeIn';
 import blink from '../../lib/blink';
+import Logo from '../shared/Logo';
+import Button from '../shared/Button';
 
 function Hero() {
 	useEffect(() => {
@@ -28,16 +29,8 @@ function Hero() {
 			<div className='bg-main-dark relative flex items-center justify-center min-h-screen overflow-hidden border-b-2 border-green-400'>
 				{/* ---------- LOGO AND BLOG BUTTON / NAV ---------- */}
 				<nav className='md:pt-6 md:px-6 lg:pt-8 lg:px-8 absolute inset-x-0 top-0 flex items-center justify-between px-4 pt-4'>
-					<Link href='/'>
-						<a className=' lg:text-3xl text-2xl rounded-[0.2rem] font-bold tracking-wide text-green-400 px-4 py-2 '>
-							KP-WEBSITE
-						</a>
-					</Link>
-					<Link href='/blog'>
-						<a className='text-sm lg:text-lg hover:underline px-4 py-2 font-semibold tracking-wider text-gray-100  border-2 border-green-400 rounded-[0.2rem]'>
-							BLOG
-						</a>
-					</Link>
+					<Logo linkHref={'/'} content={'KP-WEBSITE'} />
+					<Button linkHref={'/blog'} content={'BLOG'} />
 				</nav>
 
 				{/* ---------- BACKGROUND WATERMARK ---------- */}
