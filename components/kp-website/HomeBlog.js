@@ -13,10 +13,9 @@ function Blog() {
 				</Link>
 
 				<p className='text-md md:text-lg lg:text-xl mt-8 leading-relaxed text-gray-100'>
-					I also write about Javascript and web development, check out my
+					I also write about Javascript and web development, check out my{' '}
 					<Link href='/blog'>
-						<span className='font-semibold text-green-400 cursor-pointer'>
-							{' '}
+						<span className='hover:underline font-semibold text-green-400 cursor-pointer'>
 							blog!
 						</span>
 					</Link>
