@@ -1,4 +1,8 @@
+import { useRouter } from 'next/router';
+
 function Error404() {
+	const router = useRouter();
+
 	return (
 		<>
 			<section className='bg-main-dark '>
@@ -14,6 +18,14 @@ function Error404() {
 							Error <span className='text-accent-light'>404</span> - Page
 							not found!
 						</p>
+
+						<div className='mt-40'>
+							<a
+								className=' hover:underline hover:text-green-400 text-2xl font-semibold text-gray-100 cursor-pointer'
+								onClick={() => router.back()}>
+								Go Back{' '}
+							</a>
+						</div>
 					</div>
 				</div>
 			</section>
