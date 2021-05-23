@@ -5,7 +5,6 @@ import { Link as ScrollLink } from 'react-scroll';
 import { WindupChildren, Pace } from 'windups';
 
 import fadeIn from '../../lib/fadeIn';
-import blink from '../../lib/blink';
 import Logo from '../shared/Logo';
 import Button from '../shared/Button';
 
@@ -15,13 +14,30 @@ function Hero() {
 		const desc = document.querySelector('#description');
 		const links = document.querySelector('#links');
 		const down = document.querySelector('#scroll-down-arrow');
+		const letter = document.querySelector('#blinking-letter');
 
-		blink(530, 750);
+		let blinkingInterval;
+
+		setTimeout(() => {
+			let blink = false;
+
+			blinkingInterval = setInterval(() => {
+				if (blink) {
+					letter.classList.replace('opacity-0', 'opacity-100');
+					blink = false;
+				} else {
+					letter.classList.replace('opacity-100', 'opacity-0');
+					blink = true;
+				}
+			}, 530);
+		}, 750);
 
 		fadeIn(head, 750);
 		fadeIn(desc, 1000);
 		fadeIn(links, 1500);
 		fadeIn(down, 2000);
+
+		return () => clearInterval(blinkingInterval);
 	}, []);
 
 	return (
@@ -78,10 +94,15 @@ function Hero() {
 						className=' lg:justify-start flex items-center justify-center transition-opacity duration-1000 opacity-0'
 						id='links'>
 						<a
-							className='text-sm lg:text-lg px-4 py-2 font-semibold tracking-wider text-gray-100  border-2 border-green-400 rounded-[0.2rem]'
+							className='text-sm  lg:text-lg flex items-center px-4 py-2  font-semibold tracking-wider text-gray-100  border-2 border-green-400 rounded-[0.2rem]'
 							href='/kp-resume.pdf'
 							download>
-							RESUME
+							<Image
+								src='/svg/file-download-solid.svg'
+								width={20}
+								height={20}
+							/>
+							<span className=' ml-2'>RESUME</span>
 						</a>
 
 						<a
