@@ -5,7 +5,7 @@ const projects = [
 		subtitle: 'Educational PKI Web App',
 		description:
 			'Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut possimus rerum odio unde officia cupiditate corrupti eos similique, obcaecati explicabo error magni perspiciatis nulla odit, ea rem quae adipisci voluptas.',
-		url: '/img/js-calculator.jpg',
+		url: '/img/kp-website.jpg',
 		labels: ['React', 'Semantic', 'Node', 'SQL']
 	},
 	{
@@ -14,7 +14,7 @@ const projects = [
 		subtitle: 'My personal website and blog',
 		description:
 			'Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut possimus rerum odio unde officia cupiditate corrupti eos similique, obcaecati explicabo error magni perspiciatis nulla odit, ea rem quae adipisci voluptas.',
-		url: '/img/js-calculator.jpg',
+		url: '/img/kp-website.jpg',
 		labels: ['React', 'NEXT', 'Tailwind']
 	},
 	{
@@ -23,7 +23,7 @@ const projects = [
 		subtitle: 'Calculator made in pure JS',
 		description:
 			'Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut possimus rerum odio unde officia cupiditate corrupti eos similique, obcaecati explicabo error magni perspiciatis nulla odit, ea rem quae adipisci voluptas.',
-		url: '/img/js-calculator.jpg',
+		url: '/img/kp-website.jpg',
 		labels: ['HTML', 'CSS', 'JS']
 	}
 ];

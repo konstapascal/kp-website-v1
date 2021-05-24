@@ -11,14 +11,14 @@ function Projects() {
 					<p className='inline-block  text-4xl lg:text-5xl font-semibold text-green-400 uppercase rounded-[0.2rem]'>
 						Projects
 					</p>
-					<p className=' text-md md:text-lg lg:text-xl my-8 text-gray-100'>
+					<p className=' text-md md:text-lg lg:text-xl mt-8 mb-12 text-gray-100'>
 						Here are some of the projects I have worked on, click the
 						links for more information.
 					</p>
 				</div>
 
 				{/* ---------- CARDS ---------- */}
-				<div className=' flex flex-wrap justify-center'>
+				<div className=' lg:gap-8 flex flex-wrap justify-center gap-12'>
 					{projects.map(project => (
 						<ProjectCard
 							key={project.id}
