@@ -4,7 +4,7 @@ import projects from '../../data/projects';
 
 function Projects() {
 	return (
-		<section className='bg-main-light lg:pb-32 px-4 pb-20'>
+		<section className='bg-main-light lg:py-32 px-4 py-20'>
 			<div className=' container text-gray-100'>
 				<div className='text-center'>
 					<p className=' font-semibold text-gray-100'>Some of my</p>
@@ -18,7 +18,7 @@ function Projects() {
 				</div>
 
 				{/* ---------- CARDS ---------- */}
-				<div className=' lg:gap-8 flex flex-wrap justify-center gap-12'>
+				<div className=' lg:gap-8 flex flex-col items-center gap-12'>
 					{projects.map(project => (
 						<ProjectCard
 							key={project.id}

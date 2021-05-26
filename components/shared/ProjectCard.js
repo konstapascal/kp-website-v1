@@ -3,19 +3,17 @@ import Label from './Label';
 
 function ProjectCard({ title, subtitle, description, url, labels }) {
 	return (
-		<div className='bg-main-dark lg:even:flex-row-reverse lg:even:border-r-0 lg:even:border-l-2 group md:shadow-2xl offset lg:flex-row lg:max-w-4xl xl:max-w-5xl flex flex-col max-w-md duration-500 transform border-b-2 border-r-2 border-green-400 rounded shadow-md'>
+		<div className='bg-main-dark lg:even:flex-row-reverse lg:even:border-r-0 lg:even:border-l-2 md:shadow-2xl offset lg:flex-row lg:hover:scale-105 transform-gpu flex flex-col duration-200 border-b-2 border-r-2 border-green-400 rounded shadow-md'>
 			<Image
 				src={`${url}`}
-				width={800}
-				height={450}
+				width={600}
+				height={300}
 				quality={100}
-				className=' lg:group-hover:scale-150 object-cover duration-500 transform'
+				className=' object-cover'
 			/>
 
 			<div className=' lg:px-12 lg:py-10 max-w-3xl px-10 py-8'>
-				<h1 className=' group-hover:underline inline-block text-2xl text-green-400'>
-					{title}
-				</h1>
+				<h1 className=' inline-block text-3xl text-green-400'>{title}</h1>
 				<p className=' mt-1 text-sm font-semibold text-gray-400 uppercase'>
 					{subtitle}
 				</p>

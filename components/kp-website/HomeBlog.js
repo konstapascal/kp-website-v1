@@ -2,7 +2,7 @@ import Link from 'next/link';
 
 function Blog() {
 	return (
-		<section className=' bg-main-light lg:pt-32 px-4 pt-20'>
+		<section className=' bg-main-light lg:pb-32 px-4 pb-20'>
 			<div className=' lg:max-w-4xl container text-center text-gray-100'>
 				<p className='font-semibold text-gray-100'>Check out my</p>
 

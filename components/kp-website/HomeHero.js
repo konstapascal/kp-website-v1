@@ -94,7 +94,7 @@ function Hero() {
 						className=' lg:justify-start flex items-center justify-center transition-opacity duration-1000 opacity-0'
 						id='links'>
 						<a
-							className='text-sm  lg:text-lg flex items-center px-4 py-2  font-semibold tracking-wider text-gray-100  border-2 border-green-400 rounded-[0.2rem]'
+							className='text-sm hover:scale-105 transform-gpu duration-200  lg:text-lg flex items-center px-4 py-2  font-semibold tracking-wider text-gray-100  border-2 border-green-400 rounded-[0.2rem]'
 							href='/kp-resume.pdf'
 							download>
 							<Image

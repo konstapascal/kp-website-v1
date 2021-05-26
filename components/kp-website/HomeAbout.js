@@ -3,7 +3,7 @@ import Image from 'next/image';
 function About() {
 	return (
 		<section
-			className=' bg-main-light lg:py-32 px-4 py-20'
+			className=' bg-main-light lg:pt-32 px-4 pt-20'
 			id='about-section'>
 			<div className=' lg:max-w-4xl container text-center text-gray-100'>
 				<p className='font-semibold text-gray-100'>Some of my</p>

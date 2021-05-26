@@ -13,9 +13,9 @@ const projects = [
 		title: 'KP Website',
 		subtitle: 'My personal website and blog',
 		description:
-			'Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut possimus rerum odio unde officia cupiditate corrupti eos similique, obcaecati explicabo error magni perspiciatis nulla odit, ea rem quae adipisci voluptas.',
+			'Statically generated website by the amazing Next JS, a flexile React framework. Tailwind CSS used as the primary styling library. Graymatter used to work with the blog articles as files, converting them from Markdown to HTML format.',
 		url: '/img/kp-website.jpg',
-		labels: ['React', 'NEXT', 'Tailwind']
+		labels: ['REACT', 'NEXT', 'TAILWIND', 'GRAY-MATTER']
 	},
 	{
 		id: 3,
