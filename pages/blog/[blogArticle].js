@@ -37,7 +37,10 @@ function Post({ postData, postContent }) {
 						<span className='hover:underline font-semibold text-green-400 cursor-pointer'>
 							{postData.author}
 						</span>{' '}
-						on <span>{postData.date}</span>
+						on{' '}
+						<span>
+							{new Date(postData.date).toUTCString().slice(5, 16)}
+						</span>
 					</p>
 					<div
 						id='article-content'

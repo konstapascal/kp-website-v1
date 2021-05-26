@@ -1,18 +1,18 @@
 import Image from 'next/image';
 import Label from './Label';
 
-function ProjectCard({ title, subtitle, description, url, labels }) {
+function ProjectCard({ title, subtitle, description, urls, labels }) {
 	return (
-		<div className='bg-main-dark lg:even:flex-row-reverse lg:even:border-r-0 lg:even:border-l-2 md:shadow-2xl offset lg:flex-row lg:hover:scale-105 transform-gpu flex flex-col duration-200 border-b-2 border-r-2 border-green-400 rounded shadow-md'>
+		<div className='bg-main-dark lg:even:flex-row-reverse lg:even:border-r-0 lg:even:border-l-2 md:shadow-2xl offset lg:flex-row lg:hover:scale-105 transform-gpu lg:max-w-6xl flex flex-col duration-200 border-b-2 border-r-2 border-green-400 rounded shadow-md'>
 			<Image
-				src={`${url}`}
-				width={600}
-				height={300}
+				src={`${urls.imgPath}`}
+				width={500}
+				height={250}
 				quality={100}
-				className=' object-cover'
+				className=' flex-1 object-cover object-center'
 			/>
 
-			<div className=' lg:px-12 lg:py-10 max-w-3xl px-10 py-8'>
+			<div className=' lg:px-12 lg:py-10 flex-1 max-w-3xl px-10 py-8'>
 				<h1 className=' inline-block text-3xl text-green-400'>{title}</h1>
 				<p className=' mt-1 text-sm font-semibold text-gray-400 uppercase'>
 					{subtitle}
@@ -32,7 +32,7 @@ function ProjectCard({ title, subtitle, description, url, labels }) {
 				<div className=' flex items-center justify-start mt-4'>
 					<a
 						className=' flex items-center'
-						href='https://duckduckgo.com/'
+						href={`${urls.demoUrl}`}
 						target='_blank'
 						rel='noopener noreferrer'>
 						<Image
@@ -43,7 +43,7 @@ function ProjectCard({ title, subtitle, description, url, labels }) {
 					</a>
 					<a
 						className=' flex items-center ml-1'
-						href='https://duckduckgo.com/'
+						href={`${urls.codeUrl}`}
 						target='_blank'
 						rel='noopener noreferrer'>
 						<Image

@@ -33,7 +33,7 @@ function Footer() {
 					</a>
 				</div>
 
-				<p className='text-sm font-semibold text-gray-400'>
+				<p className='text-base font-semibold text-gray-400'>
 					Made by{' '}
 					<span className='font-semibold text-green-400'>
 						Konstantinos Pascal

@@ -6,7 +6,7 @@ function About() {
 			className=' bg-main-light lg:pt-32 px-4 pt-20'
 			id='about-section'>
 			<div className=' lg:max-w-4xl container text-center text-gray-100'>
-				<p className='font-semibold text-gray-100'>Some of my</p>
+				<p className='font-semibold text-gray-100'>These are my</p>
 				<h3 className='lg:text-5xl inline-block text-4xl font-semibold text-green-400 uppercase'>
 					Skillsets
 				</h3>

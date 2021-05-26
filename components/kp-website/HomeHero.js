@@ -135,11 +135,7 @@ function Hero() {
 				<div
 					id='scroll-down-arrow'
 					className='lg:block bottom-2 absolute hidden transition-opacity duration-1000 opacity-0 cursor-pointer'>
-					<ScrollLink
-						to='about-section'
-						smooth={true}
-						offset={-275}
-						duration={1000}>
+					<ScrollLink to='about-section' smooth={true} duration={1000}>
 						<Image
 							src='/svg/chevron-down-solid.svg'
 							width={40}
