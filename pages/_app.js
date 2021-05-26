@@ -1,14 +1,14 @@
 import '../styles/tailwind.css';
 import '../styles/globals.css';
-import '../styles/nprogress.css';
+// import '../styles/nprogress.css';
 
-import { useEffect } from 'react';
-import useProgressBar from '../lib/useProgressBar';
+// import { useEffect } from 'react';
+// import useProgressBar from '../lib/useProgressBar';
 
 function MyApp({ Component, pageProps }) {
-	useEffect(() => {
-		useProgressBar();
-	}, []);
+	// useEffect(() => {
+	// 	useProgressBar();
+	// }, []);
 
 	return (
 		<>
