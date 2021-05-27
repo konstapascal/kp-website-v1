@@ -10,12 +10,12 @@ import { read } from 'gray-matter';
 import { serialize } from 'next-mdx-remote/serialize';
 import { MDXRemote } from 'next-mdx-remote';
 
-import makeAnchorsNewTab from '../../lib/makeAnchorsNewTab';
+import makeAnchorsOpenNewTab from '../../lib/makeAnchorsOpenNewTab';
 import Footer from '../../components/shared/Footer';
 
 function Post({ postData, postContent }) {
 	useEffect(() => {
-		makeAnchorsNewTab();
+		makeAnchorsOpenNewTab('#article-content');
 	}, []);
 
 	return (

@@ -4,9 +4,9 @@ import Image from 'next/image';
 import { Link as ScrollLink } from 'react-scroll';
 import { WindupChildren, Pace } from 'windups';
 
-import fadeIn from '../../lib/fadeIn';
 import Logo from '../shared/Logo';
 import Button from '../shared/Button';
+import fadeInElement from '../../lib/fadeInElement';
 
 function Hero() {
 	useEffect(() => {
@@ -30,12 +30,12 @@ function Hero() {
 					blink = true;
 				}
 			}, 530);
-		}, 750);
+		}, 500);
 
-		fadeIn(head, 750);
-		fadeIn(desc, 1000);
-		fadeIn(links, 1500);
-		fadeIn(down, 2000);
+		fadeInElement(head, 750);
+		fadeInElement(desc, 1000);
+		fadeInElement(links, 1250);
+		fadeInElement(down, 1500);
 
 		return () => clearInterval(blinkingInterval);
 	}, []);
@@ -55,7 +55,7 @@ function Hero() {
 					className=' text-main-light transform -rotate-12 lg:rotate-0 whitespace-nowrap top-[27.5%] sm:top-[25%] md:top-[22.5%] absolute text-8xl sm:text-9xl md:text-[10rem] font-extrabold lg:top-[20%] lg:text-[15rem] text-center opacity-50 select-none'>
 					<WindupChildren>
 						<Pace ms={25}>
-							<p>FRONT & BACK</p>
+							<p>FULL STACK</p>
 							<p>DEVELOPER</p>
 						</Pace>
 					</WindupChildren>
@@ -95,7 +95,7 @@ function Hero() {
 						id='links'>
 						<a
 							className='text-sm hover:scale-105 transform-gpu duration-200  lg:text-lg flex items-center px-4 py-2  font-semibold tracking-wider text-gray-100  border-2 border-green-400 rounded-[0.2rem]'
-							href='/kp-resume.pdf'
+							href='/files/kp-resume.pdf'
 							download>
 							<Image
 								src='/svg/file-download-solid.svg'
