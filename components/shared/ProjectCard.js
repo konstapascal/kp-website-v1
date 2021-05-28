@@ -13,23 +13,32 @@ function ProjectCard({ title, subtitle, description, urls, labels }) {
 			/>
 
 			<div className=' lg:px-12 lg:py-10 flex-1 max-w-3xl px-10 py-8'>
-				<h1 className=' inline-block text-3xl text-green-400'>{title}</h1>
-				<p className=' mt-1 text-sm font-semibold text-gray-400 uppercase'>
-					{subtitle}
-				</p>
-				<div className=' mt-2'>
-					{labels.map(label => {
-						return (
-							<Label
-								key={`${label}-` + Math.floor(Math.random() * 1000) + 1}
-								content={`${label}`}
-							/>
-						);
-					})}
+				<div className='xl:flex-row flex flex-col justify-between'>
+					<div>
+						<h1 className=' inline-block text-3xl text-green-400'>
+							{title}
+						</h1>
+						<p className=' mt-1 text-sm font-semibold text-gray-400 uppercase'>
+							{subtitle}
+						</p>
+					</div>
+					<div className=' xl:mt-0 mt-2'>
+						{labels.map(label => {
+							return (
+								<Label
+									key={
+										`${label}-` + Math.floor(Math.random() * 1000) + 1
+									}
+									content={`${label}`}
+								/>
+							);
+						})}
+					</div>
 				</div>
-				<p className='text-md mt-2 text-gray-100'>{description}</p>
 
-				<div className=' flex items-center justify-start mt-4'>
+				<p className='text-md mt-4 mb-6 text-gray-100'>{description}</p>
+
+				<div className=' flex items-center justify-start'>
 					<a
 						className=' flex items-center'
 						href={`${urls.demoUrl}`}
@@ -40,9 +49,12 @@ function ProjectCard({ title, subtitle, description, urls, labels }) {
 							width={35}
 							height={35}
 						/>
+						<p className='hover:text-green-400 hover:underline ml-2 text-lg'>
+							Demo
+						</p>
 					</a>
 					<a
-						className=' flex items-center ml-1'
+						className=' flex items-center ml-8'
 						href={`${urls.codeUrl}`}
 						target='_blank'
 						rel='noopener noreferrer'>
@@ -51,6 +63,9 @@ function ProjectCard({ title, subtitle, description, urls, labels }) {
 							width={35}
 							height={35}
 						/>
+						<p className='hover:text-green-400 hover:underline ml-2 text-lg'>
+							Source Code
+						</p>
 					</a>
 				</div>
 			</div>

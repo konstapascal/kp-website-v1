@@ -15,7 +15,7 @@ function About() {
 					modern web languages, frameworks and technologies.
 				</p>
 
-				<ul className=' inline-block my-8'>
+				<ul className=' my-8'>
 					<li className=''>
 						<h4 className='text-xl'>HTML, CSS, JS</h4>
 					</li>
@@ -27,50 +27,48 @@ function About() {
 					</li>
 				</ul>
 
-				<div className=''>
-					<div className='flex justify-center'>
-						<div className=''>
-							<Image
-								src='/svg/html5-brands.svg'
-								alt='HTML5 Logo'
-								width={50}
-								height={50}
-							/>
-						</div>
-						<div className='mx-2'>
-							<Image
-								src='/svg/css3-alt-brands.svg'
-								alt='CSS3 Logo'
-								width={50}
-								height={50}
-							/>
-						</div>
-						<div className=''>
-							<Image
-								src='/svg/js-square-brands.svg'
-								alt='JS Logo'
-								width={50}
-								height={50}
-							/>
-						</div>
+				<div className='flex justify-center'>
+					<div className=''>
+						<Image
+							src='/svg/html5-brands.svg'
+							alt='HTML5 Logo'
+							width={50}
+							height={50}
+						/>
 					</div>
-					<div className=' flex justify-center mt-1'>
-						<div className='mr-1'>
-							<Image
-								src='/svg/node-js-brands.svg'
-								alt='Node Logo'
-								width={50}
-								height={50}
-							/>
-						</div>
-						<div className='ml-1'>
-							<Image
-								src='/svg/react-brands.svg'
-								alt='React Logo'
-								width={50}
-								height={50}
-							/>
-						</div>
+					<div className='mx-2'>
+						<Image
+							src='/svg/css3-alt-brands.svg'
+							alt='CSS3 Logo'
+							width={50}
+							height={50}
+						/>
+					</div>
+					<div className=''>
+						<Image
+							src='/svg/js-square-brands.svg'
+							alt='JS Logo'
+							width={50}
+							height={50}
+						/>
+					</div>
+				</div>
+				<div className=' flex justify-center mt-1'>
+					<div className='mr-1'>
+						<Image
+							src='/svg/node-js-brands.svg'
+							alt='Node Logo'
+							width={50}
+							height={50}
+						/>
+					</div>
+					<div className='ml-1'>
+						<Image
+							src='/svg/react-brands.svg'
+							alt='React Logo'
+							width={50}
+							height={50}
+						/>
 					</div>
 				</div>
 			</div>

@@ -81,7 +81,7 @@ function Hero() {
 
 					<p
 						id='description'
-						className='text-md md:text-lg lg:text-xl mb-14 mt-6 text-gray-100 transition-opacity duration-1000 opacity-0'>
+						className='text-md md:text-lg lg:text-xl mt-6 mb-12 text-gray-100 transition-opacity duration-1000 opacity-0'>
 						I am a new developer always excited to learn! Most interested
 						in web development with a passion for both the{' '}
 						<span className=' font-bold text-green-400'>frontend</span>{' '}
@@ -91,7 +91,7 @@ function Hero() {
 
 					{/* RESUME AND LINKS */}
 					<div
-						className=' lg:justify-start flex items-center justify-center transition-opacity duration-1000 opacity-0'
+						className=' lg:justify-start sm:flex-row sm:gap-10 flex flex-col-reverse items-center justify-center gap-8 transition-opacity duration-1000 opacity-0'
 						id='links'>
 						<a
 							className='text-sm hover:scale-105 transform-gpu duration-200  lg:text-lg flex items-center px-4 py-2  font-semibold tracking-wider text-gray-100  border-2 border-green-400 rounded-[0.2rem]'
@@ -105,29 +105,30 @@ function Hero() {
 							<span className=' ml-2'>RESUME</span>
 						</a>
 
-						<a
-							className='flex items-center ml-8'
-							href='https://github.com/konstapascal'
-							target='_blank'
-							rel='noopener noreferrer'>
-							<Image
-								src='/svg/github-square-brands.svg'
-								width={40}
-								height={40}
-							/>
-						</a>
-
-						<a
-							className='flex items-center ml-2'
-							href='https://duckduckgo.com/'
-							target='_blank'
-							rel='noopener noreferrer'>
-							<Image
-								src='/svg/linkedin-brands.svg'
-								width={40}
-								height={40}
-							/>
-						</a>
+						<div className=' flex gap-2'>
+							<a
+								className=' flex items-center'
+								href='https://github.com/konstapascal'
+								target='_blank'
+								rel='noopener noreferrer'>
+								<Image
+									src='/svg/github-square-brands.svg'
+									width={40}
+									height={40}
+								/>
+							</a>
+							<a
+								className=' flex items-center'
+								href='https://duckduckgo.com/'
+								target='_blank'
+								rel='noopener noreferrer'>
+								<Image
+									src='/svg/linkedin-brands.svg'
+									width={40}
+									height={40}
+								/>
+							</a>
+						</div>
 					</div>
 				</div>
 

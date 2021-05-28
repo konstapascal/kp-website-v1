@@ -23,7 +23,7 @@ const projects = [
 			demoUrl: '',
 			codeUrl: 'https://github.com/konstapascal/kp-website-v1'
 		},
-		labels: ['REACT', 'NEXT', 'TAILWIND', 'GRAY-MATTER']
+		labels: ['NEXT', 'TAILWIND', 'GRAY-MATTER']
 	},
 	{
 		id: 3,

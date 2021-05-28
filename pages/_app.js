@@ -13,7 +13,7 @@ function MyApp({ Component, pageProps }) {
 	return (
 		<>
 			{/* TODO: DELETE THIS LATER */}
-			{/* <div className='text-md fixed bottom-0 right-0 z-50 p-4 font-bold text-center text-black'>
+			<div className='text-md fixed bottom-0 right-0 z-50 p-4 font-bold text-center text-black'>
 				<div className='mb-1 text-gray-100'>
 					<a href='#'>UP</a>
 				</div>
@@ -35,7 +35,7 @@ function MyApp({ Component, pageProps }) {
 				<span className='2xl:inline-block hidden px-1 bg-yellow-400 rounded'>
 					2XL (1536px+)
 				</span>
-			</div> */}
+			</div>
 			{/* TODO: DELETE THIS LATER */}
 			<Component {...pageProps} />
 		</>

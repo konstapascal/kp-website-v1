@@ -7,9 +7,9 @@ function Footer() {
 				<p className='text-xl font-semibold text-gray-100'>
 					Find me on any of these platforms.{' '}
 				</p>
-				<div className=' flex justify-center m-8'>
+				<div className=' flex justify-center gap-2 my-6'>
 					<a
-						className='ml-1'
+						className=''
 						href='https://github.com/konstapascal'
 						target='_blank'
 						rel='noopener noreferrer'>
@@ -20,7 +20,7 @@ function Footer() {
 						/>
 					</a>
 					<a
-						className='ml-1'
+						className=''
 						href='https://duckduckgo.com/'
 						target='_blank'
 						rel='noopener noreferrer'>
