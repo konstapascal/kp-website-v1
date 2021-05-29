@@ -49,7 +49,7 @@ function ProjectCard({ title, subtitle, description, urls, labels }) {
 							width={35}
 							height={35}
 						/>
-						<p className='hover:text-green-400 hover:underline ml-2 text-lg'>
+						<p className='hover:text-green-400 hover:underline ml-2 font-medium'>
 							Demo
 						</p>
 					</a>
@@ -63,7 +63,7 @@ function ProjectCard({ title, subtitle, description, urls, labels }) {
 							width={35}
 							height={35}
 						/>
-						<p className='hover:text-green-400 hover:underline ml-2 text-lg'>
+						<p className='hover:text-green-400 hover:underline ml-2 font-medium'>
 							Source Code
 						</p>
 					</a>
