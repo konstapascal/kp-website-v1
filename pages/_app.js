@@ -1,5 +1,6 @@
 import '../styles/tailwind.css';
 import '../styles/globals.css';
+import Image from 'next/image';
 // import '../styles/nprogress.css';
 
 // import { useEffect } from 'react';
@@ -12,14 +13,14 @@ function MyApp({ Component, pageProps }) {
 
 	return (
 		<>
+			<div className='group fixed bottom-0 right-0 z-50 p-4 text-2xl font-bold text-gray-100'>
+				<a href='#' className='flex'>
+					<Image href='#' src='/svg/arrow-circle-up-solid.svg' width={35} height={35} />
+				</a>
+			</div>
 			{/* TODO: DELETE THIS LATER */}
-			<div className='text-md fixed bottom-0 right-0 z-50 p-4 font-bold text-center text-black'>
-				<div className='mb-1 text-gray-100'>
-					<a href='#'>UP</a>
-				</div>
-				<p className='sm:hidden px-1 bg-yellow-400 rounded'>
-					XS (0px to 640px)
-				</p>
+			{/* <div className='text-md left-0-0 fixed bottom-0 z-50 p-4 font-bold text-center text-black'>
+				<p className='sm:hidden px-1 bg-yellow-400 rounded'>XS (0px to 640px)</p>
 				<p className='sm:inline-block md:hidden hidden px-1 bg-yellow-400 rounded'>
 					SM (640px to 768px)
 				</p>
@@ -35,7 +36,7 @@ function MyApp({ Component, pageProps }) {
 				<span className='2xl:inline-block hidden px-1 bg-yellow-400 rounded'>
 					2XL (1536px+)
 				</span>
-			</div>
+			</div> */}
 			{/* TODO: DELETE THIS LATER */}
 			<Component {...pageProps} />
 		</>

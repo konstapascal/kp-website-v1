@@ -9,35 +9,23 @@ function Footer() {
 				</p>
 				<div className=' flex justify-center gap-2 my-6'>
 					<a
-						className=''
+						className='flex items-center'
 						href='https://github.com/konstapascal'
 						target='_blank'
 						rel='noopener noreferrer'>
-						<Image
-							src='/svg/github-square-brands.svg'
-							width={40}
-							height={40}
-						/>
+						<Image src='/svg/github-square-brands.svg' width={40} height={40} />
 					</a>
 					<a
-						className=''
+						className='flex items-center'
 						href='https://duckduckgo.com/'
 						target='_blank'
 						rel='noopener noreferrer'>
-						<Image
-							src='/svg/linkedin-brands.svg'
-							href='#'
-							width={40}
-							height={40}
-						/>
+						<Image src='/svg/linkedin-brands.svg' href='#' width={40} height={40} />
 					</a>
 				</div>
 
 				<p className='text-base font-semibold text-gray-400'>
-					Made by{' '}
-					<span className='font-semibold text-green-400'>
-						Konstantinos Pascal
-					</span>
+					Made by <span className='font-semibold text-green-400'>Konstantinos Pascal</span>
 				</p>
 			</div>
 		</footer>

@@ -63,9 +63,7 @@ function Hero() {
 
 				{/* ---------- HEADINGS, DESCRIPTION, LINKS ---------- */}
 				<div className=' lg:max-w-3xl lg:text-left top-1/4 container absolute px-4 text-center'>
-					<div
-						className=' transition-opacity duration-1000 opacity-0'
-						id='heading'>
+					<div className=' transition-opacity duration-1000 opacity-0' id='heading'>
 						<h1 className='lg:text-2xl text-xl font-semibold text-gray-100'>
 							Hello, this is..
 						</h1>
@@ -82,10 +80,9 @@ function Hero() {
 					<p
 						id='description'
 						className='text-md md:text-lg lg:text-xl mt-6 mb-12 text-gray-100 transition-opacity duration-1000 opacity-0'>
-						I am a new developer always excited to learn! Most interested
-						in web development with a passion for both the{' '}
-						<span className=' font-bold text-green-400'>frontend</span>{' '}
-						and the{' '}
+						I am a new developer always excited to learn! Most interested in web development
+						with a passion for both the{' '}
+						<span className=' font-bold text-green-400'>frontend</span> and the{' '}
 						<span className='font-bold text-green-400'>backend!</span>{' '}
 					</p>
 
@@ -97,36 +94,24 @@ function Hero() {
 							className='text-sm hover:scale-105 transform-gpu duration-200  lg:text-lg flex items-center px-4 py-2  font-semibold tracking-wider text-gray-100  border-2 border-green-400 rounded-[0.2rem]'
 							href='/files/kp-resume.pdf'
 							download>
-							<Image
-								src='/svg/file-download-solid.svg'
-								width={20}
-								height={20}
-							/>
+							<Image src='/svg/file-download-solid.svg' width={20} height={20} />
 							<span className=' ml-2'>RESUME</span>
 						</a>
 
-						<div className=' flex gap-2'>
+						<div className=' flex items-center gap-2'>
 							<a
 								className=' flex items-center'
 								href='https://github.com/konstapascal'
 								target='_blank'
 								rel='noopener noreferrer'>
-								<Image
-									src='/svg/github-square-brands.svg'
-									width={40}
-									height={40}
-								/>
+								<Image src='/svg/github-square-brands.svg' width={40} height={40} />
 							</a>
 							<a
 								className=' flex items-center'
 								href='https://duckduckgo.com/'
 								target='_blank'
 								rel='noopener noreferrer'>
-								<Image
-									src='/svg/linkedin-brands.svg'
-									width={40}
-									height={40}
-								/>
+								<Image src='/svg/linkedin-brands.svg' width={40} height={40} />
 							</a>
 						</div>
 					</div>
@@ -137,11 +122,7 @@ function Hero() {
 					id='scroll-down-arrow'
 					className='lg:block bottom-2 absolute hidden transition-opacity duration-1000 opacity-0 cursor-pointer'>
 					<ScrollLink to='about-section' smooth={true} duration={1000}>
-						<Image
-							src='/svg/chevron-down-solid.svg'
-							width={40}
-							height={40}
-						/>
+						<Image src='/svg/chevron-down-solid.svg' width={40} height={40} />
 					</ScrollLink>
 				</div>
 			</div>
