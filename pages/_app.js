@@ -6,7 +6,6 @@ import fadeInElement from '../lib/fadeInElement';
 
 import { useEffect } from 'react';
 import fadeOutElement from '../lib/fadeOutElement';
-import { ScrollLink } from 'react-scroll';
 // import useProgressBar from '../lib/useProgressBar';
 
 function MyApp({ Component, pageProps }) {
@@ -15,7 +14,7 @@ function MyApp({ Component, pageProps }) {
 		const button = document.querySelector('#go-up');
 
 		document.addEventListener('scroll', () => {
-			window.pageYOffset >= 1000 ? fadeInElement(button) : fadeOutElement(button);
+			window.pageYOffset >= 500 ? fadeInElement(button) : fadeOutElement(button);
 		});
 	}, []);
 
@@ -23,9 +22,9 @@ function MyApp({ Component, pageProps }) {
 		<>
 			<div
 				id='go-up'
-				className=' fixed bottom-0 right-0 z-50 p-4 transition-opacity duration-500 opacity-0'>
+				className=' fixed bottom-0 right-0 z-50 p-6 transition-opacity duration-500 opacity-0'>
 				<a href='#' className='flex'>
-					<Image href='#' src='/svg/arrow-circle-up-solid.svg' width={35} height={35} />
+					<Image href='#' src='/svg/arrow-circle-up-solid.svg' width={40} height={40} />
 				</a>
 			</div>
 
