@@ -1,23 +1,34 @@
 import '../styles/tailwind.css';
 import '../styles/globals.css';
 import Image from 'next/image';
+import fadeInElement from '../lib/fadeInElement';
 // import '../styles/nprogress.css';
 
-// import { useEffect } from 'react';
+import { useEffect } from 'react';
+import fadeOutElement from '../lib/fadeOutElement';
+import { ScrollLink } from 'react-scroll';
 // import useProgressBar from '../lib/useProgressBar';
 
 function MyApp({ Component, pageProps }) {
-	// useEffect(() => {
-	// 	useProgressBar();
-	// }, []);
+	useEffect(() => {
+		// useProgressBar();
+		const button = document.querySelector('#go-up');
+
+		document.addEventListener('scroll', () => {
+			window.pageYOffset >= 1000 ? fadeInElement(button) : fadeOutElement(button);
+		});
+	}, []);
 
 	return (
 		<>
-			<div className='group fixed bottom-0 right-0 z-50 p-4 text-2xl font-bold text-gray-100'>
+			<div
+				id='go-up'
+				className=' fixed bottom-0 right-0 z-50 p-4 transition-opacity duration-500 opacity-0'>
 				<a href='#' className='flex'>
 					<Image href='#' src='/svg/arrow-circle-up-solid.svg' width={35} height={35} />
 				</a>
 			</div>
+
 			{/* TODO: DELETE THIS LATER */}
 			{/* <div className='text-md left-0-0 fixed bottom-0 z-50 p-4 font-bold text-center text-black'>
 				<p className='sm:hidden px-1 bg-yellow-400 rounded'>XS (0px to 640px)</p>
