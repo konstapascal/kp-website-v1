@@ -12,8 +12,8 @@ function Projects() {
 						Projects
 					</p>
 					<p className=' text-md md:text-lg lg:text-xl mt-8 mb-12 text-gray-100'>
-						Here are some of the projects I have worked on, click the
-						links for more information.
+						Here are some of the projects I have worked on, click the links for more
+						information.
 					</p>
 				</div>
 

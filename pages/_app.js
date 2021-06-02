@@ -23,7 +23,7 @@ function MyApp({ Component, pageProps }) {
 			<div
 				id='go-up'
 				className=' fixed bottom-0 right-0 z-50 p-6 transition-opacity duration-500 opacity-0'>
-				<a href='#' className='flex'>
+				<a href='#' className=' flex'>
 					<Image href='#' src='/svg/arrow-circle-up-solid.svg' width={40} height={40} />
 				</a>
 			</div>

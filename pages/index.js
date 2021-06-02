@@ -14,9 +14,11 @@ export default function Home() {
 				<link rel='icon' href='/favicon.png' />
 			</Head>
 			<HomeHero />
+
 			<HomeAbout />
 			<HomeProjects />
 			<HomeBlog />
+
 			<Footer />
 		</>
 	);

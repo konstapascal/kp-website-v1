@@ -6,7 +6,7 @@ function Blog() {
 			<div className=' lg:max-w-4xl container text-center text-gray-100'>
 				<p className='font-semibold text-gray-100'>Check out my</p>
 
-				<h3 className='lg:text-5xl  inline-block text-4xl font-semibold text-green-400 uppercase'>
+				<h3 className='lg:text-5xl inline-block text-4xl font-semibold text-green-400 uppercase'>
 					Articles
 				</h3>
 
