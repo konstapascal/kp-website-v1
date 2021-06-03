@@ -34,7 +34,7 @@ const projects = [
 		urls: {
 			imgPath: '/img/the-wise-owl.jpg',
 			demoUrl: '',
-			codeUrl: ''
+			codeUrl: 'https://github.com/konstapascal/the-wise-owl'
 		},
 		labels: ['NEXT', 'TAILWIND']
 	}
