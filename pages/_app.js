@@ -1,35 +1,47 @@
 import '../styles/tailwind.css';
 import '../styles/globals.css';
-import Image from 'next/image';
-import fadeInElement from '../lib/fadeInElement';
-// import '../styles/nprogress.css';
 
 import { useEffect } from 'react';
+import Image from 'next/image';
+
+import fadeInElement from '../lib/fadeInElement';
 import fadeOutElement from '../lib/fadeOutElement';
+
+// import '../styles/nprogress.css';
 // import useProgressBar from '../lib/useProgressBar';
 
 function MyApp({ Component, pageProps }) {
-	useEffect(() => {
-		// useProgressBar();
-		const button = document.querySelector('#go-up');
+	// useEffect(() => {
+	// 	useProgressBar();
+	// }, []);
 
-		document.addEventListener('scroll', () => {
-			window.pageYOffset >= 500 ? fadeInElement(button) : fadeOutElement(button);
+	useEffect(() => {
+		const button = document.querySelector('#go-up');
+		const a = button.querySelector('#go-up-a');
+
+		const buttonEventListener = document.addEventListener('scroll', () => {
+			if (window.pageYOffset >= 500) {
+				fadeInElement(button);
+				a.classList.remove('pointer-events-none', 'cursor-default');
+			} else {
+				fadeOutElement(button);
+				a.classList.add('pointer-events-none', 'cursor-default');
+			}
 		});
+
+		return document.removeEventListener('scroll', buttonEventListener);
 	}, []);
 
 	return (
 		<>
-			<div
-				id='go-up'
-				className=' fixed bottom-0 right-0 z-50 p-6 transition-opacity duration-500 opacity-0'>
-				<a href='#' className=' flex'>
+			<div id='go-up' className=' fixed bottom-0 right-0 p-6 transition duration-500 opacity-0'>
+				<a id='go-up-a' href='#' className='flex cursor-default pointer-events-none'>
 					<Image href='#' src='/svg/arrow-circle-up-solid.svg' width={40} height={40} />
 				</a>
 			</div>
 
 			{/* TODO: DELETE THIS LATER */}
-			{/* <div className='text-md left-0-0 fixed bottom-0 z-50 p-4 font-bold text-center text-black'>
+			<div className='text-md left-0-0 fixed bottom-0 z-50 p-4 font-bold text-center text-black'>
 				<p className='sm:hidden px-1 bg-yellow-400 rounded'>XS (0px to 640px)</p>
 				<p className='sm:inline-block md:hidden hidden px-1 bg-yellow-400 rounded'>
 					SM (640px to 768px)
@@ -46,7 +58,7 @@ function MyApp({ Component, pageProps }) {
 				<span className='2xl:inline-block hidden px-1 bg-yellow-400 rounded'>
 					2XL (1536px+)
 				</span>
-			</div> */}
+			</div>
 			{/* TODO: DELETE THIS LATER */}
 			<Component {...pageProps} />
 		</>
