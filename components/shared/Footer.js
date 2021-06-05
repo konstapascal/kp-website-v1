@@ -5,16 +5,16 @@ function Footer() {
 				<p className='text-xl font-semibold text-gray-100'>
 					Find me on any of these platforms.{' '}
 				</p>
-				<div className=' flex justify-center gap-2 my-6'>
+				<div className=' flex justify-center my-6'>
 					<a
-						className='flex items-center'
+						className='flex items-center mr-1'
 						href='https://github.com/konstapascal'
 						target='_blank'
 						rel='noopener noreferrer'>
 						<img src='/kp-website-v1/svg/github-square-brands.svg' width={40} height={40} />
 					</a>
 					<a
-						className='flex items-center'
+						className='flex items-center ml-1'
 						href='https://duckduckgo.com/'
 						target='_blank'
 						rel='noopener noreferrer'>

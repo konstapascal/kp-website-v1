@@ -18,7 +18,7 @@ function Projects() {
 				</div>
 
 				{/* ---------- CARDS ---------- */}
-				<div className=' lg:gap-8 flex flex-col items-center gap-12'>
+				<div className=' flex flex-col items-center'>
 					{projects.map(project => (
 						<ProjectCard
 							key={project.id}

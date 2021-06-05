@@ -33,7 +33,7 @@ const projects = [
 			'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptas id in, cumque consectetur, molestiae eum labore nisi quisquam doloribus atque, minima aliquid. A quos ab nemo necessitatibus cupiditate quas.',
 		urls: {
 			imgPath: '/img/the-wise-owl.jpg',
-			demoUrl: '',
+			demoUrl: 'https://konstapascal.github.io/the-wise-owl/',
 			codeUrl: 'https://github.com/konstapascal/the-wise-owl'
 		},
 		labels: ['NEXT', 'TAILWIND']

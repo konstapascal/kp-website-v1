@@ -87,19 +87,19 @@ function Hero() {
 
 					{/* RESUME AND LINKS */}
 					<div
-						className=' lg:justify-start sm:flex-row sm:gap-10 flex flex-col-reverse items-center justify-center gap-8 transition-opacity duration-1000 opacity-0'
+						className=' lg:justify-start sm:flex-row flex flex-col-reverse items-center justify-center transition-opacity duration-1000 opacity-0'
 						id='links'>
 						<a
-							className='text-sm hover:scale-105 transform-gpu duration-200  lg:text-lg flex items-center px-4 py-2  font-semibold tracking-wider text-gray-100  border-2 border-green-400 rounded-[0.2rem]'
+							className='text-sm hover:scale-105 transform-gpu transition-transform duration-200 mt-8 sm:mt-0 sm:mr-5 lg:text-lg flex items-center px-4 py-2  font-semibold tracking-wider text-gray-100  border-2 border-green-400 rounded-[0.2rem]'
 							href='/files/kp-resume.pdf'
 							download>
 							<img src='/kp-website-v1/svg/file-download-solid.svg' width={20} height={20} />
 							<span className=' ml-2'>RESUME</span>
 						</a>
 
-						<div className=' flex items-center gap-2'>
+						<div className=' sm:ml-5 flex items-center'>
 							<a
-								className=' flex items-center'
+								className='flex items-center mr-1'
 								href='https://github.com/konstapascal'
 								target='_blank'
 								rel='noopener noreferrer'>
@@ -110,7 +110,7 @@ function Hero() {
 								/>
 							</a>
 							<a
-								className=' flex items-center'
+								className=' flex items-center ml-1'
 								href='https://duckduckgo.com/'
 								target='_blank'
 								rel='noopener noreferrer'>
