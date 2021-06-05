@@ -28,8 +28,8 @@ jobs:
       - name: Upload Artifacts 🔺 # The project is then uploaded as an artifact named 'site'.
         uses: actions/upload-artifact@v1
         with:
-          name: out
-          path: .
+          name: built-site
+          path: ./out
   
   deploy:
     needs: [build] # The second job must depend on the first one to complete before running, and uses ubuntu-latest instead of windows.
@@ -41,10 +41,10 @@ jobs:
       - name: Download Artifacts 🔻 # The built project is downloaded into the 'out' folder.
         uses: actions/download-artifact@v1
         with:
-          name: out
+          name: built-site
 
       - name: Deploy 🚀
         uses: JamesIves/github-pages-deploy-action@4.1.0
         with:
           branch: gh-pages # The branch the action should deploy to.
-          folder: 'out' # The folder the action should deploy.
+          folder: . # The folder the action should deploy.
