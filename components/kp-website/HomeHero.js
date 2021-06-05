@@ -78,7 +78,7 @@ function Hero() {
 
 					<p
 						id='description'
-						className='text-md md:text-lg lg:text-xl mt-6 mb-12 text-gray-100 transition-opacity duration-1000 opacity-0'>
+						className='text-md md:text-lg lg:text-xl lg:mt-6 lg:mb-12 mt-4 mb-8 text-gray-100 transition-opacity duration-1000 opacity-0'>
 						I am a new developer always excited to learn! Most interested in web development
 						with a passion for both the{' '}
 						<span className=' font-bold text-green-400'>frontend</span> and the{' '}

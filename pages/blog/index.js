@@ -19,7 +19,7 @@ function Blog({ filesMetadataArr }) {
 			</Head>
 			<BlogHero />
 
-			<section className=' bg-main-light lg:px-0 lg:py-32 px-4 py-24'>
+			<section className=' bg-main-light lg:px-0 lg:py-32 px-4 py-20'>
 				<div className=' lg:max-w-3xl container text-gray-100'>
 					{filesMetadataArr.map(file => {
 						return (

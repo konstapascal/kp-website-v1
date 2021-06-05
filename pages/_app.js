@@ -33,7 +33,9 @@ function MyApp({ Component, pageProps }) {
 
 	return (
 		<>
-			<div id='go-up' className=' fixed bottom-0 right-0 p-6 transition duration-500 opacity-0'>
+			<div
+				id='go-up'
+				className=' fixed bottom-0 right-0 z-50 p-6 transition duration-500 opacity-0'>
 				<a id='go-up-a' href='#' className='flex cursor-default pointer-events-none'>
 					<img
 						href='#'
