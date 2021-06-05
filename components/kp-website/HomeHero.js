@@ -93,7 +93,7 @@ function Hero() {
 							className='text-sm hover:scale-105 transform-gpu duration-200  lg:text-lg flex items-center px-4 py-2  font-semibold tracking-wider text-gray-100  border-2 border-green-400 rounded-[0.2rem]'
 							href='/files/kp-resume.pdf'
 							download>
-							<img src='/svg/file-download-solid.svg' width={20} height={20} />
+							<img src='/kp-website-v1/svg/file-download-solid.svg' width={20} height={20} />
 							<span className=' ml-2'>RESUME</span>
 						</a>
 
@@ -103,14 +103,18 @@ function Hero() {
 								href='https://github.com/konstapascal'
 								target='_blank'
 								rel='noopener noreferrer'>
-								<img src='/svg/github-square-brands.svg' width={40} height={40} />
+								<img
+									src='/kp-website-v1/svg/github-square-brands.svg'
+									width={40}
+									height={40}
+								/>
 							</a>
 							<a
 								className=' flex items-center'
 								href='https://duckduckgo.com/'
 								target='_blank'
 								rel='noopener noreferrer'>
-								<img src='/svg/linkedin-brands.svg' width={40} height={40} />
+								<img src='/kp-website-v1/svg/linkedin-brands.svg' width={40} height={40} />
 							</a>
 						</div>
 					</div>
@@ -121,7 +125,7 @@ function Hero() {
 					id='scroll-down-arrow'
 					className='lg:block bottom-2 absolute hidden transition-opacity duration-1000 opacity-0 cursor-pointer'>
 					<ScrollLink to='about-section' smooth={true} duration={1000}>
-						<img src='/svg/chevron-down-solid.svg' width={40} height={40} />
+						<img src='/kp-website-v1/svg/chevron-down-solid.svg' width={40} height={40} />
 					</ScrollLink>
 				</div>
 			</div>

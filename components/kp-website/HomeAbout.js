@@ -25,21 +25,41 @@ function About() {
 
 				<div className='flex justify-center'>
 					<div className=''>
-						<img src='/svg/html5-brands.svg' alt='HTML5 Logo' />
+						<img src='/kp-website-v1/svg/html5-brands.svg' alt='HTML5 Logo' />
 					</div>
 					<div className='mx-2'>
-						<img src='/svg/css3-alt-brands.svg' alt='CSS3 Logo' width={50} height={50} />
+						<img
+							src='/kp-website-v1/svg/css3-alt-brands.svg'
+							alt='CSS3 Logo'
+							width={50}
+							height={50}
+						/>
 					</div>
 					<div className=''>
-						<img src='/svg/js-square-brands.svg' alt='JS Logo' width={50} height={50} />
+						<img
+							src='/kp-website-v1/svg/js-square-brands.svg'
+							alt='JS Logo'
+							width={50}
+							height={50}
+						/>
 					</div>
 				</div>
 				<div className=' flex justify-center mt-2'>
 					<div className='mr-1'>
-						<img src='/svg/node-js-brands.svg' alt='Node Logo' width={50} height={50} />
+						<img
+							src='/kp-website-v1/svg/node-js-brands.svg'
+							alt='Node Logo'
+							width={50}
+							height={50}
+						/>
 					</div>
 					<div className='ml-1'>
-						<img src='/svg/react-brands.svg' alt='React Logo' width={50} height={50} />
+						<img
+							src='/kp-website-v1/svg/react-brands.svg'
+							alt='React Logo'
+							width={50}
+							height={50}
+						/>
 					</div>
 				</div>
 			</div>

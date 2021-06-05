@@ -20,7 +20,7 @@ const projects = [
 			'Statically generated website with Next JS, a flexile React framework. Tailwind CSS used as the primary styling library. Gray-matter used to work with the blog articles as files, converting them from Markdown to HTML format.',
 		urls: {
 			imgPath: '/img/kp-website.jpg',
-			demoUrl: '',
+			demoUrl: 'https://konstapascal.github.io/kp-website-v1/',
 			codeUrl: 'https://github.com/konstapascal/kp-website-v1'
 		},
 		labels: ['NEXT', 'TAILWIND', 'GRAY-MATTER']
