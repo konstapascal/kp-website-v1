@@ -1,5 +1,3 @@
-import Image from 'next/image';
-
 function Footer() {
 	return (
 		<footer className=' bg-main-dark pt-16 pb-20 border-t-2 border-green-400'>
@@ -13,14 +11,14 @@ function Footer() {
 						href='https://github.com/konstapascal'
 						target='_blank'
 						rel='noopener noreferrer'>
-						<Image src='/svg/github-square-brands.svg' width={40} height={40} />
+						<img src='/svg/github-square-brands.svg' width={40} height={40} />
 					</a>
 					<a
 						className='flex items-center'
 						href='https://duckduckgo.com/'
 						target='_blank'
 						rel='noopener noreferrer'>
-						<Image src='/svg/linkedin-brands.svg' href='#' width={40} height={40} />
+						<img src='/svg/linkedin-brands.svg' href='#' width={40} height={40} />
 					</a>
 				</div>
 

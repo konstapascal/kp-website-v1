@@ -2,7 +2,6 @@ import '../styles/tailwind.css';
 import '../styles/globals.css';
 
 import { useEffect } from 'react';
-import Image from 'next/image';
 
 import fadeInElement from '../lib/fadeInElement';
 import fadeOutElement from '../lib/fadeOutElement';
@@ -36,7 +35,7 @@ function MyApp({ Component, pageProps }) {
 		<>
 			<div id='go-up' className=' fixed bottom-0 right-0 p-6 transition duration-500 opacity-0'>
 				<a id='go-up-a' href='#' className='flex cursor-default pointer-events-none'>
-					<Image href='#' src='/svg/arrow-circle-up-solid.svg' width={40} height={40} />
+					<img href='#' src='/svg/arrow-circle-up-solid.svg' width={40} height={40} />
 				</a>
 			</div>
 
