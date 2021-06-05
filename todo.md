@@ -1,0 +1,4 @@
+-  remove the use of Image components
+-  temporary publish on Github Pages
+-  add Chestnut as a project
+-  write a couple blog articles
