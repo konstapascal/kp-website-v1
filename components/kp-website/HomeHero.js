@@ -62,7 +62,7 @@ function Hero() {
 
 				{/* ---------- HEADINGS, DESCRIPTION, LINKS ---------- */}
 				<div className=' lg:max-w-3xl lg:text-left top-1/4 container absolute px-4 text-center'>
-					<div className=' invisible duration-1000 opacity-0' id='heading'>
+					<div className=' invisible transition-opacity duration-1000 opacity-0' id='heading'>
 						<h1 className='lg:text-2xl text-xl font-semibold text-gray-100'>
 							Hello, this is..
 						</h1>
@@ -78,7 +78,7 @@ function Hero() {
 
 					<p
 						id='description'
-						className='text-md md:text-lg lg:text-xl lg:mt-6 lg:mb-12 invisible mt-4 mb-8 text-gray-100 duration-1000 opacity-0'>
+						className='text-md md:text-lg lg:text-xl lg:mt-6 lg:mb-12 invisible mt-4 mb-8 text-gray-100 transition-opacity duration-1000 opacity-0'>
 						I am a new developer always excited to learn! Most interested in web development
 						with a passion for both the{' '}
 						<span className=' font-bold text-green-400'>frontend</span> and the{' '}
@@ -87,7 +87,7 @@ function Hero() {
 
 					{/* RESUME AND LINKS */}
 					<div
-						className=' lg:justify-start sm:flex-row flex flex-col-reverse items-center justify-center invisible duration-1000 opacity-0'
+						className=' lg:justify-start sm:flex-row flex flex-col-reverse items-center justify-center invisible transition-opacity duration-1000 opacity-0'
 						id='links'>
 						<a
 							className='text-sm hover:scale-105 transform-gpu transition-transform duration-200 mt-8 sm:mt-0 sm:mr-5 lg:text-lg flex items-center px-4 py-2  font-semibold tracking-wider text-gray-100  border-2 border-green-400 rounded-[0.2rem]'
