@@ -12,8 +12,8 @@ function Hero() {
 				<p className=' lg:text-4xl text-3xl font-semibold text-green-400'>
 					Welcome to my blog!
 				</p>
-				<p className='lg:text-xl mt-2 text-lg text-gray-100'>
-					Here you can expect weekly articles on Javascript, tailored for both begginers and
+				<p className='lg:text-xl mt-4 text-lg text-gray-100'>
+					Here you can expect weekly articles on Javascript, aimed at both begginers and
 					advanced!
 				</p>
 			</div>

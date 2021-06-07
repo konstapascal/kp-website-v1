@@ -45,7 +45,7 @@ function ProjectCard({ title, subtitle, description, urls, labels }) {
 						<p className='hover:text-green-400 hover:underline ml-2 font-medium'>Demo</p>
 					</a>
 					<a
-						className=' flex items-center ml-8'
+						className=' flex items-center ml-6'
 						href={`${urls.codeUrl}`}
 						target='_blank'
 						rel='noopener noreferrer'>

@@ -30,7 +30,7 @@ const projects = [
 		title: 'The Wise Owl',
 		subtitle: 'Famous and inspirational quote generator',
 		description:
-			'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptas id in, cumque consectetur, molestiae eum labore nisi quisquam doloribus atque, minima aliquid. A quos ab nemo necessitatibus cupiditate quas.',
+			'Simple application in which you can generate and save your favorite quotes. Made with Next JS and styled eentirely with Tailwind CSS. Works by making use of the browsers local storage.',
 		urls: {
 			imgPath: '/img/the-wise-owl.jpg',
 			demoUrl: 'https://konstapascal.github.io/the-wise-owl/',

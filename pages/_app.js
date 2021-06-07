@@ -21,10 +21,14 @@ function MyApp({ Component, pageProps }) {
 		const buttonEventListener = document.addEventListener('scroll', () => {
 			if (window.pageYOffset >= 500) {
 				fadeInElement(button);
-				a.classList.remove('pointer-events-none', 'cursor-default');
+				if (a.classList.contains('pointer-events-none')) {
+					a.classList.remove('pointer-events-none', 'cursor-default');
+				}
 			} else {
 				fadeOutElement(button);
-				a.classList.add('pointer-events-none', 'cursor-default');
+				if (!a.classList.contains('pointer-events-none')) {
+					a.classList.add('pointer-events-none', 'cursor-default');
+				}
 			}
 		});
 
