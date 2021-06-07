@@ -41,12 +41,7 @@ function MyApp({ Component, pageProps }) {
 				id='go-up'
 				className=' fixed bottom-0 right-0 z-50 p-6 transition duration-500 opacity-0'>
 				<a id='go-up-a' href='#' className='flex cursor-default pointer-events-none'>
-					<img
-						href='#'
-						src='/kp-website-v1/svg/arrow-circle-up-solid.svg'
-						width={40}
-						height={40}
-					/>
+					<img href='#' src='/svg/arrow-circle-up-solid.svg' width={40} height={40} />
 				</a>
 			</div>
 

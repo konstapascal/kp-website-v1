@@ -37,11 +37,7 @@ function ProjectCard({ title, subtitle, description, urls, labels }) {
 						href={`${urls.demoUrl}`}
 						target='_blank'
 						rel='noopener noreferrer'>
-						<img
-							src='/kp-website-v1/svg/external-link-square-alt-solid.svg'
-							width={35}
-							height={35}
-						/>
+						<img src='/svg/external-link-square-alt-solid.svg' width={35} height={35} />
 						<p className='hover:text-green-400 hover:underline ml-2 font-medium'>Demo</p>
 					</a>
 					<a
@@ -49,7 +45,7 @@ function ProjectCard({ title, subtitle, description, urls, labels }) {
 						href={`${urls.codeUrl}`}
 						target='_blank'
 						rel='noopener noreferrer'>
-						<img src='/kp-website-v1/svg/github-square-brands.svg' width={35} height={35} />
+						<img src='/svg/github-square-brands.svg' width={35} height={35} />
 						<p className='hover:text-green-400 hover:underline ml-2 font-medium'>
 							Source Code
 						</p>
