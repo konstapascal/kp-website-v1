@@ -6,6 +6,7 @@ import Link from 'next/link';
 
 import { readdir } from 'fs/promises';
 import path from 'path';
+import { platform } from 'os';
 
 import { read } from 'gray-matter';
 import Footer from '../../components/shared/Footer';
@@ -54,8 +55,9 @@ export async function getStaticProps() {
 
 	const tempArr = [];
 
+	const os = platform();
 	posts.forEach(post => {
-		const postMetadata = read(`${postsDirectory}\\${post}`);
+		const postMetadata = read(`${postsDirectory}${os === 'win32' ? '\\' : '/'}${post}`);
 		tempArr.push(postMetadata);
 	});
 
@@ -63,7 +65,7 @@ export async function getStaticProps() {
 		.map(post => {
 			return { ...post.data };
 		})
-		// sort by dat
+		// sort by date
 		.sort((a, b) => {
 			return new Date(b.date) - new Date(a.date);
 		});
