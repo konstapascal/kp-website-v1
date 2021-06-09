@@ -33,7 +33,7 @@ const projects = [
 			'Simple application in which you can generate and save your favorite quotes. Made with Next JS and styled eentirely with Tailwind CSS. Works by making use of the browsers local storage.',
 		urls: {
 			imgPath: '/img/the-wise-owl.jpg',
-			demoUrl: 'https://vercel.com/konstapascal/the-wise-owl',
+			demoUrl: 'https://the-wise-owl.vercel.app',
 			codeUrl: 'https://github.com/konstapascal/the-wise-owl'
 		},
 		labels: ['NEXT', 'TAILWIND']
