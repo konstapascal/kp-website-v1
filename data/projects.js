@@ -7,7 +7,7 @@ const projects = [
 			'Calculator made with simplicity in mind. Made purely in vanilla JS and without the use of any third party libraries. Flex and grid layout model have been used primarily for achieving the design.',
 		urls: {
 			imgPath: '/img/js-calculator.jpg',
-			demoUrl: 'https://konstapascal.github.io/js-calculator/',
+			demoUrl: 'https://js-calculator-kp.vercel.app',
 			codeUrl: 'https://github.com/konstapascal/js-calculator'
 		},
 		labels: ['HTML', 'CSS', 'JS']
@@ -33,7 +33,7 @@ const projects = [
 			'Simple application in which you can generate and save your favorite quotes. Made with Next JS and styled eentirely with Tailwind CSS. Works by making use of the browsers local storage.',
 		urls: {
 			imgPath: '/img/the-wise-owl.jpg',
-			demoUrl: 'https://konstapascal.github.io/the-wise-owl/',
+			demoUrl: 'https://vercel.com/konstapascal/the-wise-owl',
 			codeUrl: 'https://github.com/konstapascal/the-wise-owl'
 		},
 		labels: ['NEXT', 'TAILWIND']
