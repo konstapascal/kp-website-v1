@@ -1,5 +1,6 @@
 import '../styles/tailwind.css';
 import '../styles/globals.css';
+import '../styles/prism-syntax-theme.css';
 
 import { useEffect } from 'react';
 

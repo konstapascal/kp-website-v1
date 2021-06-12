@@ -14,11 +14,20 @@ import makeAnchorsOpenNewTab from '../../lib/makeAnchorsOpenNewTab';
 import Footer from '../../components/shared/Footer';
 import ArticleProgressBar from '../../components/shared/ArticleProgressBar';
 
+import prism from 'prismjs';
+
 function Post({ postData, postContent }) {
+	// make all a tags open new tab
 	useEffect(() => {
 		makeAnchorsOpenNewTab('#article-content');
 	}, []);
 
+	// syntax highlight all pre code blocks
+	useEffect(() => {
+		prism.highlightAll();
+	}, []);
+
+	// event listener update progress bar at the top
 	useEffect(() => {
 		const bar = document.querySelector('#progressbar');
 
@@ -45,7 +54,12 @@ function Post({ postData, postContent }) {
 			<ArticleProgressBar />
 
 			<BlogArticleHero
-				articleDetails={{ title: postData.title, author: postData.author, date: postData.date }}
+				articleDetails={{
+					title: postData.title,
+					author: postData.author,
+					date: postData.date,
+					labels: postData.labels
+				}}
 			/>
 
 			<section className=' bg-main-light lg:px-0 lg:pt-20 lg:pb-32 px-4 pt-16 pb-24'>

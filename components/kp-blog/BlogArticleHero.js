@@ -1,7 +1,8 @@
 import Button from '../shared/Button';
 import Logo from '../shared/Logo';
+import Label from '../shared/Label';
 
-function ArticleHero({ articleDetails: { title, author, date } }) {
+function ArticleHero({ articleDetails: { title, author, date, labels } }) {
 	return (
 		<section id='blog-section' className='bg-main-dark border-b-2 border-green-400'>
 			<nav className=' lg:px-8 lg:pt-8 md:px-6 md:pt-6 flex items-center justify-between px-4 pt-4'>
@@ -17,6 +18,16 @@ function ArticleHero({ articleDetails: { title, author, date } }) {
 					</span>{' '}
 					on <span>{new Date(date).toUTCString().slice(5, 16)}</span>
 				</p>
+				<div className='mt-4'>
+					{labels.map(label => {
+						return (
+							<Label
+								key={`${label}-` + Math.floor(Math.random() * 1000) + 1}
+								content={label}
+							/>
+						);
+					})}
+				</div>
 			</div>
 		</section>
 	);

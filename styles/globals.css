@@ -2,9 +2,10 @@
 	display: none;
 }
 
+/* overwriting some default prismjs syntax styles */
 .prose pre {
-	background-color: #1e1f1c;
-	border: 1px solid #34d399;
+	background-color: #1e1f1c !important;
+	font-size: 1rem !important;
 }
 
 .prose a {
@@ -13,15 +14,18 @@
 
 .prose a {
 	color: #34d399;
+}
+
+.prose strong,
+.prose blockquote {
+	color: #f3f4f6;
 }
 
 .prose h1,
 .prose h2,
 .prose h3,
-.prose h4,
-.prose strong,
-.prose blockquote {
-	color: #f3f4f6;
+.prose h4 {
+	color: #34d399;
 }
 
 .prose code,

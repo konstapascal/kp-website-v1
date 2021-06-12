@@ -9,8 +9,6 @@ url: 'example-md-file'
 
 Paragraphs are separated by a blank line.
 
-[DDG](http://www.duckduckgo.com)
-
 2nd paragraph. _Italic_, **bold**, and `monospace`. Itemized lists
 look like:
 
