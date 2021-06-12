@@ -51,7 +51,7 @@ function Hero() {
 				{/* ---------- BACKGROUND WATERMARK ---------- */}
 				<div
 					id='watermark'
-					className=' text-main-light transform -rotate-12 lg:rotate-0 whitespace-nowrap top-[27.5%] sm:top-[25%] md:top-[22.5%] absolute text-8xl sm:text-9xl md:text-[10rem] font-extrabold lg:top-[20%] lg:text-[15rem] text-center opacity-50 select-none'>
+					className=' text-main-light transform -rotate-12 lg:rotate-0 whitespace-nowrap top-[27.5%] sm:top-[25%] md:top-[22.5%] absolute text-8xl  sm:text-9xl md:text-[10rem] font-extrabold lg:top-[19%] lg:text-[16rem] text-center opacity-50 select-none'>
 					<WindupChildren>
 						<Pace ms={25}>
 							<p>FULL STACK</p>
@@ -66,11 +66,11 @@ function Hero() {
 						<h1 className='lg:text-2xl text-xl font-semibold text-gray-100'>
 							Hello, this is..
 						</h1>
-						<p className='lg:text-5xl text-4xl font-semibold text-green-400'>
+						<p className='lg:text-6xl text-5xl font-semibold text-green-400'>
 							Konstantinos Pasca
 							<span
 								id='blinking-letter'
-								className='lg:text-5xl text-4xl font-semibold text-green-400 duration-75 opacity-0'>
+								className='lg:text-6xl text-5xl font-semibold text-green-400 duration-75 opacity-0'>
 								l
 							</span>
 						</p>
@@ -78,7 +78,7 @@ function Hero() {
 
 					<p
 						id='description'
-						className='text-md md:text-lg lg:text-xl lg:mt-6 lg:mb-12 invisible mt-4 mb-8 text-gray-100 transition-opacity duration-1000 opacity-0'>
+						className='md:text-xl lg:text-xl lg:mt-6 lg:mb-12 invisible mt-4 mb-8 text-lg text-gray-100 transition-opacity duration-1000 opacity-0'>
 						I am a new developer always excited to learn! Most interested in web development
 						with a passion for both the{' '}
 						<span className=' font-bold text-green-400'>frontend</span> and the{' '}
@@ -90,7 +90,7 @@ function Hero() {
 						className=' lg:justify-start sm:flex-row flex flex-col-reverse items-center justify-center invisible transition-opacity duration-1000 opacity-0'
 						id='links'>
 						<a
-							className='text-sm hover:scale-105 transform-gpu transition-transform duration-200 mt-8 sm:mt-0 sm:mr-5 lg:text-lg flex items-center px-4 py-2  font-semibold tracking-wider text-gray-100  border-2 border-green-400 rounded-[0.2rem]'
+							className='text-md hover:scale-105 transform-gpu transition-transform duration-200 mt-8 sm:mt-0 sm:mr-5 lg:text-lg flex items-center px-4 py-2  font-semibold tracking-wider text-gray-100  border-2 border-green-400 rounded-[0.2rem]'
 							href='/files/kp-resume.pdf'
 							download>
 							<img src='/svg/file-download-solid.svg' width={20} height={20} />
@@ -99,14 +99,14 @@ function Hero() {
 
 						<div className=' sm:ml-5 flex items-center'>
 							<a
-								className='flex items-center mr-1'
+								className=' transform-gpu hover:scale-110 flex items-center mr-1 transition-transform duration-200'
 								href='https://github.com/konstapascal'
 								target='_blank'
 								rel='noopener noreferrer'>
 								<img src='/svg/github-square-brands.svg' width={40} height={40} />
 							</a>
 							<a
-								className=' flex items-center ml-1'
+								className=' transform-gpu hover:scale-110 flex items-center ml-1 transition-transform duration-200'
 								href='https://duckduckgo.com/'
 								target='_blank'
 								rel='noopener noreferrer'>
@@ -119,9 +119,14 @@ function Hero() {
 				{/* ---------- SCROLL DOWN ARROW ---------- */}
 				<div
 					id='scroll-down-arrow'
-					className='lg:block bottom-2 absolute hidden transition-opacity duration-1000 opacity-0 cursor-pointer'>
+					className='lg:block bottom-4 absolute hidden transition-opacity duration-1000 opacity-0 cursor-pointer'>
 					<ScrollLink to='about-section' smooth={true} duration={1000}>
-						<img src='/svg/chevron-down-solid.svg' width={40} height={40} />
+						<img
+							className='transform-gpu hover:scale-125 transition-transform duration-200'
+							src='/svg/chevron-down-solid.svg'
+							width={40}
+							height={40}
+						/>
 					</ScrollLink>
 				</div>
 			</div>

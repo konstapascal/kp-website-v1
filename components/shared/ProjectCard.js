@@ -33,22 +33,30 @@ function ProjectCard({ title, subtitle, description, urls, labels }) {
 
 				<div className=' flex items-center justify-start'>
 					<a
-						className=' flex items-center'
+						className=' hover:text-green-400 group flex items-center'
 						href={`${urls.demoUrl}`}
 						target='_blank'
 						rel='noopener noreferrer'>
-						<img src='/svg/external-link-square-alt-solid.svg' width={35} height={35} />
-						<p className='hover:text-green-400 hover:underline ml-2 font-medium'>Demo</p>
+						<img
+							className='transform-gpu group-hover:scale-110 transition-transform duration-200'
+							src='/svg/external-link-square-alt-solid.svg'
+							width={35}
+							height={35}
+						/>
+						<p className=' ml-2 font-medium'>Demo</p>
 					</a>
 					<a
-						className=' flex items-center ml-6'
+						className='hover:text-green-400 group flex items-center ml-6'
 						href={`${urls.codeUrl}`}
 						target='_blank'
 						rel='noopener noreferrer'>
-						<img src='/svg/github-square-brands.svg' width={35} height={35} />
-						<p className='hover:text-green-400 hover:underline ml-2 font-medium'>
-							Source Code
-						</p>
+						<img
+							className='transform-gpu group-hover:scale-110 transition-transform duration-200'
+							src='/svg/github-square-brands.svg'
+							width={35}
+							height={35}
+						/>
+						<p className=' ml-2 font-medium'>Source Code</p>
 					</a>
 				</div>
 			</div>

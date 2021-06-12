@@ -18,9 +18,10 @@ function Blog({ filesMetadataArr }) {
 				<title>kp-blog</title>
 				<link rel='icon' href='/favicon.png' />
 			</Head>
+
 			<BlogHero />
 
-			<section className=' bg-main-light lg:px-0 lg:py-32 px-4 py-20'>
+			<section className=' bg-main-light lg:px-0 lg:pt-24 lg:pb-32 px-4 pt-20 pb-24'>
 				<div className=' lg:max-w-3xl container text-gray-100'>
 					{filesMetadataArr.map(file => {
 						return (

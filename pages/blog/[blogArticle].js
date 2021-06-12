@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react';
 import Head from 'next/head';
-import BlogHero from '../../components/kp-blog/BlogHero';
+import BlogArticleHero from '../../components/kp-blog/BlogArticleHero';
 import Link from 'next/link';
 
 import { readdir } from 'fs/promises';
@@ -42,21 +42,15 @@ function Post({ postData, postContent }) {
 				<title>kp-blog</title>
 				<link rel='icon' href='/favicon.png' />
 			</Head>
-
 			<ArticleProgressBar />
-			<BlogHero />
-			<section className=' bg-main-light lg:px-0 lg:py-32 px-4 py-24'>
-				<div className=' container max-w-3xl'>
-					<p className=' lg:text-4xl text-3xl font-semibold text-gray-100'>{postData.title}</p>
 
-					<p className=' mt-2 text-gray-400'>
-						by{' '}
-						<span className='hover:underline font-semibold text-green-400 cursor-pointer'>
-							{postData.author}
-						</span>{' '}
-						on <span>{new Date(postData.date).toUTCString().slice(5, 16)}</span>
-					</p>
-					<div id='article-content' className='max-w-3xl mt-10 prose prose-lg text-gray-100'>
+			<BlogArticleHero
+				articleDetails={{ title: postData.title, author: postData.author, date: postData.date }}
+			/>
+
+			<section className=' bg-main-light lg:px-0 lg:pt-20 lg:pb-32 px-4 pt-16 pb-24'>
+				<div className=' container max-w-3xl'>
+					<div id='article-content' className='max-w-3xl prose prose-lg text-gray-100'>
 						<MDXRemote {...postContent} />
 					</div>
 					<div className=' mt-16 text-center'>
@@ -73,18 +67,22 @@ function Post({ postData, postContent }) {
 		</>
 	);
 }
+
 export async function getStaticPaths() {
 	const postsDirectory = join(process.cwd(), 'data/blog_posts_data');
 	const filenames = await readdir(postsDirectory);
 	const urls = filenames.map(filename => filename.replace('.md', ''));
+
 	const urlsArr = urls.map(url => {
 		return { params: { blogArticle: url } };
 	});
+
 	return {
 		paths: urlsArr,
 		fallback: false
 	};
 }
+
 export async function getStaticProps({ params }) {
 	const postsDirectory = join(process.cwd(), 'data/blog_posts_data');
 	const filePath = join(postsDirectory, params.blogArticle + '.md');
@@ -99,4 +97,5 @@ export async function getStaticProps({ params }) {
 		}
 	};
 }
+
 export default Post;
