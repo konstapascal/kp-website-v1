@@ -2,6 +2,8 @@ import Label from '../shared/Label';
 
 import Link from 'next/link';
 
+import formatDate from '../../lib/formatDate';
+
 function BlogPost({ title, excerpt, date, author, labels, url }) {
 	return (
 		<div className=' first:mt-0 last:mb-0 my-14'>
@@ -16,7 +18,7 @@ function BlogPost({ title, excerpt, date, author, labels, url }) {
 				<span className='hover:underline font-semibold text-green-400 cursor-pointer'>
 					{author}
 				</span>{' '}
-				on <span>{date}</span>
+				on <span>{formatDate(date)}</span>
 			</p>
 			<Link href={`/blog/${url}`}>
 				<p className='text-md lg:text-lg mt-4 text-gray-100 cursor-pointer'>{excerpt}</p>

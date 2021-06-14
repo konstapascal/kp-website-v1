@@ -1,6 +1,7 @@
 import Button from '../shared/Button';
 import Logo from '../shared/Logo';
 import Label from '../shared/Label';
+import formatDate from '../../lib/formatDate';
 
 function ArticleHero({ articleDetails: { title, author, date, labels } }) {
 	return (
@@ -16,7 +17,7 @@ function ArticleHero({ articleDetails: { title, author, date, labels } }) {
 					<span className='hover:underline font-semibold text-green-400 cursor-pointer'>
 						{author}
 					</span>{' '}
-					on <span>{new Date(date).toUTCString().slice(5, 16)}</span>
+					on <span>{formatDate(date)}</span>
 				</p>
 				<div className='mt-4'>
 					{labels.map(label => {

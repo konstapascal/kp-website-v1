@@ -23,7 +23,8 @@ function Footer() {
 				</div>
 
 				<p className='text-base font-semibold text-gray-400'>
-					Made by <span className='font-semibold text-green-400'>Konstantinos Pascal</span>
+					Made by <span className='font-semibold text-green-400'>Konstantinos Pascal</span> -{' '}
+					{new Date().getFullYear()}
 				</p>
 			</div>
 		</footer>

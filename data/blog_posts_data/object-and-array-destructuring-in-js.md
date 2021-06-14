@@ -24,7 +24,7 @@ const obj = { firstName: 'John', lastName: 'Doe', age: 25 };
 
 ### Traditional assignment
 
-One way to assign its values to variables, is by accessing them by their index like so:
+One way to assign its values to variables, is by accessing them by their index in arrays, or with the dot notation for objects like so:
 
 ```javascript
 const first = arr[0]; // 10
@@ -44,7 +44,7 @@ Array and object destructuring assignments solve this by decresing the amount of
 
 ```javascript
 const [first, second, third, fourth] = [10, 20, 30, 40];
-console.log(first, second, thirds, fourth); // 10 20 30 40
+console.log(first, second, third, fourth); // 10 20 30 40
 
 const { firstName, lastName, age } = { firstName: 'John', lastName: 'Doe', age: 25 };
 console.log(firstName, lastName, age); // "John" "Doe" 25
@@ -87,8 +87,9 @@ The rest operator can also be used to, as the name suggests, assign the rest of 
 ```javascript
 const [first, second, ...rest] = [10, 20, 30, 40];
 
-console.log(a, b); // 10 20
-console.log(rest); // [30, 40, 50]
+console.log(first, second); // 10 20
+console.log(rest); // [30, 40]
+console.log(...rest); // 30 40
 ```
 
 The rest operator behaves the same way for objects as well.
@@ -101,7 +102,7 @@ Destructuring of nested objects is also possible. Take the following object:
 const personObj = {
 	firstName: 'John',
 	lastName: 'Doe',
-	facts: {
+	favorites: {
 		favoriteFood: 'Pizza',
 		favoriteLanguage: 'Javascript'
 	}
@@ -109,7 +110,7 @@ const personObj = {
 
 const {
 	firstName: newFirstName, // variable name change
-	facts: { favoriteFood, favoriteLanguage }
+	favorites: { favoriteFood, favoriteLanguage }
 } = personObj;
 
 console.log(newFirstName); // "John"
