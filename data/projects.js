@@ -17,7 +17,7 @@ const projects = [
 		title: 'URL Shortener',
 		subtitle: 'Handy URL shortener for long links',
 		description:
-			'Simple URL shortener application created with the Create React App template, styled with Tailwind. Extremely useful for both shortening URLs and having them personalized to my own domain. Generated links are stored locally.',
+			'Simple URL shortener application created with the Create React App template, styled with Tailwind. Extremely useful for both shortening URLs and having them personalized to my own domain.',
 		urls: {
 			imgPath: '/img/url-shortener.jpg',
 			demoUrl: 'https://sh.konstapascal.dev',
