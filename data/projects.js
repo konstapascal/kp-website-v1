@@ -1,6 +1,6 @@
 const projects = [
 	{
-		id: 2,
+		id: 1,
 		title: 'JS Calculator',
 		subtitle: 'Calculator made in pure JS',
 		description:
@@ -13,17 +13,17 @@ const projects = [
 		labels: ['HTML', 'CSS', 'JS']
 	},
 	{
-		id: 1,
-		title: 'KP Website',
-		subtitle: 'My personal website and blog',
+		id: 2,
+		title: 'URL Shortener',
+		subtitle: 'Handy URL shortener for long links',
 		description:
-			'Statically generated website with Next JS, a flexile React framework. Tailwind CSS used as the primary styling library. Gray-matter used to work with the blog articles as files, converting them from Markdown to HTML format.',
+			'Simple URL shortener application created with the Create React App template, styled with Tailwind. Extremely useful for both shortening URLs and having them personalized to my own domain. Generated links are stored locally.',
 		urls: {
-			imgPath: '/img/kp-website.jpg',
-			demoUrl: 'https://konstapascal.dev',
-			codeUrl: 'https://github.com/konstapascal/kp-website-v1'
+			imgPath: '/img/url-shortener.jpg',
+			demoUrl: 'https://sh.konstapascal.dev',
+			codeUrl: 'https://github.com/konstapascal/url-shortener'
 		},
-		labels: ['NEXT', 'TAILWIND', 'GRAY-MATTER']
+		labels: ['REACT', 'CRA', 'TAILWIND']
 	},
 	{
 		id: 3,
