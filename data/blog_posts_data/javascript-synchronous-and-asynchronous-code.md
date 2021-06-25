@@ -1,6 +1,6 @@
 ---
 title: Javascript Synchronous and Asynchronous Code
-excerpt: Asynchronous code and promises, whether they be Promises or when using async/await, are topics you will eventually encounter when learning Javascript. It is a very confusing topic and difficult to grasp at first, especially when not having background with other programming languages.
+excerpt: Asynchronous code is something you will eventually encounter when learning Javascript. It is a very confusing topic and difficult to grasp at first, especially when not having background with other programming languages. It leads to unexpected behavious and sometimes bugs in your code. Let's look at it!
 date: '2021-06-25' # ISO Format
 author: Konstantinos Pascal
 labels: ['JAVASCRIPT', 'ES6', 'PROMISE']
