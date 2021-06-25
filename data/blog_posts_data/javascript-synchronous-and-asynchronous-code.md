@@ -1,6 +1,6 @@
 ---
 title: Javascript Synchronous and Asynchronous Code
-excerpt: Asynchronous code is something you will eventually encounter when learning Javascript. It is a very confusing topic and difficult to grasp at first, especially when not having background with other programming languages. It leads to unexpected behavious and sometimes bugs in your code. Let's look at it!
+excerpt: Asynchronous code is something you will eventually encounter when learning Javascript. It is a very confusing topic and difficult to grasp at first, especially when not having background with other programming languages.
 date: '2021-06-25' # ISO Format
 author: Konstantinos Pascal
 labels: ['JAVASCRIPT', 'ES6', 'PROMISE']
@@ -37,17 +37,17 @@ console.log('script end');
 
 The logs to the console appear in the order we expect them too, synchronously, it is very straight forward.
 
-Async code is not as straightforward thoough, this is what we will be looking at next.
+Asynchronous code is not as straightforward thoough, this is what we will be looking at next.
 
 ## Asynchronous code
 
-Examples of asynchronous code in Javascript are the callback functions provided to `setTimeout()`, `setInterval()` or `addEventListener()`.
+Examples of asynchronous code in Javascript are functions such as `setTimeout()`, `setInterval()` or `addEventListener()`.
 
-Asynchronous code is code that, will usually take some amount of time to finish, some time that we are not able to predict beforehand. The same asynchronous code operation may take 1s, 1.5s or 3s when ran multiple times.
+Asynchronous code is code that, will usually take some amount of time to finish, some time that we are not able to predict beforehand. The same asynchronous code operation may take 1s, 3s or 20s when ran multiple times, especially in the case of event handlers.
 
-Since Javascript is a single-threaded programming language, that means that it only has one thread of execution. Asynchronous operations would lead to the blocking of this thread. If the main thread of execution in the browser is blocked, the whole page becomes unresponsive.
+Since Javascript is a single-threaded programming language, that means that it only has one thread of execution. Asynchronous operations would lead to the complete blockage of this thread. If the main thread of execution in the browser is blocked, the whole page becomes unresponsive as nothing else is allowed to execute.
 
-Because of its nature, Javascript is not equipped to deal with asynchronous code. The environment in which the Javascript runs, such as the browser for example, will help with running this code, and hand back the result once it is done. This is precisely what happens with `setTimeout()` for example.
+Because of this, Javascript is not equipped to deal with asynchronous code. The environment in which the Javascript runs, such as the browser for example, will help with running this code, and hand back the result once it is done. This is precisely what happens with `setTimeout()` for example.
 
 Let's look at the following code:
 
@@ -70,7 +70,7 @@ console.log('script end');
 // inside timeout
 ```
 
-The resulting output might be expected to you, but what if we change the second `setTimout()` argument to 0:
+The resulting output might be expected to you, but what if we change the second `setTimeout()` argument to 0:
 
 ```javascript
 console.log('script start');
@@ -95,7 +95,7 @@ We get the exact same result despite setting no delay for the execution of the c
 
 That is because, as explained earlier, the execution of the function is passed to the environment that the JS is running in. After the delay has passed, the browser will create a task containing the callback and push it to the task queue. From here, it waits for the event loop to pick it up and place it on the call stack.
 
-The event loop within the JS engine is responsible for picking what gets to run next. The event loop will pick the next task that has been queued only after the call stack is empty.
+The event loop within the JS engine is responsible for picking what gets to run next. The event loop will pick the next task that has been queued only after the call stack is empty. In our case, the call stack does not empty until everything has been executed, and we return from every function, including the global execution context.
 
 This means that, `setTimeout` does not actually execute after a delay of 0 ms, but rather after a minimum of time provided as the argument.
 
