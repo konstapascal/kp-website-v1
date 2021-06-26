@@ -3,7 +3,7 @@ title: Javascript Synchronous and Asynchronous Code
 excerpt: Asynchronous code is something you will eventually encounter when learning Javascript. It is a very confusing topic and difficult to grasp at first, especially when not having background with other programming languages.
 date: '2021-06-25' # ISO Format
 author: Konstantinos Pascal
-labels: ['JAVASCRIPT', 'ES6', 'PROMISE']
+labels: ['JAVASCRIPT', 'ES6']
 url: 'javascript-synchronous-and-asynchronous-code'
 ---
 
