@@ -97,10 +97,10 @@ That is because, as explained earlier, the execution of the function is passed t
 
 The event loop within the JS engine is responsible for picking what gets to run next. The event loop will pick the next task that has been queued only after the call stack is empty. In our case, the call stack does not empty until everything has been executed, and we return from every function, including the global execution context.
 
-This means that, `setTimeout` does not actually execute after a delay of 0 ms, but rather after a minimum of time provided as the argument.
+This means that, `setTimeout` does not actually execute after a delay of n ms, but rather as soon as it is able too, after atleast n ms, as provided by the second argument. Knowing this, It is important to not write blocking synchronous code that may take a long time to execute and lead to great delays in the execution of asynchronous callbacks and handlers.
 
 ## Conclusion
 
-In conclusion, we have learned what synchronous and asynchronous code is, how it behaves within the context of the browser, and code executes in the order it does.
+In conclusion, we have learned what synchronous and asynchronous code is, how it behaves within the context of the browser, and why the code executes in the order that it does.
 
-Asynchronous code will always execute after the call stack is empty, at the very minimum, so while not always obvious from the code, you can still predict where that is by looking and thinking about the order of execution.
+Asynchronous code will always execute after the call stack is empty, at the very minimum, so while not always obvious from the code, you can still predict the result of that by looking closely at the code.
