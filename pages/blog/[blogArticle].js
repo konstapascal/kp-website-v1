@@ -42,7 +42,7 @@ function Post({ postData, postContent }) {
 
 		const progressEventListener = document.addEventListener('scroll', setProgressBarWidth);
 
-		return document.removeEventListener('scroll', progressEventListener);
+		return () => document.removeEventListener('scroll', progressEventListener);
 	}, []);
 
 	return (
