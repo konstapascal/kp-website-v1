@@ -7,11 +7,10 @@ function ProjectCard({ title, subtitle, description, urls, labels }) {
 				src={`${urls.imgPath}`}
 				width={500}
 				height={250}
-				quality={100}
 				className=' flex-1 object-cover object-center'
 			/>
 
-			<div className=' lg:px-12 lg:py-10 flex-1 max-w-3xl px-10 py-8'>
+			<div className=' lg:px-12 lg:py-10 md:px-10 md:py-8 flex-1 max-w-3xl px-6 py-4'>
 				<div className='xl:flex-row flex flex-col justify-between'>
 					<div>
 						<h1 className=' inline-block text-3xl text-green-400'>{title}</h1>
