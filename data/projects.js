@@ -7,10 +7,23 @@ const projects = [
 			'Calculator made with simplicity in mind. Made purely in vanilla JS and without the use of any third party libraries. Flex and grid layout model have been used primarily for achieving the design.',
 		urls: {
 			imgPath: '/img/js-calculator.jpg',
-			demoUrl: 'https://js-calculator-kp.vercel.app',
+			demoUrl: 'https://calc.konstapascal.dev',
 			codeUrl: 'https://github.com/konstapascal/js-calculator'
 		},
 		labels: ['HTML', 'CSS', 'JS']
+	},
+	{
+		id: 3,
+		title: 'The Wise Owl',
+		subtitle: 'Famous and inspirational quote generator',
+		description:
+			'Simple application in which you can generate and save your favorite quotes. Made with Next JS and styled eentirely with Tailwind CSS. Works by making use of the browsers local storage.',
+		urls: {
+			imgPath: '/img/the-wise-owl.jpg',
+			demoUrl: 'https://owl.konstapascal.dev',
+			codeUrl: 'https://github.com/konstapascal/the-wise-owl'
+		},
+		labels: ['NEXT', 'TAILWIND']
 	},
 	{
 		id: 2,
@@ -24,19 +37,6 @@ const projects = [
 			codeUrl: 'https://github.com/konstapascal/url-shortener'
 		},
 		labels: ['REACT', 'CRA', 'TAILWIND']
-	},
-	{
-		id: 3,
-		title: 'The Wise Owl',
-		subtitle: 'Famous and inspirational quote generator',
-		description:
-			'Simple application in which you can generate and save your favorite quotes. Made with Next JS and styled eentirely with Tailwind CSS. Works by making use of the browsers local storage.',
-		urls: {
-			imgPath: '/img/the-wise-owl.jpg',
-			demoUrl: 'https://the-wise-owl.vercel.app',
-			codeUrl: 'https://github.com/konstapascal/the-wise-owl'
-		},
-		labels: ['NEXT', 'TAILWIND']
 	}
 ];
 
