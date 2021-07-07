@@ -11,9 +11,8 @@ function Projects() {
 					<p className='inline-block  text-4xl lg:text-5xl font-semibold text-green-400 uppercase rounded-[0.2rem]'>
 						Projects
 					</p>
-					<p className=' text-md md:text-lg lg:text-xl mt-8 mb-12 text-gray-100'>
-						In addition to this website and my blog where I am writing weekly articles, I have
-						also made the following projects.
+					<p className=' text-md md:text-lg lg:text-xl mt-8 mb-16 text-gray-100'>
+						Examples of some of the projects I have worked on:
 					</p>
 				</div>
 

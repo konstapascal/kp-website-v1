@@ -29,7 +29,7 @@ function Hero() {
 					blink = true;
 				}
 			}, 530);
-		}, 500);
+		}, 1500);
 
 		fadeInElement(head, 750);
 		fadeInElement(desc, 1000);
