@@ -70,7 +70,7 @@ function Hero() {
 							Konstantinos Pasca
 							<span
 								id='blinking-letter'
-								className='lg:text-6xl text-5xl font-semibold text-green-400 duration-75 opacity-0'>
+								className='lg:text-6xl text-5xl font-semibold text-green-400 duration-75 opacity-100'>
 								l
 							</span>
 						</p>
