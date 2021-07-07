@@ -13,7 +13,7 @@ const projects = [
 		labels: ['NEXT', 'TAILWIND', 'MARKDOWN']
 	},
 	{
-		id: 3,
+		id: 2,
 		title: 'The Wise Owl',
 		subtitle: 'Famous and inspirational quote generator',
 		description:
@@ -26,7 +26,7 @@ const projects = [
 		labels: ['NEXT', 'TAILWIND']
 	},
 	{
-		id: 4,
+		id: 3,
 		title: 'URL Shortener',
 		subtitle: 'Handy URL shortener for long links',
 		description:
@@ -37,20 +37,20 @@ const projects = [
 			codeUrl: 'https://github.com/konstapascal/url-shortener'
 		},
 		labels: ['REACT', 'CRA', 'TAILWIND']
-	},
-	{
-		id: 2,
-		title: 'JS Calculator',
-		subtitle: 'Calculator made in pure JS',
-		description:
-			'Calculator made with simplicity in mind. Made purely in vanilla JS and without the use of any third party libraries. Flex and Grid layout model have been used primarily to avhieve the design.',
-		urls: {
-			imgPath: '/img/js-calculator.jpg',
-			demoUrl: 'https://calc.konstapascal.dev',
-			codeUrl: 'https://github.com/konstapascal/js-calculator'
-		},
-		labels: ['HTML', 'CSS', 'JS']
 	}
+	// {
+	// 	id: 4,
+	// 	title: 'JS Calculator',
+	// 	subtitle: 'Calculator made in pure JS',
+	// 	description:
+	// 		'Calculator made with simplicity in mind. Made purely in vanilla JS and without the use of any third party libraries. Flex and Grid layout model have been used primarily to avhieve the design.',
+	// 	urls: {
+	// 		imgPath: '/img/js-calculator.jpg',
+	// 		demoUrl: 'https://calc.konstapascal.dev',
+	// 		codeUrl: 'https://github.com/konstapascal/js-calculator'
+	// 	},
+	// 	labels: ['HTML', 'CSS', 'JS']
+	// }
 ];
 
 export default projects;
