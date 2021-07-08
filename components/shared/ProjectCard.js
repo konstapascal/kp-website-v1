@@ -2,33 +2,35 @@ import Label from './Label';
 
 function ProjectCard({ title, subtitle, description, urls, labels }) {
 	return (
-		<div className='bg-main-dark mt-12 lg:mt-10 first:mt-0 md:shadow-2xl offset lg:flex-row xl:hover:scale-105 transform-gpu lg:max-w-7xl transition-transform flex flex-col max-w-[500px] duration-200 border-b-2 border-r-2 border-green-400 rounded-md shadow-md'>
+		<div className='bg-main-dark  overflow-hidden mt-12 lg:mt-10 first:mt-0 md:shadow-2xl offset lg:flex-row-reverse lg:hover:scale-105 transform-gpu lg:max-w-7xl transition-transform flex flex-col max-w-[500px] duration-200 border-b-2 border-r-2 border-green-400 rounded-md shadow-md'>
 			<img
 				src={`${urls.imgPath}`}
-				width={550}
+				width={600}
 				height={300}
-				className=' flex-1 object-cover object-center'
+				className=' object-cover object-center'
 			/>
 
-			<div className=' lg:px-12 lg:py-10 md:px-10 md:py-8 flex-1 max-w-3xl px-6 py-4'>
-				<div className='xl:flex-row flex flex-col justify-between'>
-					<div>
-						<h1 className=' inline-block text-3xl text-green-400'>{title}</h1>
-						<p className=' mt-1 text-sm font-semibold text-gray-400 uppercase'>{subtitle}</p>
-					</div>
-					<div className=' xl:mt-0 mt-2'>
-						{labels.map(label => {
-							return (
-								<Label
-									key={`${label}-` + Math.floor(Math.random() * 1000) + 1}
-									content={`${label}`}
-								/>
-							);
-						})}
-					</div>
+			<div className=' xl:px-14 xl:py-12 md:px-12 md:py-10 max-w-3xl px-6 py-8'>
+				<div>
+					<h1 className=' xl:text-4xl inline-block text-3xl font-semibold text-green-400'>
+						{title}
+					</h1>
+					<p className=' xl:mt-2 mt-1 text-sm font-semibold text-gray-400 uppercase'>
+						{subtitle}
+					</p>
+				</div>
+				<div className=' mt-2'>
+					{labels.map(label => {
+						return (
+							<Label
+								key={`${label}-` + Math.floor(Math.random() * 1000) + 1}
+								content={`${label}`}
+							/>
+						);
+					})}
 				</div>
 
-				<p className='text-md mt-4 mb-6 text-gray-100'>{description}</p>
+				<p className='text-md xl:mt-6 xl:mb-8 mt-4 mb-6 text-gray-100'>{description}</p>
 
 				<div className=' flex items-center justify-start'>
 					<a

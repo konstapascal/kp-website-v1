@@ -2,9 +2,9 @@ const projects = [
 	{
 		id: 1,
 		title: 'KP Website',
-		subtitle: 'My personal website and blog',
+		subtitle: 'Personal website and blog',
 		description:
-			'My personal website and blog, written in React and Next. The website is completely statically generated into vanilla HTML, CSS and JS files. Blog posts are written in Markdown and generated at build time.',
+			'My personal website and blog, written in React and Next. The website is generated entirely into vanilla HTML, CSS and JS files. Blog posts are written in Markdown and generated at build time.',
 		urls: {
 			imgPath: '/img/kp-website.jpg',
 			demoUrl: 'https://konstapascal.dev',
@@ -15,7 +15,7 @@ const projects = [
 	{
 		id: 2,
 		title: 'The Wise Owl',
-		subtitle: 'Famous and inspirational quote generator',
+		subtitle: 'Inspirational quotes generator',
 		description:
 			'Simple application in which you can generate and save your favorite quotes. Made with Next and styled entirely with Tailwind. Works by making use of the browsers local storage to preserve state.',
 		urls: {
@@ -28,7 +28,7 @@ const projects = [
 	{
 		id: 3,
 		title: 'URL Shortener',
-		subtitle: 'Handy URL shortener for long links',
+		subtitle: 'URL shortener for long links',
 		description:
 			'Simple URL shortener application created with the Create React App template, styled with Tailwind. Extremely useful for both shortening URLs and having them personalized to my own domain.',
 		urls: {
