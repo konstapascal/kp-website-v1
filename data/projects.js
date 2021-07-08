@@ -6,7 +6,7 @@ const projects = [
 		description:
 			'My personal website and blog, written in React and Next. The website is completely statically generated into vanilla HTML, CSS and JS files. Blog posts are written in Markdown and generated at build time.',
 		urls: {
-			imgPath: '/img/kp-website_50-v.jpg',
+			imgPath: '/img/kp-website.jpg',
 			demoUrl: 'https://konstapascal.dev',
 			codeUrl: 'https://github.com/konstapascal/kp-website-v1'
 		},
@@ -19,7 +19,7 @@ const projects = [
 		description:
 			'Simple application in which you can generate and save your favorite quotes. Made with Next and styled entirely with Tailwind. Works by making use of the browsers local storage to preserve state.',
 		urls: {
-			imgPath: '/img/the-wise-owl_50-v.jpg',
+			imgPath: '/img/the-wise-owl.jpg',
 			demoUrl: 'https://owl.konstapascal.dev',
 			codeUrl: 'https://github.com/konstapascal/the-wise-owl'
 		},
@@ -32,7 +32,7 @@ const projects = [
 		description:
 			'Simple URL shortener application created with the Create React App template, styled with Tailwind. Extremely useful for both shortening URLs and having them personalized to my own domain.',
 		urls: {
-			imgPath: '/img/url-shortener_50-v.jpg',
+			imgPath: '/img/url-shortener.jpg',
 			demoUrl: 'https://sh.konstapascal.dev',
 			codeUrl: 'https://github.com/konstapascal/url-shortener'
 		},
@@ -45,7 +45,7 @@ const projects = [
 		description:
 			'Calculator made with simplicity in mind. Made purely in vanilla JS and without the use of any third party libraries. Flex and Grid layout model have been used primarily to avhieve the design.',
 		urls: {
-			imgPath: '/img/js-calculator_50-v.jpg',
+			imgPath: '/img/js-calculator.jpg',
 			demoUrl: 'https://calc.konstapascal.dev',
 			codeUrl: 'https://github.com/konstapascal/js-calculator'
 		},
