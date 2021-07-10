@@ -50,6 +50,19 @@ const projects = [
 			codeUrl: 'https://github.com/konstapascal/js-calculator'
 		},
 		labels: ['HTML', 'CSS', 'JS']
+	},
+	{
+		id: 5,
+		title: 'VSCode Theme',
+		subtitle: 'CLI application for managing VSC themes',
+		description:
+			'CLI application from which you can change and manage your VSC themes. Implemented in Node and with minimal use of additional third party libraries. Compatible with Windows, macOS and Linux.',
+		urls: {
+			imgPath: '/img/vscode-theme.jpg',
+			demoUrl: 'https://www.npmjs.com/package/vscode-theme',
+			codeUrl: 'https://github.com/konstapascal/vscode-theme'
+		},
+		labels: ['NODE', 'JS']
 	}
 ];
 
