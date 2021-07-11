@@ -4,7 +4,7 @@ excerpt: Object and array destructuring in JS is a very simple yet powerful feat
 date: '2021-06-12' # ISO Format
 author: Konstantinos Pascal
 labels: ['JAVASCRIPT', 'ES6', 'OBJECT', 'ARRAY']
-url: 'object-and-array-destructuring-in-js'
+url: 'object-and-array-destructuring-in-javascript'
 ---
 
 ## Introduction
