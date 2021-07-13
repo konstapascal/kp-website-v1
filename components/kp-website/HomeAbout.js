@@ -1,7 +1,7 @@
 function About() {
 	return (
 		<section className=' bg-main-light lg:pt-32 px-4 pt-20' id='about-section'>
-			<div className=' lg:max-w-4xl container text-center text-gray-100'>
+			<div className=' lg:max-w-3xl container text-center text-gray-100'>
 				<p className='font-semibold text-gray-100'>These are my</p>
 				<h3 className='lg:text-5xl inline-block text-4xl font-semibold text-green-400 uppercase'>
 					Skillsets
@@ -11,16 +11,10 @@ function About() {
 					languages, frameworks and technologies.
 				</p>
 
-				<ul className=' my-8'>
-					<li className=''>
-						<h4 className='text-xl'>HTML, CSS, JS</h4>
-					</li>
-					<li className=''>
-						<h4 className='text-xl'>Node, Express, React, Next </h4>
-					</li>
-					<li className=''>
-						<h4 className='text-xl'>Tailwind</h4>
-					</li>
+				<ul id='tech-list' className=' relative my-10'>
+					<li className='lg:text-2xl text-xl'>HTML, CSS, JS</li>
+					<li className='lg:text-2xl mt-1 text-xl'>Node, Express, React, Next</li>
+					<li className='lg:text-2xl mt-1 text-xl'>Tailwind</li>
 				</ul>
 
 				<div className='flex justify-center'>

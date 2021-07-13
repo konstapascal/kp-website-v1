@@ -2,15 +2,15 @@ import Label from './Label';
 
 function ProjectCard({ title, subtitle, description, urls, labels }) {
 	return (
-		<div className='bg-main-dark  overflow-hidden mt-12 lg:mt-10 first:mt-0 md:shadow-2xl offset lg:flex-row-reverse lg:hover:scale-105 transform-gpu lg:max-w-7xl transition-transform flex flex-col max-w-[500px] duration-200 border-b-2 border-r-2 border-green-400 rounded-md shadow-md'>
+		<div className='bg-main-dark  overflow-hidden mt-12 lg:mt-10 first:mt-0 md:shadow-2xl offset lg:flex-row-reverse xl:hover:scale-105 transform-gpu lg:max-w-7xl transition-transform flex flex-col max-w-[500px] duration-200 border-b-2 border-r-2 border-green-400 rounded-md shadow-md'>
 			<img
 				src={`${urls.imgPath}`}
 				width={600}
 				height={300}
-				className=' object-cover object-center'
+				className='object-cover object-center'
 			/>
 
-			<div className=' xl:px-14 xl:py-12 md:px-12 md:py-10 max-w-3xl px-6 py-8'>
+			<div className=' xl:px-14 xl:py-12 md:px-10 max-w-3xl px-6 py-8'>
 				<div>
 					<h1 className=' xl:text-4xl inline-block text-3xl font-semibold text-green-400'>
 						{title}
