@@ -51,7 +51,7 @@ function Hero() {
 				{/* ---------- BACKGROUND WATERMARK ---------- */}
 				<div
 					id='watermark'
-					className=' text-main-light transform -rotate-12 lg:rotate-0 whitespace-nowrap top-[27.5%] sm:top-[25%] md:top-[22.5%] absolute text-8xl  sm:text-9xl md:text-[10rem] font-extrabold lg:top-[19%] lg:text-[16rem] text-center opacity-50 select-none'>
+					className=' text-main-light transform -rotate-12 lg:rotate-0 whitespace-nowrap top-[31.5%] sm:top-[25%] md:top-[22.5%] absolute text-8xl  sm:text-9xl md:text-[10rem] font-extrabold lg:top-[19%] lg:text-[16rem] text-center opacity-50 select-none'>
 					<WindupChildren>
 						<Pace ms={25}>
 							<p>FULL STACK</p>
