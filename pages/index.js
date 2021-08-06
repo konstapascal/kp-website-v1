@@ -13,10 +13,13 @@ export default function Home() {
 				<title>kp-website</title>
 				<link rel='icon' href='/favicon.png' />
 				<script async src='https://www.googletagmanager.com/gtag/js?id=G-Z2FSLL37JV'></script>
-				<script>
-					window.dataLayer = window.dataLayer || []; function gtag(){dataLayer.push(arguments)}
-					gtag('js', new Date()); gtag('config', 'G-Z2FSLL37JV');
-				</script>
+				<script
+					dangerouslySetInnerHTML={{
+						__html: `window.dataLayer = window.dataLayer || []; function gtag(){dataLayer.push(arguments)}
+					gtag('js', new Date()); gtag('config', 'G-Z2FSLL37JV');`
+					}}
+				/>
+				<script></script>
 			</Head>
 			<HomeHero />
 
