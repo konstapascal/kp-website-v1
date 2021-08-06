@@ -12,13 +12,8 @@ export default function Home() {
 			<Head>
 				<title>kp-website</title>
 				<link rel='icon' href='/favicon.png' />
-				<script async src='https://www.googletagmanager.com/gtag/js?id=G-Z2FSLL37JV'></script>
-				<script
-					dangerouslySetInnerHTML={{
-						__html: `window.dataLayer = window.dataLayer || []; function gtag() { dataLayer.push(arguments); } gtag('js', new Date());
- gtag('config', 'G-Z2FSLL37JV');`
-					}}
-				/>
+				<script async src='https://www.googletagmanager.com/gtag/js?id=G-Z2FSLL37JV' />
+				<script src='js/analytics.js' />
 			</Head>
 			<HomeHero />
 

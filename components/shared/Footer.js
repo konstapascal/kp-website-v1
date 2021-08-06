@@ -32,7 +32,9 @@ function Footer() {
 				<p className='text-base font-semibold text-gray-400'>
 					Made by <span className='font-semibold text-green-400'>Konstantinos Pascal</span>
 				</p>
-				<p class="text-base font-semibold text-gray-400 my-4">2021 - {new Date().getFullYear()}</p>
+				<p className='my-4 text-base font-semibold text-gray-400'>
+					2021 - {new Date().getFullYear()}
+				</p>
 			</div>
 		</footer>
 	);
