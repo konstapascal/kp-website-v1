@@ -40,7 +40,7 @@ const projects = [
 	},
 	{
 		id: 6,
-		title: 'Chestnut & API',
+		title: 'Chestnut App & API',
 		subtitle: 'Educational PKI web application and API',
 		description:
 			'Educational web app used to teach basic concepts of PKI and cryptography. It allows the creation and management of keypairs, encryption and decryption. The API, written in Node JS, is the backend used by the website.',
