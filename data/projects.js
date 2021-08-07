@@ -46,7 +46,7 @@ const projects = [
 			'Educational web app used to teach basic concepts of PKI and cryptography. It allows the creation and management of keypairs, encryption and decryption. The API, written in Node JS, is the backend used by the website.',
 
 		urls: {
-			imgPath: '/img/chestnut-api.jpg',
+			imgPath: '/img/chestnut.jpg',
 			codeUrl: 'https://github.com/konstapascal/chestnut',
 			apiUrl: 'https://app.swaggerhub.com/apis-docs/konstapascal/chestnut-api/1.1'
 		},

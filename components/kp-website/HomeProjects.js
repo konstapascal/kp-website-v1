@@ -1,8 +1,26 @@
 import ProjectCard from '../shared/ProjectCard';
 
 import projects from '../../data/projects';
+import { useEffect, useState } from 'react';
 
 function Projects() {
+	const [projectsHidden, setProjectsHidden] = useState(true);
+
+	useEffect(() => {
+		const parent = document.querySelector('#project-cards');
+
+		// starting from next last child, as last is a button
+		const lastThreeChildren = [
+			parent.children[parent.children.length - 2],
+			parent.children[parent.children.length - 3],
+			parent.children[parent.children.length - 4]
+		];
+
+		projectsHidden
+			? lastThreeChildren.forEach(elem => (elem.style.display = 'none'))
+			: lastThreeChildren.forEach(elem => (elem.style.display = 'flex'));
+	}, [projectsHidden]);
+
 	return (
 		<section className='bg-main-light lg:py-32 px-4 py-20'>
 			<div className=' container text-gray-100'>
@@ -17,7 +35,7 @@ function Projects() {
 				</div>
 
 				{/* ---------- CARDS ---------- */}
-				<div className=' flex flex-col items-center'>
+				<div id='project-cards' className=' flex flex-col items-center'>
 					{projects.map(project => (
 						<ProjectCard
 							key={project.id}
@@ -28,6 +46,11 @@ function Projects() {
 							labels={project.labels}
 						/>
 					))}
+					<a
+						className='text-sm mt-12 hover:scale-105 transform-gpu transition-transform duration-200 lg:text-lg  px-4 py-2 font-semibold tracking-wider text-gray-100  border-2 border-green-400 rounded-[0.2rem] cursor-pointer'
+						onClick={() => setProjectsHidden(prev => !prev)}>
+						{projectsHidden ? 'Show More' : 'Show Less'}
+					</a>
 				</div>
 			</div>
 		</section>
