@@ -39,17 +39,18 @@ const projects = [
 		labels: ['REACT', 'CRA', 'TAILWIND']
 	},
 	{
-		id: 4,
-		title: 'JS Calculator',
-		subtitle: 'Calculator made in pure JS',
+		id: 6,
+		title: 'Chestnut & API',
+		subtitle: 'Educational PKI web application and API',
 		description:
-			'Calculator made with simplicity in mind. Made purely in vanilla JS and without the use of any third party libraries. Flex and Grid layout model have been used primarily to avhieve the design.',
+			'Educational web app used to teach basic concepts of PKI and cryptography. It allows the creation and management of keypairs, encryption and decryption. The API, written in Node JS, is the backend used by the website.',
+
 		urls: {
-			imgPath: '/img/js-calculator.jpg',
-			demoUrl: 'https://calc.konstapascal.dev',
-			codeUrl: 'https://github.com/konstapascal/js-calculator'
+			imgPath: '/img/chestnut-api.jpg',
+			codeUrl: 'https://github.com/konstapascal/chestnut',
+			apiUrl: 'https://app.swaggerhub.com/apis-docs/konstapascal/chestnut-api/1.1'
 		},
-		labels: ['HTML', 'CSS', 'JS']
+		labels: ['REACT', 'CRA', 'NODE']
 	},
 	{
 		id: 5,
@@ -63,6 +64,19 @@ const projects = [
 			codeUrl: 'https://github.com/konstapascal/vscode-theme'
 		},
 		labels: ['NODE', 'JS']
+	},
+	{
+		id: 4,
+		title: 'JS Calculator',
+		subtitle: 'Calculator made in pure JS',
+		description:
+			'Calculator made with simplicity in mind. Made purely in vanilla JS and without the use of any third party libraries. Flex and Grid layout model have been used primarily to avhieve the design.',
+		urls: {
+			imgPath: '/img/js-calculator.jpg',
+			demoUrl: 'https://calc.konstapascal.dev',
+			codeUrl: 'https://github.com/konstapascal/js-calculator'
+		},
+		labels: ['HTML', 'CSS', 'JS']
 	}
 ];
 

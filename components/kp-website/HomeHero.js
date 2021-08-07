@@ -107,7 +107,7 @@ function Hero() {
 							</a>
 							<a
 								className=' transform-gpu hover:scale-110 flex items-center mx-1 transition-transform duration-200'
-								href='https://duckduckgo.com/'
+								href='https://www.linkedin.com/in/konstapascal'
 								target='_blank'
 								rel='noopener noreferrer'>
 								<img src='/svg/linkedin-brands.svg' width={40} height={40} />
