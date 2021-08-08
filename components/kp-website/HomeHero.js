@@ -91,7 +91,7 @@ function Hero() {
 						id='links'>
 						<a
 							className='text-md hover:scale-105 transform-gpu transition-transform duration-200 mt-8 sm:mt-0 sm:mr-5 lg:text-lg flex items-center px-4 py-2  font-semibold tracking-wider text-gray-100  border-2 border-green-400 rounded-[0.2rem]'
-							href='/files/kp-resume.pdf'
+							href='/files/kp-resume-en.pdf'
 							download>
 							<img src='/svg/file-download-solid.svg' width={20} height={20} />
 							<span className=' ml-2'>RESUME</span>
