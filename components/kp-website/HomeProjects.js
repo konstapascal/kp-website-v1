@@ -24,13 +24,13 @@ function Projects() {
 	return (
 		<section className='bg-main-light lg:py-32 px-4 py-20'>
 			<div className=' container text-gray-100'>
-				<div className='text-center'>
+				<div className='lg:max-w-3xl container text-center'>
 					<p className=' font-semibold text-gray-100'>Some of my</p>
 					<p className='inline-block  text-4xl lg:text-5xl font-semibold text-green-400 uppercase rounded-[0.2rem]'>
 						Projects
 					</p>
 					<p className=' text-md md:text-lg lg:text-xl mt-8 mb-16 text-gray-100'>
-						Examples of some of the projects I have worked on:
+						Examples of some of the projects I have worked and collaborated on:
 					</p>
 				</div>
 
