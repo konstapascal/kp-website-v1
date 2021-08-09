@@ -51,7 +51,7 @@ function Hero() {
 				{/* ---------- BACKGROUND WATERMARK ---------- */}
 				<div
 					id='watermark'
-					className=' text-main-light transform -rotate-12 lg:rotate-0 whitespace-nowrap top-[31.5%] sm:top-[25%] md:top-[22.5%] absolute text-8xl  sm:text-9xl md:text-[10rem] font-extrabold lg:top-[19%] lg:text-[16rem] text-center opacity-50 select-none'>
+					className=' text-main-light transform -rotate-12 lg:rotate-0 whitespace-nowrap top-[25%] md:top-[22.5%] absolute text-8xl  sm:text-9xl md:text-[10rem] font-extrabold lg:top-[19%] lg:text-[16rem] text-center opacity-50 select-none'>
 					<WindupChildren>
 						<Pace ms={25}>
 							<p>FULL STACK</p>
@@ -61,7 +61,7 @@ function Hero() {
 				</div>
 
 				{/* ---------- HEADINGS, DESCRIPTION, LINKS ---------- */}
-				<div className=' lg:max-w-3xl lg:text-left top-1/4 container absolute px-4 text-center'>
+				<div className=' lg:max-w-3xl lg:text-left top-[17.5%] sm:top-1/4 container absolute px-4 text-center'>
 					<div className=' invisible transition-opacity duration-1000 opacity-0' id='heading'>
 						<h1 className='lg:text-2xl text-xl font-semibold text-gray-100'>
 							Hello, this is..
