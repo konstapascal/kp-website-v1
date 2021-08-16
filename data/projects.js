@@ -44,7 +44,7 @@ const projects = [
 		title: 'JS Calculator',
 		subtitle: 'Calculator made in pure JS',
 		description:
-			'Calculator made with simplicity in mind. Made purely in vanilla JS and without the use of any third party libraries. Flex and Grid layout model have been used primarily to avhieve the design.',
+			'Calculator made with simplicity in mind. Made purely in vanilla JS and without the use of any third party libraries. Flex and Grid layout model have been used primarily to achieve the design.',
 		urls: {
 			imgPath: '/img/js-calculator.jpg',
 			demoUrl: 'https://calc.konstapascal.dev',
