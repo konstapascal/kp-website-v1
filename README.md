@@ -8,7 +8,7 @@
 <p align="center">
   <a href="#links">Links</a> •
   <a href="#key-features">Key Features</a> •
-  <a href="#how-to-use">How To Use</a> •
+  <a href="#how-to-run">How To Run</a> •
   <a href="#technologies">Technologies</a>
 </p>
 
@@ -24,7 +24,7 @@
 -  Projects and blog articles are **generated dynamically**
 -  Easy to **add**, **remove** or **edit** website content
 
-## How To Use
+## How To Run
 
 To clone and run this project, you'll need [Git](https://git-scm.com) and [Node.js](https://nodejs.org/en/download/) (which comes with [npm](http://npmjs.com)) installed on your computer. From your command line:
 
