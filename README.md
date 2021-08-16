@@ -20,7 +20,7 @@
 
 ### Mobile view
 
-![kp-website-hero](./readme-img/kp-website-full-m.jpeg)
+![kp-website-hero](./readme-img/kp-website-full-m.png)
 
 ## Key Features
 
