@@ -1,34 +1,56 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+<h1 align="center">
+  KP Website & Blog
+  <br>
+</h1>
 
-## Getting Started
+<h4 align="center">My personal website and blog where I present myself, my work and write articles.</h4>
 
-First, run the development server:
+<p align="center">
+  <a href="#key-features">Key Features</a> •
+  <a href="#how-to-use">How To Use</a> •
+  <a href="#technologies">Technologies</a>
+</p>
+
+![kp-website](./github-images/kp-website.jpg)
+
+## Key Features
+
+-  Statically generated into HTML, CSS, JS
+-  Fast load times
+-  Projects and blog articles are generated dynamically
+-  Easy to add, remove or edit website content
+
+## How To Use
+
+To clone and run this project, you'll need [Git](https://git-scm.com) and [Node.js](https://nodejs.org/en/download/) (which comes with [npm](http://npmjs.com)) installed on your computer. From your command line:
 
 ```bash
-npm run dev
-# or
-yarn dev
+# Clone this repository
+$ git clone https://github.com/konstapascal/kp-website-v1
+
+# Go into the repository
+$ cd kp-website-v1
+
+# Install dependencies
+$ npm install
+
+# Run the app
+$ npm run dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Note: If you're using Linux Bash for Windows, [see this guide](https://www.howtogeek.com/261575/how-to-run-graphical-linux-desktop-applications-from-windows-10s-bash-shell/) or use `node` from the command prompt.
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
+## Technologies
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
+This software uses the following technologies:
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+-  [Next JS](https://nextjs.org/)
+-  [Tailwind CSS](https://tailwindcss.com/)
+-  [Gray Matter](https://www.npmjs.com/package/gray-matter/v/1.2.3)
+-  [Windups](https://windups.gwil.co/)
 
-## Learn More
+---
 
-To learn more about Next.js, take a look at the following resources:
-
--  [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
--  [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+> [konstapascal.dev](https://konstapascal.dev) &nbsp;&middot;&nbsp;
+> GitHub [@konstapascal](https://github.com/konstapascal) &nbsp;&middot;&nbsp;
+> Twitter [@konstapascal](https://twitter.com/konstapascal)
