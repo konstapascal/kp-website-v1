@@ -16,14 +16,11 @@
 
 ### Desktop view
 
-![kp-website-hero](./readme-img/kp-website-hero.png)
-![kp-website-projects](./readme-img/kp-website-projects.jpg)
-![kp-blog](./readme-img/kp-blog.jpg)
+![kp-website-hero](./readme-img/kp-website-full.jpeg)
 
 ### Mobile view
 
-![kp-website-hero-m](./readme-img/kp-website-hero-m.png)
-![kp-blog-article-m](./readme-img/kp-blog-article-m.png)
+![kp-website-hero](./readme-img/kp-website-full-m.jpeg)
 
 ## Key Features
 
