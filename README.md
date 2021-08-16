@@ -16,7 +16,7 @@
 
 ### Desktop view
 
-![kp-website-hero](./readme-img/kp-website-hero.jpg)
+![kp-website-hero](./readme-img/kp-website-hero.png)
 ![kp-website-projects](./readme-img/kp-website-projects.jpg)
 ![kp-blog](./readme-img/kp-blog.jpg)
 
