@@ -3,15 +3,27 @@
   <br>
 </h1>
 
-<h4 align="center">My personal website and blog where I present myself, my work and write articles.</h4>
+<h4 align="center">My personal website and blog where I present myself, my work and write blog articles.</h4>
 
 <p align="center">
+  <a href="#gallery">Gallery</a> •
   <a href="#key-features">Key Features</a> •
   <a href="#how-to-use">How To Use</a> •
   <a href="#technologies">Technologies</a>
 </p>
 
-![kp-website](./github-images/kp-website.jpg)
+## Gallery
+
+### Desktop view
+
+![kp-website-hero](./readme-img/kp-website-hero.jpg)
+![kp-website-projects](./readme-img/kp-website-projects.jpg)
+![kp-blog](./readme-img/kp-blog.jpg)
+
+### Mobile view
+
+![kp-website-hero-m](./readme-img/kp-website-hero-m.png)
+![kp-blog-article-m](./readme-img/kp-blog-article-m.png)
 
 ## Key Features
 
