@@ -38,6 +38,8 @@ function MyApp({ Component, pageProps }) {
 
 	return (
 		<>
+			<Component {...pageProps} />
+
 			<div
 				id='go-up'
 				className=' fixed bottom-0 right-0 z-50 p-6 transition-opacity duration-500 opacity-0'>
@@ -48,8 +50,6 @@ function MyApp({ Component, pageProps }) {
 					<img href='#' src='/svg/arrow-circle-up-solid.svg' width={40} height={40} />
 				</a>
 			</div>
-
-			<Component {...pageProps} />
 		</>
 	);
 }
