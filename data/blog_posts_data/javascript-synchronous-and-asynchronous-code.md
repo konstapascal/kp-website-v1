@@ -103,4 +103,4 @@ This means that, `setTimeout` does not actually execute after a delay of **n** m
 
 In conclusion, we have learned what synchronous and asynchronous code is, how it behaves within the context of the browser, and why the code executes in the order that it does.
 
-_Asynchronous code_ will **always** execute after the call stack is empty, at the very minimum, so while not always obvious from the code, you can still predict the result of that by looking closely at the code.
+**Asynchronous code** will **always** execute after the call stack is empty, at the very minimum, so while not always obvious, you can still make out the result of that by closely inspecting the code.
