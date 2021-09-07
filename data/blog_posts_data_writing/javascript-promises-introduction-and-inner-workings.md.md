@@ -13,6 +13,8 @@ First of all, if you haven't done so, I recommend you read my article on **synch
 
 This will give you a good introduction to **asynchronous** behaviour, which is crucial to be familiar with when working with **promises**.
 
+### Promise object
+
 **But what are promises and why do they exist?** At their most basic, promises are just another object type in Javascript. What makes promises special from other objects, is that they are a wrapper for some other code inside it.
 
 The object provides us with ways and methods to work with that code. It allows us to know the status of the code, the result and will keep track of its execution.
