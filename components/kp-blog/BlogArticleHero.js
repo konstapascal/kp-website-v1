@@ -5,9 +5,9 @@ import formatDate from '../../lib/formatDate';
 
 function ArticleHero({ articleDetails: { title, author, date, labels } }) {
 	return (
-		<section id='blog-section' className='bg-main-dark border-b-2 border-green-400'>
-			<nav className=' lg:px-8 lg:pt-8 md:px-6 md:pt-6 flex items-center justify-between px-4 pt-4'>
-				<Logo linkHref={'/blog'} content={'KP-BLOG'} />
+		<section id='blog-section' className='bg-main-dark '>
+			<nav className=' lg:px-8 lg:pt-8 md:px-6 md:pt-6 flex items-center justify-end px-4 pt-4'>
+				{/* <Logo linkHref={'/blog'} content={'KP-BLOG'} /> */}
 				<Button linkHref={'/'} content={'WEBSITE'} />
 			</nav>
 			<div className='lg:max-w-3xl lg:px-0 lg:text-left lg:pt-16 lg:pb-20 pt-14 container px-4 pb-16 text-center text-gray-100'>

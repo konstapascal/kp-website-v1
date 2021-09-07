@@ -8,7 +8,7 @@ function ProjectCard({
 	labels
 }) {
 	return (
-		<div className='bg-main-dark overflow-hidden mt-12 lg:mt-10 first:mt-0 md:shadow-2xl lg:flex-row-reverse xl:hover:scale-105 transform-gpu lg:max-w-7xl transition-transform flex flex-col max-w-[600px] duration-200 border-b-2 border-r-2 border-green-400 rounded-md shadow-md'>
+		<div className='bg-main-dark overflow-hidden mt-12 lg:mt-10 first:mt-0 md:shadow-2xl lg:flex-row-reverse xl:hover:scale-105 transform-gpu lg:max-w-7xl transition-transform flex flex-col max-w-[600px] duration-200 lg:border-l-2 border-green-400 border-opacity-75 rounded-md  shadow-md'>
 			<img src={`${imgPath}`} width={600} height={300} className='object-cover object-center' />
 			<div className=' xl:px-14 xl:py-12 md:px-10 max-w-3xl px-6 py-8'>
 				<div>
@@ -35,7 +35,9 @@ function ProjectCard({
 					})}
 				</div>
 
-				<p className='text-md xl:mt-6 xl:mb-8 mt-4 mb-6 text-gray-100'>{description}</p>
+				<p className='xl:mt-6 xl:mb-8 text-md lg:text-lg mt-4 mb-6 text-gray-100'>
+					{description}
+				</p>
 
 				<div className=' flex items-center justify-start'>
 					{demoUrl !== '' && (

@@ -8,7 +8,8 @@ module.exports = {
 		extend: {
 			colors: {
 				main: {
-					light: '#2F312C',
+					// light: '#2F312C',
+					light: '#262723',
 					dark: '#1E1F1C'
 				},
 				accent: {

@@ -15,6 +15,7 @@ export default function Home() {
 				<script async src='https://www.googletagmanager.com/gtag/js?id=G-Z2FSLL37JV' />
 				<script src='js/analytics.js' />
 			</Head>
+
 			<HomeHero />
 
 			<HomeAbout />

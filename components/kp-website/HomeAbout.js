@@ -1,11 +1,9 @@
 function About() {
 	return (
-		<section className=' bg-main-light lg:pt-32 px-4 pt-20' id='about-section'>
+		<section className=' bg-main-light lg:pt-28 px-4 pt-16' id='about-section'>
 			<div className=' lg:max-w-3xl container text-center text-gray-100'>
-				<p className='font-semibold text-gray-100'>These are my</p>
-
 				<h3 className='lg:text-5xl inline-block text-4xl font-semibold text-green-400 uppercase'>
-					Skillsets
+					Skillset
 				</h3>
 
 				<p className='text-md md:text-lg lg:text-xl mt-8 leading-relaxed text-gray-100'>
@@ -15,28 +13,58 @@ function About() {
 
 				<ul id='tech-list' className=' relative my-10'>
 					<li className='lg:text-2xl text-xl'>HTML5, CSS3, JS</li>
-					<li className='lg:text-2xl mt-1 text-xl'>Node, Express, React, Next</li>
-					<li className='lg:text-2xl mt-1 text-xl'>Tailwind, Bootstrap</li>
+					<li className='lg:text-2xl mt-1 text-xl'>Node, Express, React, Next JS</li>
+					<li className='lg:text-2xl mt-1 text-xl'>Tailwind CSS</li>
 				</ul>
 
 				<div className='flex justify-center'>
 					<div className=''>
-						<img src='/svg/html5-brands.svg' alt='HTML5 Logo' width={50} height={50} />
+						<img
+							src='/svg/html5-brands.svg'
+							alt='HTML5 Logo'
+							title='HTML5 Logo'
+							width={50}
+							height={50}
+						/>
 					</div>
 					<div className='mx-2'>
-						<img src='/svg/css3-alt-brands.svg' alt='CSS3 Logo' width={50} height={50} />
+						<img
+							src='/svg/css3-alt-brands.svg'
+							alt='CSS3 Logo'
+							title='CSS3 Logo'
+							width={50}
+							height={50}
+						/>
 					</div>
 					<div className=''>
-						<img src='/svg/js-square-brands.svg' alt='JS Logo' width={50} height={50} />
+						<img
+							src='/svg/js-square-brands.svg'
+							alt='JS Logo'
+							title='JS Logo'
+							width={50}
+							height={50}
+						/>
 					</div>
 				</div>
 
 				<div className=' flex justify-center mt-2'>
 					<div className='mr-1'>
-						<img src='/svg/node-js-brands.svg' alt='Node Logo' width={50} height={50} />
+						<img
+							src='/svg/node-js-brands.svg'
+							alt='Node Logo'
+							title='Node Logo'
+							width={50}
+							height={50}
+						/>
 					</div>
 					<div className='ml-1'>
-						<img src='/svg/react-brands.svg' alt='React Logo' width={50} height={50} />
+						<img
+							src='/svg/react-brands.svg'
+							alt='React Logo'
+							title='React Logo'
+							width={50}
+							height={50}
+						/>
 					</div>
 				</div>
 			</div>

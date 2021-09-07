@@ -2,6 +2,13 @@
 	display: none;
 }
 
+::selection {
+	background: #186d4e; /* WebKit/Blink Browsers */
+}
+::-moz-selection {
+	background: #186d4e; /* Gecko Browsers */
+}
+
 /* overwriting some default prismjs syntax styles */
 .prose pre {
 	background-color: #1e1f1c !important;
