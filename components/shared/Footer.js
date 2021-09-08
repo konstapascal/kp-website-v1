@@ -30,7 +30,10 @@ function Footer() {
 				</div>
 
 				<p className='text-base font-semibold text-gray-400'>
-					Made by <span className='font-semibold text-green-400'>Konstantinos Pascal</span>
+					Made by{' '}
+					<a href='https://konstapascal.dev' className='font-semibold text-green-400'>
+						Konstantinos Pascal
+					</a>
 				</p>
 				<p className='my-4 text-base font-semibold text-gray-400'>
 					2021 - {new Date().getFullYear()}

@@ -1,16 +1,16 @@
 const projects = [
 	{
-		id: 1,
-		title: 'KP Website',
-		subtitle: 'Personal website and blog',
+		id: 3,
+		title: 'URL Shortener',
+		subtitle: 'URL shortener for long links',
 		description:
-			'My personal website and blog, written in React and Next. The website is generated entirely into vanilla HTML, CSS and JS files. Blog posts are written in Markdown and generated at build time.',
+			'Simple URL shortener application created with the Create React App template, styled with Tailwind. Extremely useful for both shortening URLs and having them personalized to my own domain.',
 		urls: {
-			imgPath: '/img/kp-website.jpg',
-			demoUrl: 'https://konstapascal.dev',
-			codeUrl: 'https://github.com/konstapascal/kp-website-v1'
+			imgPath: '/img/url-shortener.jpg',
+			demoUrl: 'https://sh.konstapascal.dev',
+			codeUrl: 'https://github.com/konstapascal/url-shortener'
 		},
-		labels: ['NEXT', 'TAILWIND', 'MARKDOWN']
+		labels: ['REACT', 'CRA', 'TAILWIND']
 	},
 	{
 		id: 2,
@@ -26,17 +26,17 @@ const projects = [
 		labels: ['NEXT', 'TAILWIND']
 	},
 	{
-		id: 3,
-		title: 'URL Shortener',
-		subtitle: 'URL shortener for long links',
+		id: 1,
+		title: 'KP Website',
+		subtitle: 'Personal website and blog',
 		description:
-			'Simple URL shortener application created with the Create React App template, styled with Tailwind. Extremely useful for both shortening URLs and having them personalized to my own domain.',
+			'My personal website and blog, written in React and Next. The website is generated entirely into vanilla HTML, CSS and JS files. Blog posts are written in Markdown and generated at build time.',
 		urls: {
-			imgPath: '/img/url-shortener.jpg',
-			demoUrl: 'https://sh.konstapascal.dev',
-			codeUrl: 'https://github.com/konstapascal/url-shortener'
+			imgPath: '/img/kp-website.jpg',
+			demoUrl: 'https://konstapascal.dev',
+			codeUrl: 'https://github.com/konstapascal/kp-website-v1'
 		},
-		labels: ['REACT', 'CRA', 'TAILWIND']
+		labels: ['NEXT', 'TAILWIND', 'MARKDOWN']
 	},
 	// {
 	// 	id: 4,
