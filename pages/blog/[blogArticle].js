@@ -6,7 +6,7 @@ import Link from 'next/link';
 import { readdir } from 'fs/promises';
 import { join } from 'path';
 
-import { read } from 'gray-matter';
+import { read as gmRead } from 'gray-matter';
 import { serialize } from 'next-mdx-remote/serialize';
 import { MDXRemote } from 'next-mdx-remote';
 
@@ -101,7 +101,7 @@ export async function getStaticProps({ params }) {
 	const postsDirectory = join(process.cwd(), 'data/blog_posts_data');
 	const filePath = join(postsDirectory, params.blogArticle + '.md');
 
-	const postData = read(filePath);
+	const postData = gmRead(filePath);
 	const postContent = await serialize(postData.content);
 
 	return {

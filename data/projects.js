@@ -25,7 +25,6 @@ const projects = [
 		},
 		labels: ['NEXT', 'TAILWIND']
 	},
-
 	{
 		id: 3,
 		title: 'URL Shortener',

@@ -6,7 +6,11 @@ import HomeBlog from '../components/kp-website/HomeBlog';
 import Head from 'next/head';
 import Footer from '../components/shared/Footer';
 
-export default function Home() {
+import { join } from 'path';
+import { readdir } from 'fs/promises';
+import { read as gmRead } from 'gray-matter';
+
+export default function Home({ labels }) {
 	return (
 		<>
 			<Head>
@@ -20,9 +24,27 @@ export default function Home() {
 
 			<HomeAbout />
 			<HomeProjects />
-			<HomeBlog />
+			<HomeBlog labels={labels} />
 
 			<Footer />
 		</>
 	);
+}
+
+export async function getStaticProps() {
+	const postsDirectory = join(process.cwd(), 'data/blog_posts_data');
+	const posts = await readdir(postsDirectory);
+
+	let labels = [];
+
+	posts.forEach(post => {
+		const contents = gmRead(`${postsDirectory}/${post}`);
+		labels.push(...contents.data.labels);
+	});
+
+	return {
+		props: {
+			labels: [...new Set(labels)]
+		}
+	};
 }
