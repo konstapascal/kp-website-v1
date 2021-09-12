@@ -15,6 +15,7 @@ import Footer from '../../components/shared/Footer';
 import ArticleProgressBar from '../../components/shared/ArticleProgressBar';
 
 import prism from 'prismjs';
+import TwitterMetaTags from '../../components/meta/TwitterMetaTags';
 
 function Post({ postData, postContent }) {
 	// make all a tags open new tab
@@ -50,10 +51,15 @@ function Post({ postData, postContent }) {
 			<Head>
 				<link rel='icon' href='/favicon.png' />
 				<title>{postData.title}</title>
+
+				{/* generic meta tags */}
 				<meta name='title' content={postData.title} />
 				<meta name='description' content={postData.excerpt} />
 				<meta name='author' content={postData.author} />
 				<meta name='keywords' content={postData.labels.join(', ')} />
+
+				{/* twitter specific meta tags */}
+				<TwitterMetaTags />
 			</Head>
 
 			<ArticleProgressBar />
