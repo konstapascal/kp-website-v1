@@ -9,7 +9,7 @@ const projects = [
 			imgAlt: 'Image of my personal website project, featuring the hero section.'
 		},
 		urls: {
-			imgPath: '/img/kp-website.jpg',
+			imgPath: '/img/kp-website.webp',
 			demoUrl: 'https://konstapascal.dev',
 			codeUrl: 'https://github.com/konstapascal/kp-website-v1'
 		},
@@ -25,7 +25,7 @@ const projects = [
 			imgAlt: 'Image of The Wise Owl project, featuring the main page of the website.'
 		},
 		urls: {
-			imgPath: '/img/the-wise-owl.jpg',
+			imgPath: '/img/the-wise-owl.webp',
 			demoUrl: 'https://owl.konstapascal.dev',
 			codeUrl: 'https://github.com/konstapascal/the-wise-owl'
 		},
@@ -43,7 +43,7 @@ const projects = [
 				'Image of the URL shortener website project, featuring the main page of the website.'
 		},
 		urls: {
-			imgPath: '/img/url-shortener.jpg',
+			imgPath: '/img/url-shortener.webp',
 			demoUrl: 'https://sh.konstapascal.dev',
 			codeUrl: 'https://github.com/konstapascal/url-shortener'
 		},
@@ -56,7 +56,7 @@ const projects = [
 	// 	description:
 	// 		'Calculator made with simplicity in mind. Made purely in vanilla JS and without the use of any third party libraries. Flex and Grid layout model have been used primarily to achieve the design.',
 	// 	urls: {
-	// 		imgPath: '/img/js-calculator.jpg',
+	// 		imgPath: '/img/js-calculator.webp',
 	// 		demoUrl: 'https://calc.konstapascal.dev',
 	// 		codeUrl: 'https://github.com/konstapascal/js-calculator'
 	// 	},
@@ -72,7 +72,7 @@ const projects = [
 			imgAlt: 'Image of a terminal with some output from the VSCode Theme CLI applicaiton.'
 		},
 		urls: {
-			imgPath: '/img/vscode-theme.jpg',
+			imgPath: '/img/vscode-theme.webp',
 			demoUrl: 'https://www.npmjs.com/package/vscode-theme',
 			codeUrl: 'https://github.com/konstapascal/vscode-theme'
 		},
@@ -86,7 +86,7 @@ const projects = [
 	// 		'Educational web app used to teach basic concepts of PKI and cryptography. It allows the creation and management of keypairs, encryption and decryption. The API, written in Node JS, is the backend used by the website.',
 
 	// 	urls: {
-	// 		imgPath: '/img/chestnut.jpg',
+	// 		imgPath: '/img/chestnut.webp',
 	// 		codeUrl: 'https://github.com/konstapascal/chestnut',
 	// 		apiUrl: 'https://app.swaggerhub.com/apis-docs/konstapascal/chestnut-api/1.1'
 	// 	},
