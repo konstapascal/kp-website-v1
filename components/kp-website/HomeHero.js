@@ -45,11 +45,7 @@ function Hero() {
 				{/* ---------- LOGO AND BLOG BUTTON / NAV ---------- */}
 				<nav className='md:pt-6 md:px-6 lg:pt-8 lg:px-8 absolute inset-x-0 top-0 flex items-center justify-end px-4 pt-4'>
 					{/* <Logo linkHref={'/'} content={'KP-WEBSITE'} /> */}
-					<Button
-						linkTitle={'Link to the blog website.'}
-						linkHref={'/blog'}
-						content={'BLOG'}
-					/>
+					<Button linkTitle={'Link to the blog website'} linkHref={'/blog'} content={'BLOG'} />
 				</nav>
 
 				{/* ---------- BACKGROUND WATERMARK ---------- */}

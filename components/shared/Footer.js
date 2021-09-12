@@ -45,7 +45,7 @@ function Footer() {
 				<p className='text-base font-semibold text-gray-400'>
 					Made by{' '}
 					<a
-						title='Link to my main website, konstapascal.dev'
+						title='Link to my main website'
 						href='https://konstapascal.dev'
 						className='font-semibold text-green-400'>
 						Konstantinos Pascal
