@@ -10,16 +10,27 @@ import { platform } from 'os';
 
 import { read } from 'gray-matter';
 import Footer from '../../components/shared/Footer';
+import GenericMetaTags from '../../components/meta/GenericMetaTags';
+import TwitterMetaTags from '../../components/meta/TwitterMetaTags';
 
 function Blog({ filesMetadataArr }) {
+	const labels = filesMetadataArr.map(file => file.labels).flat();
+	const uniqueLabels = [...new Set(labels)];
+
 	return (
 		<>
 			<Head>
 				<title>kp-blog</title>
 				<link rel='icon' href='/favicon.png' />
-				<meta
-					name='description'
-					content='I am Konstantinos Pascal and this is my writing corner on the web. Here you can expect articles on Javascript and other random topics, for both begginers and advanced!'
+
+				<GenericMetaTags
+					description='I am Konstantinos Pascal and this is my writing corner on the web. Here you can expect articles on Javascript and other random topics, for both begginers and advanced!'
+					author='Konstantinos Pascal'
+					keywords={uniqueLabels}
+				/>
+				<TwitterMetaTags
+					title="Konstantinos Pascal's Blog"
+					description='I am Konstantinos Pascal and this is my writing corner on the web. Here you can expect articles on Javascript and other random topics, for both begginers and advanced!'
 				/>
 			</Head>
 

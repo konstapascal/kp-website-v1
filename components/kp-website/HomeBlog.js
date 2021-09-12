@@ -28,7 +28,7 @@ function Blog({ labels }) {
 				<div className='mt-6'>
 					{labels.map(label => (
 						<Label
-							key={`${label}-` + Math.floor(Math.random() * 1000) + 1}
+							key={`${label}-${Math.floor(Math.random() * 1000) + 1}`}
 							content={`${label}`}
 						/>
 					))}
