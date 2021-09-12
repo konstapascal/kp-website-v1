@@ -18,6 +18,10 @@ export default function Home({ labels }) {
 				<link rel='icon' href='/favicon.png' />
 				<script async src='https://www.googletagmanager.com/gtag/js?id=G-Z2FSLL37JV' />
 				<script src='js/analytics.js' />
+				<meta
+					name='description'
+					content='Hello, my name is Konstantinos Pascal! I am a new developer always excited to learn! Most interested in web development with a passion for both the frontend and the backend! I am very comfortable with the modern web languages, frameworks and technologies.'
+				/>
 			</Head>
 
 			<HomeHero />

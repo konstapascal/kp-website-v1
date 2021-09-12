@@ -48,8 +48,12 @@ function Post({ postData, postContent }) {
 	return (
 		<>
 			<Head>
-				<title>kp-blog</title>
 				<link rel='icon' href='/favicon.png' />
+				<title>{postData.title}</title>
+				<meta name='title' content={postData.title} />
+				<meta name='description' content={postData.excerpt} />
+				<meta name='author' content={postData.author} />
+				<meta name='keywords' content={postData.labels.join(', ')} />
 			</Head>
 
 			<ArticleProgressBar />

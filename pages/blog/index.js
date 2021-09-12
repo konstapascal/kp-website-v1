@@ -17,6 +17,10 @@ function Blog({ filesMetadataArr }) {
 			<Head>
 				<title>kp-blog</title>
 				<link rel='icon' href='/favicon.png' />
+				<meta
+					name='description'
+					content='I am Konstantinos Pascal and this is my writing corner on the web. Here you can expect articles on Javascript and other random topics, for both begginers and advanced!'
+				/>
 			</Head>
 
 			<BlogHero />

@@ -9,7 +9,7 @@ function ProjectCard({
 	labels
 }) {
 	return (
-		<div className='bg-main-dark overflow-hidden mt-12 lg:mt-10 first:mt-0 md:shadow-2xl lg:flex-row-reverse xl:hover:scale-105 transform-gpu lg:max-w-7xl transition-transform flex flex-col max-w-[600px] duration-200 lg:border-l-2 border-green-400 border-opacity-75  rounded-md  shadow-md'>
+		<div className='bg-main-dark overflow-hidden mt-12 lg:mt-10 first:mt-0 md:shadow-2xl lg:flex-row-reverse xl:hover:scale-105 transform-gpu lg:max-w-7xl transition-transform flex flex-col max-w-[600px] duration-200 lg:border-l-4 border-green-400 border-opacity-60 rounded-md  shadow-md'>
 			<img
 				src={`${imgPath}`}
 				width={600}
