@@ -94,7 +94,7 @@ function Hero() {
 						className=' lg:justify-start sm:flex-row flex flex-col-reverse items-center justify-center invisible transition-opacity duration-1000 opacity-0'
 						id='links'>
 						<a
-							title='Download link for my resume, file is in PDF format.'
+							title='Download link for my resume in pdf format'
 							className='text-md hover:scale-105 transform-gpu transition-transform duration-200 mt-8 sm:mt-0 sm:mr-5 lg:text-lg flex items-center px-4 py-2  font-semibold tracking-wider text-gray-100  border-2 border-green-400 rounded-[0.2rem]'
 							href='/files/kp-resume-en-ref-hidden.pdf'
 							download>
@@ -109,7 +109,7 @@ function Hero() {
 
 						<div className=' sm:ml-5 flex items-center'>
 							<a
-								title='Link to my GitHub profile.'
+								title='Link to my GitHub profile'
 								className=' transform-gpu hover:scale-110 flex items-center mr-1 transition-transform duration-200'
 								href='https://github.com/konstapascal'
 								target='_blank'
@@ -122,7 +122,7 @@ function Hero() {
 								/>
 							</a>
 							<a
-								title='Link to my LinkedIn profile.'
+								title='Link to my LinkedIn profile'
 								className=' transform-gpu hover:scale-110 flex items-center mx-1 transition-transform duration-200'
 								href='https://www.linkedin.com/in/konstapascal'
 								target='_blank'
@@ -135,7 +135,7 @@ function Hero() {
 								/>
 							</a>
 							<a
-								title='Link to my Twitter profile.'
+								title='Link to my Twitter profile'
 								className=' transform-gpu hover:scale-110 flex items-center ml-1 transition-transform duration-200'
 								href='https://twitter.com/konstapascal'
 								target='_blank'

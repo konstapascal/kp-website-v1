@@ -7,7 +7,7 @@ function Footer() {
 				</p>
 				<div className=' flex justify-center my-6'>
 					<a
-						title='Link to my GitHub profile.'
+						title='Link to my GitHub profile'
 						className='transform-gpu hover:scale-110 flex items-center mr-1 transition-transform duration-200'
 						href='https://github.com/konstapascal'
 						target='_blank'
@@ -20,7 +20,7 @@ function Footer() {
 						/>
 					</a>
 					<a
-						title='Link to my LinkedIn profile.'
+						title='Link to my LinkedIn profile'
 						className=' transform-gpu hover:scale-110 flex items-center mx-1 transition-transform duration-200'
 						href='https://www.linkedin.com/in/konstapascal'
 						target='_blank'
@@ -28,7 +28,7 @@ function Footer() {
 						<img alt='LinkedIn Logo' src='/svg/linkedin-brands.svg' width={40} height={40} />
 					</a>
 					<a
-						title='Link to my Twitter profile.'
+						title='Link to my Twitter profile'
 						className=' transform-gpu hover:scale-110 flex items-center ml-1 transition-transform duration-200'
 						href='https://twitter.com/konstapascal'
 						target='_blank'
@@ -45,7 +45,7 @@ function Footer() {
 				<p className='text-base font-semibold text-gray-400'>
 					Made by{' '}
 					<a
-						title='Link to my main website, konstapascal.dev.'
+						title='Link to my main website, konstapascal.dev'
 						href='https://konstapascal.dev'
 						className='font-semibold text-green-400'>
 						Konstantinos Pascal

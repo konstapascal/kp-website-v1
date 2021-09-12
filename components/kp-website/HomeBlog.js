@@ -16,7 +16,7 @@ function Blog({ labels }) {
 						I also write about Javascript and web development, check out my{' '}
 						<Link href='/blog'>
 							<a
-								title='Link to my blog website, kp-blog.'
+								title='Link to my blog website'
 								className='hover:underline font-semibold text-green-400 cursor-pointer'>
 								blog!
 							</a>

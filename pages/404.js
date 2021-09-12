@@ -20,7 +20,7 @@ function Error404() {
 
 						<div className='mt-40'>
 							<a
-								title='Go back to the previous page.'
+								title='Go back to the previous page'
 								className=' hover:underline hover:text-green-400 text-2xl font-semibold text-gray-100 cursor-pointer'
 								onClick={() => router.back()}>
 								Go Back{' '}

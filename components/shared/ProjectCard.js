@@ -22,8 +22,8 @@ function ProjectCard({
 					<a
 						title={
 							apiUrl === ''
-								? `Link to the live demo of ${title}.`
-								: `Link to the API documentation of ${title}.`
+								? `Link to the live demo of ${title}`
+								: `Link to the API documentation of ${title}`
 						}
 						href={apiUrl === '' ? `${demoUrl}` : `${apiUrl}`}
 						target='_blank'
@@ -55,12 +55,12 @@ function ProjectCard({
 					{demoUrl !== '' && (
 						<a
 							className=' hover:text-green-400 group flex items-center'
-							title={`Link to the live demo of ${title}.`}
+							title={`Link to the live demo of ${title}`}
 							href={`${demoUrl}`}
 							target='_blank'
 							rel='noopener noreferrer'>
 							<img
-								alt='External link to live demo.'
+								alt='External link to live demo'
 								className='transform-gpu group-hover:scale-110 transition-transform duration-200'
 								src='/svg/external-link-square-alt-solid.svg'
 								width={35}
@@ -73,11 +73,11 @@ function ProjectCard({
 						<a
 							className=' hover:text-green-400 group flex items-center'
 							href={`${apiUrl}`}
-							title={`Link to the API documentation of ${title}.`}
+							title={`Link to the API documentation of ${title}`}
 							target='_blank'
 							rel='noopener noreferrer'>
 							<img
-								alt='External link to API documentation.'
+								alt='External link to API documentation'
 								className='transform-gpu group-hover:scale-110 transition-transform duration-200'
 								src='/svg/server-solid.svg'
 								width={30}
@@ -89,11 +89,11 @@ function ProjectCard({
 					<a
 						className='hover:text-green-400 group flex items-center ml-6'
 						href={`${codeUrl}`}
-						title={`Link to the source code for ${title} on GitHub.`}
+						title={`Link to the source code for ${title} on GitHub`}
 						target='_blank'
 						rel='noopener noreferrer'>
 						<img
-							alt='External link to source code on Github.'
+							alt='External link to source code on Github'
 							className='transform-gpu group-hover:scale-110 transition-transform duration-200'
 							src='/svg/github-square-brands.svg'
 							width={35}

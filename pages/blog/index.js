@@ -43,7 +43,7 @@ function Blog({ filesMetadataArr }) {
 					<div className='mt-16 text-center'>
 						<Link href={`/`}>
 							<a
-								title='Go back to the main website, konstapascal.dev.'
+								title='Go back to the main website, konstapascal.dev'
 								className=' hover:underline hover:text-green-400 text-2xl font-semibold cursor-pointer'>
 								Back to Website{' '}
 							</a>

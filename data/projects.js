@@ -22,7 +22,7 @@ const projects = [
 		description:
 			'Simple application in which you can generate and save your favorite quotes. Made with Next and styled entirely with Tailwind. Works by making use of the browsers local storage to preserve state.',
 		metadata: {
-			imgAlt: 'Image of The Wise Owl project, featuring the main page of the website.'
+			imgAlt: 'Image of The Wise Owl project, featuring the main page of the website'
 		},
 		urls: {
 			imgPath: '/img/the-wise-owl.webp',
@@ -40,7 +40,7 @@ const projects = [
 			'Simple URL shortener application created with the Create React App template, styled with Tailwind. Extremely useful for both shortening URLs and having them personalized to my own domain.',
 		metadata: {
 			imgAlt:
-				'Image of the URL shortener website project, featuring the main page of the website.'
+				'Image of the URL shortener website project, featuring the main page of the website'
 		},
 		urls: {
 			imgPath: '/img/url-shortener.webp',
@@ -69,7 +69,7 @@ const projects = [
 		description:
 			'CLI application from which you can change and manage your VSC themes. Implemented in Node and with minimal use of additional third party libraries. Compatible with Windows, macOS and Linux.',
 		metadata: {
-			imgAlt: 'Image of a terminal with some output from the VSCode Theme CLI applicaiton.'
+			imgAlt: 'Image of a terminal with some output from the VSCode Theme CLI application'
 		},
 		urls: {
 			imgPath: '/img/vscode-theme.webp',
