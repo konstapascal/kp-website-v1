@@ -19,6 +19,8 @@ import TwitterMetaTags from '../../components/meta/TwitterMetaTags';
 import GenericMetaTags from '../../components/meta/GenericMetaTags';
 
 function Post({ postData, postContent }) {
+	console.log(postData);
+
 	// make all a tags open new tab
 	useEffect(() => {
 		makeAnchorsOpenNewTab('#article-content');
@@ -59,7 +61,7 @@ function Post({ postData, postContent }) {
 					author={postData.author}
 					keywords={postData.labels}
 				/>
-				<TwitterMetaTags title={postData.title} description={postData.description} />
+				<TwitterMetaTags title={postData.title} description={postData.excerpt} />
 			</Head>
 
 			<ArticleProgressBar />

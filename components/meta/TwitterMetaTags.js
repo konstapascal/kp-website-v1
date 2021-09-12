@@ -5,7 +5,7 @@ function TwitterMetaTags({ title, description }) {
 			<meta name='twitter:title' content={title} />
 			<meta name='twitter:description' content={description} />
 			<meta name='twitter:site' content='@konstapascal' />
-			<meta name='twitter:image' content='/img/kp-thumbnail.jpg' />
+			<meta name='twitter:image' content='https://konstapascal.dev/img/kp-thumbnail.jpg' />
 			<meta name='twitter:image:alt' content='Image of the KP logo' />
 		</>
 	);

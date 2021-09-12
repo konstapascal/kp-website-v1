@@ -28,8 +28,8 @@ export default function Home({ labels }) {
 					keywords={labels}
 				/>
 				<TwitterMetaTags
-					title="Konstantinos Pascal's Website"
-					description='Hello, my name is Konstantinos Pascal! I am a new developer always excited to learn! Most interested in web development with a passion for both the frontend and the backend! I am very comfortable with the modern web languages, frameworks and technologies.'
+					title='KP Website'
+					description='I am a new developer always excited to learn! Most interested in web development with a passion for both the frontend and the backend! I am very comfortable with the modern web languages, frameworks and technologies.'
 				/>
 			</Head>
 

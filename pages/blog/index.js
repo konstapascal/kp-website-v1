@@ -29,7 +29,7 @@ function Blog({ filesMetadataArr }) {
 					keywords={uniqueLabels}
 				/>
 				<TwitterMetaTags
-					title="Konstantinos Pascal's Blog"
+					title='KP Blog'
 					description='I am Konstantinos Pascal and this is my writing corner on the web. Here you can expect articles on Javascript and other random topics, for both begginers and advanced!'
 				/>
 			</Head>
