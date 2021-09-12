@@ -46,8 +46,15 @@ function MyApp({ Component, pageProps }) {
 				<a
 					id='go-up-a'
 					href='#'
+					title='Scroll all the way back up.'
 					className='transform-gpu hover:scale-110 flex transition-transform duration-200 cursor-default pointer-events-none'>
-					<img href='#' src='/svg/arrow-circle-up-solid.svg' width={40} height={40} />
+					<img
+						alt='Arrow pointing up.'
+						href='#'
+						src='/svg/arrow-circle-up-solid.svg'
+						width={40}
+						height={40}
+					/>
 				</a>
 			</div>
 		</>

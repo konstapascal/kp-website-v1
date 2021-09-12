@@ -8,7 +8,9 @@ function BlogPost({ title, excerpt, date, author, labels, url }) {
 	return (
 		<div className=' first:mt-0 last:mb-0 my-14'>
 			<Link href={`/blog/${url}`}>
-				<a className=' hover:underline hover:text-green-400 lg:text-4xl inline-block text-3xl font-semibold text-gray-100 cursor-pointer'>
+				<a
+					title={`Link to the blog post with title ${title}`}
+					className=' hover:underline hover:text-green-400 lg:text-4xl inline-block text-3xl font-semibold text-gray-100 cursor-pointer'>
 					{title}
 				</a>
 			</Link>

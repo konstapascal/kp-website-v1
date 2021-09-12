@@ -3,7 +3,7 @@ import React, { useEffect } from 'react';
 import { Link as ScrollLink } from 'react-scroll';
 import { WindupChildren, Pace } from 'windups';
 
-import Logo from '../shared/Logo';
+// import Logo from '../shared/Logo';
 import Button from '../shared/Button';
 import fadeInElement from '../../lib/fadeInElement';
 
@@ -45,7 +45,11 @@ function Hero() {
 				{/* ---------- LOGO AND BLOG BUTTON / NAV ---------- */}
 				<nav className='md:pt-6 md:px-6 lg:pt-8 lg:px-8 absolute inset-x-0 top-0 flex items-center justify-end px-4 pt-4'>
 					{/* <Logo linkHref={'/'} content={'KP-WEBSITE'} /> */}
-					<Button linkHref={'/blog'} content={'BLOG'} />
+					<Button
+						linkTitle={'Link to the blog website.'}
+						linkHref={'/blog'}
+						content={'BLOG'}
+					/>
 				</nav>
 
 				{/* ---------- BACKGROUND WATERMARK ---------- */}
@@ -90,34 +94,58 @@ function Hero() {
 						className=' lg:justify-start sm:flex-row flex flex-col-reverse items-center justify-center invisible transition-opacity duration-1000 opacity-0'
 						id='links'>
 						<a
+							title='Download link for my resume, file is in PDF format.'
 							className='text-md hover:scale-105 transform-gpu transition-transform duration-200 mt-8 sm:mt-0 sm:mr-5 lg:text-lg flex items-center px-4 py-2  font-semibold tracking-wider text-gray-100  border-2 border-green-400 rounded-[0.2rem]'
 							href='/files/kp-resume-en-ref-hidden.pdf'
 							download>
-							<img src='/svg/file-download-solid.svg' width={20} height={20} />
+							<img
+								alt='File download icon'
+								src='/svg/file-download-solid.svg'
+								width={20}
+								height={20}
+							/>
 							<span className=' ml-2'>RESUME</span>
 						</a>
 
 						<div className=' sm:ml-5 flex items-center'>
 							<a
+								title='Link to my GitHub profile.'
 								className=' transform-gpu hover:scale-110 flex items-center mr-1 transition-transform duration-200'
 								href='https://github.com/konstapascal'
 								target='_blank'
 								rel='noopener noreferrer'>
-								<img src='/svg/github-square-brands.svg' width={40} height={40} />
+								<img
+									alt='GitHub Logo'
+									src='/svg/github-square-brands.svg'
+									width={40}
+									height={40}
+								/>
 							</a>
 							<a
+								title='Link to my LinkedIn profile.'
 								className=' transform-gpu hover:scale-110 flex items-center mx-1 transition-transform duration-200'
 								href='https://www.linkedin.com/in/konstapascal'
 								target='_blank'
 								rel='noopener noreferrer'>
-								<img src='/svg/linkedin-brands.svg' width={40} height={40} />
+								<img
+									alt='LinkedIn Logo'
+									src='/svg/linkedin-brands.svg'
+									width={40}
+									height={40}
+								/>
 							</a>
 							<a
+								title='Link to my Twitter profile.'
 								className=' transform-gpu hover:scale-110 flex items-center ml-1 transition-transform duration-200'
 								href='https://twitter.com/konstapascal'
 								target='_blank'
 								rel='noopener noreferrer'>
-								<img src='/svg/twitter-square-brands.svg' width={40} height={40} />
+								<img
+									alt='Twitter Logo'
+									src='/svg/twitter-square-brands.svg'
+									width={40}
+									height={40}
+								/>
 							</a>
 						</div>
 					</div>
@@ -129,6 +157,7 @@ function Hero() {
 					className='lg:block bottom-4 absolute hidden transition-opacity duration-1000 opacity-0 cursor-pointer'>
 					<ScrollLink to='about-section' smooth={true} duration={1000}>
 						<img
+							alt='Icon of arrow pointing down'
 							className='transform-gpu hover:scale-125 transition-transform duration-200'
 							src='/svg/chevron-down-solid.svg'
 							width={40}

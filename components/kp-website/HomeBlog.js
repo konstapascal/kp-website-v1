@@ -15,7 +15,9 @@ function Blog({ labels }) {
 					<p>
 						I also write about Javascript and web development, check out my{' '}
 						<Link href='/blog'>
-							<a className='hover:underline font-semibold text-green-400 cursor-pointer'>
+							<a
+								title='Link to my blog website, kp-blog.'
+								className='hover:underline font-semibold text-green-400 cursor-pointer'>
 								blog!
 							</a>
 						</Link>

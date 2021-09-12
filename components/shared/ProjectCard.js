@@ -4,15 +4,27 @@ function ProjectCard({
 	title,
 	subtitle,
 	description,
+	metadata: { imgAlt },
 	urls: { imgPath, codeUrl, demoUrl = '', apiUrl = '' },
 	labels
 }) {
 	return (
 		<div className='bg-main-dark overflow-hidden mt-12 lg:mt-10 first:mt-0 md:shadow-2xl lg:flex-row-reverse xl:hover:scale-105 transform-gpu lg:max-w-7xl transition-transform flex flex-col max-w-[600px] duration-200 lg:border-l-2 border-green-400 border-opacity-75  rounded-md  shadow-md'>
-			<img src={`${imgPath}`} width={600} height={300} className='object-cover object-center' />
+			<img
+				src={`${imgPath}`}
+				width={600}
+				height={300}
+				alt={imgAlt}
+				className='object-cover object-center'
+			/>
 			<div className=' xl:px-14 xl:py-12 md:px-10 max-w-3xl px-6 py-8'>
 				<div>
 					<a
+						title={
+							apiUrl === ''
+								? `Link to the live demo of ${title}.`
+								: `Link to the API documentation of ${title}.`
+						}
 						href={apiUrl === '' ? `${demoUrl}` : `${apiUrl}`}
 						target='_blank'
 						rel='noopener noreferrer'>
@@ -43,10 +55,12 @@ function ProjectCard({
 					{demoUrl !== '' && (
 						<a
 							className=' hover:text-green-400 group flex items-center'
+							title={`Link to the live demo of ${title}.`}
 							href={`${demoUrl}`}
 							target='_blank'
 							rel='noopener noreferrer'>
 							<img
+								alt='External link to live demo.'
 								className='transform-gpu group-hover:scale-110 transition-transform duration-200'
 								src='/svg/external-link-square-alt-solid.svg'
 								width={35}
@@ -59,9 +73,11 @@ function ProjectCard({
 						<a
 							className=' hover:text-green-400 group flex items-center'
 							href={`${apiUrl}`}
+							title={`Link to the API documentation of ${title}.`}
 							target='_blank'
 							rel='noopener noreferrer'>
 							<img
+								alt='External link to API documentation.'
 								className='transform-gpu group-hover:scale-110 transition-transform duration-200'
 								src='/svg/server-solid.svg'
 								width={30}
@@ -73,9 +89,11 @@ function ProjectCard({
 					<a
 						className='hover:text-green-400 group flex items-center ml-6'
 						href={`${codeUrl}`}
+						title={`Link to the source code for ${title} on GitHub.`}
 						target='_blank'
 						rel='noopener noreferrer'>
 						<img
+							alt='External link to source code on Github.'
 							className='transform-gpu group-hover:scale-110 transition-transform duration-200'
 							src='/svg/github-square-brands.svg'
 							width={35}

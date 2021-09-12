@@ -15,12 +15,12 @@ function Error404() {
 					</div>
 					<div className=' top-[27.5%] sm:top-[30%] md:top-[32.5%] absolute text-center'>
 						<p className=' lg:text-6xl md:text-5xl text-4xl'>
-							Error <span className='text-accent-light'>404</span> - Page
-							not found!
+							Error <span className='text-accent-light'>404</span> - Page not found!
 						</p>
 
 						<div className='mt-40'>
 							<a
+								title='Go back to the previous page.'
 								className=' hover:underline hover:text-green-400 text-2xl font-semibold text-gray-100 cursor-pointer'
 								onClick={() => router.back()}>
 								Go Back{' '}

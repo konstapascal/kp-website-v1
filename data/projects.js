@@ -5,6 +5,9 @@ const projects = [
 		subtitle: 'Personal website and blog',
 		description:
 			'My personal website and blog, written in React and Next. The website is generated entirely into vanilla HTML, CSS and JS files. Blog posts are written in Markdown and generated at build time.',
+		metadata: {
+			imgAlt: 'Image of my personal website project, featuring the hero section.'
+		},
 		urls: {
 			imgPath: '/img/kp-website.jpg',
 			demoUrl: 'https://konstapascal.dev',
@@ -18,11 +21,15 @@ const projects = [
 		subtitle: 'Inspirational quotes generator',
 		description:
 			'Simple application in which you can generate and save your favorite quotes. Made with Next and styled entirely with Tailwind. Works by making use of the browsers local storage to preserve state.',
+		metadata: {
+			imgAlt: 'Image of The Wise Owl project, featuring the main page of the website.'
+		},
 		urls: {
 			imgPath: '/img/the-wise-owl.jpg',
 			demoUrl: 'https://owl.konstapascal.dev',
 			codeUrl: 'https://github.com/konstapascal/the-wise-owl'
 		},
+
 		labels: ['NEXT', 'TAILWIND']
 	},
 	{
@@ -31,6 +38,10 @@ const projects = [
 		subtitle: 'URL shortener for long links',
 		description:
 			'Simple URL shortener application created with the Create React App template, styled with Tailwind. Extremely useful for both shortening URLs and having them personalized to my own domain.',
+		metadata: {
+			imgAlt:
+				'Image of the URL shortener website project, featuring the main page of the website.'
+		},
 		urls: {
 			imgPath: '/img/url-shortener.jpg',
 			demoUrl: 'https://sh.konstapascal.dev',
@@ -57,6 +68,9 @@ const projects = [
 		subtitle: 'CLI application for managing VSC themes',
 		description:
 			'CLI application from which you can change and manage your VSC themes. Implemented in Node and with minimal use of additional third party libraries. Compatible with Windows, macOS and Linux.',
+		metadata: {
+			imgAlt: 'Image of a terminal with some output from the VSCode Theme CLI applicaiton.'
+		},
 		urls: {
 			imgPath: '/img/vscode-theme.jpg',
 			demoUrl: 'https://www.npmjs.com/package/vscode-theme',

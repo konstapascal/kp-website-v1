@@ -51,6 +51,7 @@ function Post({ postData, postContent }) {
 				<title>kp-blog</title>
 				<link rel='icon' href='/favicon.png' />
 			</Head>
+
 			<ArticleProgressBar />
 
 			<BlogArticleHero
@@ -69,7 +70,9 @@ function Post({ postData, postContent }) {
 					</div>
 					<div className=' mt-16 text-center'>
 						<Link href={`/blog`}>
-							<a className=' hover:underline hover:text-green-400 text-2xl font-semibold text-gray-100 cursor-pointer'>
+							<a
+								title='Go back to the main blog.'
+								className=' hover:underline hover:text-green-400 text-2xl font-semibold text-gray-100 cursor-pointer'>
 								Go Back{' '}
 							</a>
 						</Link>

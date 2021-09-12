@@ -35,7 +35,8 @@ function Projects() {
 							title={project.title}
 							subtitle={project.subtitle}
 							description={project.description}
-							urls={{ ...project.urls }}
+							metadata={project.metadata}
+							urls={project.urls}
 							labels={project.labels}
 						/>
 					))}
