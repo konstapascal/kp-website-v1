@@ -12,10 +12,24 @@ import { read } from 'gray-matter';
 import Footer from '../../components/shared/Footer';
 import GenericMetaTags from '../../components/meta/GenericMetaTags';
 import TwitterMetaTags from '../../components/meta/TwitterMetaTags';
+import FacebookMetaTags from '../../components/meta/FacebookMetaTags';
+import { useEffect } from 'react';
+
+const meta = {
+	title: 'KP Blog',
+	description:
+		'I am Konstantinos Pascal and this is my writing corner on the web. You can expect articles on both Javascript and other random topics, aimed at both begginers and more advanced developers!'
+};
 
 function Blog({ filesMetadataArr }) {
 	const labels = filesMetadataArr.map(file => file.labels).flat();
 	const uniqueLabels = [...new Set(labels)];
+
+	let url;
+
+	useEffect(() => {
+		url = window.location.href;
+	}, []);
 
 	return (
 		<>
@@ -24,13 +38,16 @@ function Blog({ filesMetadataArr }) {
 				<link rel='icon' href='/favicon.png' />
 
 				<GenericMetaTags
-					description='I am Konstantinos Pascal and this is my writing corner on the web. Here you can expect articles on Javascript and other random topics, for both begginers and advanced!'
+					description={meta.description}
 					author='Konstantinos Pascal'
 					keywords={uniqueLabels}
 				/>
-				<TwitterMetaTags
-					title='KP Blog'
-					description='I am Konstantinos Pascal and this is my writing corner on the web. Here you can expect articles on Javascript and other random topics, for both begginers and advanced!'
+				<TwitterMetaTags title={meta.title} description={meta.description} />
+				<FacebookMetaTags
+					url={url}
+					type='blog'
+					title={meta.title}
+					description={meta.description}
 				/>
 			</Head>
 

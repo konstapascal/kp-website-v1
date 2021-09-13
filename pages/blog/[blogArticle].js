@@ -17,18 +17,17 @@ import ArticleProgressBar from '../../components/shared/ArticleProgressBar';
 import prism from 'prismjs';
 import TwitterMetaTags from '../../components/meta/TwitterMetaTags';
 import GenericMetaTags from '../../components/meta/GenericMetaTags';
+import FacebookMetaTags from '../../components/meta/FacebookMetaTags';
 
-function Post({ postData, postContent }) {
-	console.log(postData);
+function Post({ postData: { title, excerpt, author, labels, date }, postContent }) {
+	let url;
 
 	// make all a tags open new tab
 	useEffect(() => {
 		makeAnchorsOpenNewTab('#article-content');
-	}, []);
-
-	// syntax highlight all pre code blocks
-	useEffect(() => {
 		prism.highlightAll();
+
+		url = window.location.href;
 	}, []);
 
 	// event listener update progress bar at the top
@@ -53,25 +52,26 @@ function Post({ postData, postContent }) {
 		<>
 			<Head>
 				<link rel='icon' href='/favicon.png' />
-				<title>{postData.title}</title>
+				<title>{title}</title>
 
 				<GenericMetaTags
-					title={postData.title}
-					description={postData.excerpt}
-					author={postData.author}
-					keywords={postData.labels}
+					title={title}
+					description={excerpt}
+					author={author}
+					keywords={labels}
 				/>
-				<TwitterMetaTags title={postData.title} description={postData.excerpt} />
+				<TwitterMetaTags title={title} description={excerpt} />
+				<FacebookMetaTags url={url} type='article' title={title} description={excerpt} />
 			</Head>
 
 			<ArticleProgressBar />
 
 			<BlogArticleHero
 				articleDetails={{
-					title: postData.title,
-					author: postData.author,
-					date: postData.date,
-					labels: postData.labels
+					title,
+					author,
+					date,
+					labels
 				}}
 			/>
 

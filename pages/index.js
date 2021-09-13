@@ -11,8 +11,22 @@ import { readdir } from 'fs/promises';
 import { read as gmRead } from 'gray-matter';
 import GenericMetaTags from '../components/meta/GenericMetaTags';
 import TwitterMetaTags from '../components/meta/TwitterMetaTags';
+import { useEffect } from 'react';
+import FacebookMetaTags from '../components/meta/FacebookMetaTags';
+
+const meta = {
+	title: 'KP Website',
+	description:
+		'I am a developer with a big interest in web development and a passion for both the frontend and the backend! I am very comfortable with modern web languages, frameworks and technologies such as React, Next and Tailwind.'
+};
 
 export default function Home({ labels }) {
+	let url;
+
+	useEffect(() => {
+		url = window.location.href;
+	}, []);
+
 	return (
 		<>
 			<Head>
@@ -23,13 +37,16 @@ export default function Home({ labels }) {
 				<script src='js/analytics.js' />
 
 				<GenericMetaTags
-					description='Hello, my name is Konstantinos Pascal! I am a new developer always excited to learn! Most interested in web development with a passion for both the frontend and the backend! I am very comfortable with the modern web languages, frameworks and technologies.'
+					description={meta.description}
 					author='Konstantinos Pascal'
 					keywords={labels}
 				/>
-				<TwitterMetaTags
-					title='KP Website'
-					description='I am a new developer always excited to learn! Most interested in web development with a passion for both the frontend and the backend! I am very comfortable with the modern web languages, frameworks and technologies.'
+				<TwitterMetaTags title={meta.title} description={meta.description} />
+				<FacebookMetaTags
+					url={url}
+					type='website'
+					title={meta.title}
+					description={meta.description}
 				/>
 			</Head>
 
