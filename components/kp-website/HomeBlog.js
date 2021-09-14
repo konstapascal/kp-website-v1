@@ -1,7 +1,7 @@
 import Link from 'next/link';
 import Label from '../shared/Label';
 
-function Blog({ labels }) {
+function Blog({ uniqueLabels }) {
 	return (
 		<section className=' bg-main-light lg:pb-28 px-4 pb-16'>
 			<div className=' lg:max-w-3xl container text-center text-gray-100'>
@@ -26,7 +26,7 @@ function Blog({ labels }) {
 				</div>
 
 				<div className='mt-6'>
-					{labels.map(label => (
+					{uniqueLabels.map(label => (
 						<Label
 							key={`${label}-${Math.floor(Math.random() * 1000) + 1}`}
 							content={`${label}`}

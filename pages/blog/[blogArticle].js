@@ -1,5 +1,4 @@
 import React, { useEffect } from 'react';
-import Head from 'next/head';
 import BlogArticleHero from '../../components/kp-blog/BlogArticleHero';
 import Link from 'next/link';
 
@@ -15,9 +14,7 @@ import Footer from '../../components/shared/Footer';
 import ArticleProgressBar from '../../components/shared/ArticleProgressBar';
 
 import prism from 'prismjs';
-import TwitterMetaTags from '../../components/meta/TwitterMetaTags';
-import GenericMetaTags from '../../components/meta/GenericMetaTags';
-import FacebookMetaTags from '../../components/meta/FacebookMetaTags';
+import BlogArticleHead from '../../components/kp-blog/BlogArticleHead';
 
 function Post({ postData: { title, excerpt, author, labels, date }, postContent }) {
 	let url;
@@ -50,22 +47,15 @@ function Post({ postData: { title, excerpt, author, labels, date }, postContent 
 
 	return (
 		<>
-			<Head>
-				<link rel='icon' href='/favicon.png' />
-				<title>{title}</title>
-
-				<GenericMetaTags
-					title={title}
-					description={excerpt}
-					author={author}
-					keywords={labels}
-				/>
-				<TwitterMetaTags title={title} description={excerpt} />
-				<FacebookMetaTags url={url} type='article' title={title} description={excerpt} />
-			</Head>
+			<BlogArticleHead
+				tile={title}
+				excerpt={excerpt}
+				author={author}
+				labels={labels}
+				url={url}
+			/>
 
 			<ArticleProgressBar />
-
 			<BlogArticleHero
 				articleDetails={{
 					title,

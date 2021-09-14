@@ -1,25 +1,18 @@
-import Head from 'next/head';
+import { useEffect } from 'react';
 
+import BlogHead from '../../components/kp-blog/BlogHead';
 import BlogHero from '../../components/kp-blog/BlogHero';
+import BlogSearchBar from '../../components/kp-blog/BlogSearchBar';
 import BlogPost from '../../components/kp-blog/BlogPost';
+import Footer from '../../components/shared/Footer';
+
 import Link from 'next/link';
 
-import { readdir } from 'fs/promises';
 import path from 'path';
+import { readdir } from 'fs/promises';
 import { platform } from 'os';
 
 import { read } from 'gray-matter';
-import Footer from '../../components/shared/Footer';
-import GenericMetaTags from '../../components/meta/GenericMetaTags';
-import TwitterMetaTags from '../../components/meta/TwitterMetaTags';
-import FacebookMetaTags from '../../components/meta/FacebookMetaTags';
-import { useEffect } from 'react';
-
-const meta = {
-	title: 'KP Blog',
-	description:
-		'I am Konstantinos Pascal and this is my writing corner on the web. You can expect articles on both Javascript and other random topics, aimed at both begginers and more advanced developers!'
-};
 
 function Blog({ filesMetadataArr }) {
 	const labels = filesMetadataArr.map(file => file.labels).flat();
@@ -33,41 +26,27 @@ function Blog({ filesMetadataArr }) {
 
 	return (
 		<>
-			<Head>
-				<title>kp-blog</title>
-				<link rel='icon' href='/favicon.png' />
-
-				<GenericMetaTags
-					description={meta.description}
-					author='Konstantinos Pascal'
-					keywords={uniqueLabels}
-				/>
-				<TwitterMetaTags title={meta.title} description={meta.description} />
-				<FacebookMetaTags
-					url={url}
-					type='blog'
-					title={meta.title}
-					description={meta.description}
-				/>
-			</Head>
-
+			<BlogHead uniqueLabels={uniqueLabels} url={url} />
 			<BlogHero />
 
 			<section className=' bg-main-light lg:px-0 lg:pt-24 lg:pb-32 px-4 pt-20 pb-24'>
 				<div className=' lg:max-w-3xl container text-gray-100'>
-					{filesMetadataArr.map(file => {
-						return (
-							<BlogPost
-								key={file.title}
-								title={file.title}
-								excerpt={file.excerpt}
-								date={new Date(file.date).toUTCString().slice(5, 16)}
-								author={file.author}
-								labels={file.labels}
-								url={file.url}
-							/>
-						);
-					})}
+					<BlogSearchBar />
+					<div className='mt-12'>
+						{filesMetadataArr.map(file => {
+							return (
+								<BlogPost
+									key={file.title}
+									title={file.title}
+									excerpt={file.excerpt}
+									date={new Date(file.date).toUTCString().slice(5, 16)}
+									author={file.author}
+									labels={file.labels}
+									url={file.url}
+								/>
+							);
+						})}
+					</div>
 					<div className='mt-16 text-center'>
 						<Link href={`/`}>
 							<a
@@ -100,7 +79,7 @@ export async function getStaticProps() {
 		.map(post => {
 			return { ...post.data };
 		})
-		// sort by date
+		// sort by
 		.sort((a, b) => {
 			return new Date(b.date) - new Date(a.date);
 		});
