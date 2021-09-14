@@ -25,7 +25,7 @@ export default function Home({ uniqueLabels }) {
 
 			<HomeAbout />
 			<HomeProjects />
-			<HomeBlog labels={uniqueLabels} />
+			<HomeBlog uniqueLabels={uniqueLabels} />
 
 			<Footer />
 		</>

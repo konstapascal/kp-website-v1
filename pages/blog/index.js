@@ -1,4 +1,4 @@
-import { useEffect } from 'react';
+import { useEffect, useState } from 'react';
 
 import BlogHead from '../../components/kp-blog/BlogHead';
 import BlogHero from '../../components/kp-blog/BlogHero';
@@ -13,8 +13,13 @@ import { readdir } from 'fs/promises';
 import { platform } from 'os';
 
 import { read } from 'gray-matter';
+import NoArticleResults from '../../components/kp-blog/NoArticleResults';
 
 function Blog({ filesMetadataArr }) {
+	const [blogPosts, setBlogPosts] = useState(filesMetadataArr);
+	const [filteredPosts, setFilteredPosts] = useState([]);
+	const [search, setSearch] = useState('');
+
 	const labels = filesMetadataArr.map(file => file.labels).flat();
 	const uniqueLabels = [...new Set(labels)];
 
@@ -24,6 +29,19 @@ function Blog({ filesMetadataArr }) {
 		url = window.location.href;
 	}, []);
 
+	useEffect(() => {
+		if (search === '') return setFilteredPosts([]);
+
+		const filtered = [...blogPosts].filter(post => {
+			return (
+				post.labels.includes(search.toUpperCase()) ||
+				post.title.toLowerCase().includes(search.toLowerCase())
+			);
+		});
+
+		setFilteredPosts(filtered);
+	}, [search]);
+
 	return (
 		<>
 			<BlogHead uniqueLabels={uniqueLabels} url={url} />
@@ -31,26 +49,47 @@ function Blog({ filesMetadataArr }) {
 
 			<section className=' bg-main-light lg:px-0 lg:pt-24 lg:pb-32 px-4 pt-20 pb-24'>
 				<div className=' lg:max-w-3xl container text-gray-100'>
-					<BlogSearchBar />
-					<div className='mt-12'>
-						{filesMetadataArr.map(file => {
-							return (
-								<BlogPost
-									key={file.title}
-									title={file.title}
-									excerpt={file.excerpt}
-									date={new Date(file.date).toUTCString().slice(5, 16)}
-									author={file.author}
-									labels={file.labels}
-									url={file.url}
-								/>
-							);
-						})}
+					<BlogSearchBar search={search} setSearch={setSearch} />
+					<div className='mt-10'>
+						{search === '' &&
+							blogPosts.map(post => {
+								return (
+									<BlogPost
+										key={post.title}
+										title={post.title}
+										excerpt={post.excerpt}
+										date={new Date(post.date).toUTCString().slice(5, 16)}
+										author={post.author}
+										labels={post.labels}
+										url={post.url}
+									/>
+								);
+							})}
+
+						{search !== '' &&
+							filteredPosts.length !== 0 &&
+							filteredPosts.map(post => {
+								return (
+									<BlogPost
+										key={post.title}
+										title={post.title}
+										excerpt={post.excerpt}
+										date={new Date(post.date).toUTCString().slice(5, 16)}
+										author={post.author}
+										labels={post.labels}
+										url={post.url}
+									/>
+								);
+							})}
+
+						{search !== '' && filteredPosts.length === 0 && (
+							<NoArticleResults setSearch={setSearch} />
+						)}
 					</div>
 					<div className='mt-16 text-center'>
 						<Link href={`/`}>
 							<a
-								title='Go back to the main website, konstapascal.dev'
+								title='Go back to the main website'
 								className=' hover:underline hover:text-green-400 text-2xl font-semibold cursor-pointer'>
 								Back to Website{' '}
 							</a>
@@ -79,7 +118,6 @@ export async function getStaticProps() {
 		.map(post => {
 			return { ...post.data };
 		})
-		// sort by
 		.sort((a, b) => {
 			return new Date(b.date) - new Date(a.date);
 		});
