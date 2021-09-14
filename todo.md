@@ -1,3 +1,0 @@
--  change to custom domain
--  add Chestnut as a project
--  write a couple blog articles
