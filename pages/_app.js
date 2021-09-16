@@ -1,20 +1,15 @@
-import '../styles/tailwind.css';
-import '../styles/globals.css';
+import 'tailwindcss/tailwind.css';
+
 import '../styles/prism-syntax-theme.css';
+import '../styles/globals.css';
 
 import { useEffect } from 'react';
 
 import fadeInElement from '../lib/fadeInElement';
 import fadeOutElement from '../lib/fadeOutElement';
-
-// import '../styles/nprogress.css';
-// import useProgressBar from '../lib/useProgressBar';
+import UpArrow from '../components/shared/UpArrow';
 
 function MyApp({ Component, pageProps }) {
-	// useEffect(() => {
-	// 	useProgressBar();
-	// }, []);
-
 	useEffect(() => {
 		const button = document.querySelector('#go-up');
 		const a = button.querySelector('#go-up-a');
@@ -40,23 +35,7 @@ function MyApp({ Component, pageProps }) {
 		<>
 			<Component {...pageProps} />
 
-			<div
-				id='go-up'
-				className=' fixed bottom-0 right-0 z-50 p-6 transition-opacity duration-500 opacity-0'>
-				<a
-					id='go-up-a'
-					href='#'
-					title='Scroll all the way back up'
-					className='transform-gpu hover:scale-110 flex transition-transform duration-200 cursor-default pointer-events-none'>
-					<img
-						alt='Arrow pointing up'
-						href='#'
-						src='/svg/arrow-circle-up-solid.svg'
-						width={40}
-						height={40}
-					/>
-				</a>
-			</div>
+			<UpArrow />
 		</>
 	);
 }
