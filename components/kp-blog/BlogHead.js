@@ -4,30 +4,23 @@ import FacebookMetaTags from '../meta/FacebookMetaTags';
 import GenericMetaTags from '../meta/GenericMetaTags';
 import TwitterMetaTags from '../meta/TwitterMetaTags';
 
-const meta = {
-	title: 'KP Blog',
-	description:
-		'I am Konstantinos Pascal and this is my writing corner on the web. You can expect articles on both Javascript and other random topics, aimed at both begginers and more advanced developers!'
-};
+import metadata from '../../data/metadata';
 
 function BlogHead({ uniqueLabels, url }) {
+	const { title, description } = metadata.website;
+
 	return (
 		<Head>
 			<title>kp-blog</title>
 			<link rel='icon' href='/favicon.png' />
 
 			<GenericMetaTags
-				description={meta.description}
+				description={description}
 				author='Konstantinos Pascal'
 				keywords={uniqueLabels}
 			/>
-			<TwitterMetaTags title={meta.title} description={meta.description} />
-			<FacebookMetaTags
-				url={url}
-				type='blog'
-				title={meta.title}
-				description={meta.description}
-			/>
+			<TwitterMetaTags title={title} description={description} />
+			<FacebookMetaTags url={url} type='blog' title={title} description={description} />
 		</Head>
 	);
 }

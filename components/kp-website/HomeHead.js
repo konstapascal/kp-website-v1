@@ -4,13 +4,11 @@ import FacebookMetaTags from '../meta/FacebookMetaTags';
 import GenericMetaTags from '../meta/GenericMetaTags';
 import TwitterMetaTags from '../meta/TwitterMetaTags';
 
-const meta = {
-	title: 'KP Website',
-	description:
-		'I am a developer with a big interest in web development and a passion for both the frontend and the backend! I am very comfortable with modern web languages, frameworks and technologies such as React, Next and Tailwind.'
-};
+import metadata from '../../data/metadata';
 
 function HomeHead({ url, labels }) {
+	const { title, description } = metadata.website;
+
 	return (
 		<Head>
 			<title>kp-website</title>
@@ -20,17 +18,12 @@ function HomeHead({ url, labels }) {
 			<script src='js/analytics.js' />
 
 			<GenericMetaTags
-				description={meta.description}
+				description={description}
 				author='Konstantinos Pascal'
 				keywords={labels}
 			/>
-			<TwitterMetaTags title={meta.title} description={meta.description} />
-			<FacebookMetaTags
-				url={url}
-				type='website'
-				title={meta.title}
-				description={meta.description}
-			/>
+			<TwitterMetaTags title={title} description={description} />
+			<FacebookMetaTags url={url} type='website' title={title} description={description} />
 		</Head>
 	);
 }

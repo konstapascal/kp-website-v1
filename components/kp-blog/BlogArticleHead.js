@@ -8,7 +8,7 @@ function BlogArticleHead({ title, excerpt, author, labels, url }) {
 	return (
 		<Head>
 			<link rel='icon' href='/favicon.png' />
-			<title>{title}</title>
+			<title>kp-blog - {title}</title>
 
 			<GenericMetaTags title={title} description={excerpt} author={author} keywords={labels} />
 			<TwitterMetaTags title={title} description={excerpt} />

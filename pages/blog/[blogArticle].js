@@ -48,7 +48,7 @@ function Post({ postData: { title, excerpt, author, labels, date }, postContent 
 	return (
 		<>
 			<BlogArticleHead
-				tile={title}
+				title={title}
 				excerpt={excerpt}
 				author={author}
 				labels={labels}
