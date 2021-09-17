@@ -23,10 +23,10 @@ function Blog({ filesMetadataArr }) {
 	const labels = filesMetadataArr.map(file => file.labels).flat();
 	const uniqueLabels = [...new Set(labels)];
 
-	let url;
+	let BLOG_URL;
 
 	useEffect(() => {
-		url = window.location.href;
+		BLOG_URL = window.location.href;
 	}, []);
 
 	useEffect(() => {
@@ -44,7 +44,7 @@ function Blog({ filesMetadataArr }) {
 
 	return (
 		<>
-			<BlogHead uniqueLabels={uniqueLabels} url={url} />
+			<BlogHead uniqueLabels={uniqueLabels} url={BLOG_URL} />
 			<BlogHero />
 
 			<section className=' bg-main-light lg:px-0 lg:pt-24 lg:pb-32 px-4 pt-20 pb-24'>

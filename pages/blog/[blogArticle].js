@@ -17,14 +17,14 @@ import prism from 'prismjs';
 import BlogArticleHead from '../../components/kp-blog/BlogArticleHead';
 
 function Post({ postData: { title, excerpt, author, labels, date }, postContent }) {
-	let url;
+	let BLOG_URL;
 
 	// make all a tags open new tab
 	useEffect(() => {
 		makeAnchorsOpenNewTab('#article-content');
 		prism.highlightAll();
 
-		url = window.location.href;
+		BLOG_URL = window.location.href;
 	}, []);
 
 	// event listener update progress bar at the top
@@ -52,7 +52,7 @@ function Post({ postData: { title, excerpt, author, labels, date }, postContent 
 				excerpt={excerpt}
 				author={author}
 				labels={labels}
-				url={url}
+				url={BLOG_URL}
 			/>
 
 			<ArticleProgressBar />

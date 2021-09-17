@@ -6,9 +6,9 @@ import TwitterMetaTags from '../meta/TwitterMetaTags';
 
 import metadata from '../../data/metadata';
 
-function BlogHead({ uniqueLabels, url }) {
-	const { title, description } = metadata.website;
+const { title, description } = metadata.website;
 
+function BlogHead({ uniqueLabels, url }) {
 	return (
 		<Head>
 			<title>kp-blog</title>

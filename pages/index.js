@@ -12,15 +12,15 @@ import { useEffect } from 'react';
 import HomeHead from '../components/kp-website/HomeHead';
 
 export default function Home({ uniqueLabels }) {
-	let url;
+	let BLOG_URL;
 
 	useEffect(() => {
-		url = window.location.href;
+		BLOG_URL = window.location.href;
 	}, []);
 
 	return (
 		<>
-			<HomeHead url={url} labels={uniqueLabels} />
+			<HomeHead url={BLOG_URL} labels={uniqueLabels} />
 			<HomeHero />
 
 			<HomeAbout />
