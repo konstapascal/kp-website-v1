@@ -8,6 +8,7 @@ import { useEffect } from 'react';
 import fadeInElement from '../lib/fadeInElement';
 import fadeOutElement from '../lib/fadeOutElement';
 import UpArrow from '../components/shared/UpArrow';
+import Footer from '../components/shared/Footer';
 
 function MyApp({ Component, pageProps }) {
 	useEffect(() => {
@@ -35,6 +36,7 @@ function MyApp({ Component, pageProps }) {
 		<>
 			<Component {...pageProps} />
 
+			<Footer />
 			<UpArrow />
 		</>
 	);

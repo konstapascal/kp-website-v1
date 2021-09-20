@@ -21,13 +21,11 @@ export default function Home({ uniqueLabels }) {
 	return (
 		<>
 			<HomeHead url={BLOG_URL} labels={uniqueLabels} />
-			<HomeHero />
 
+			<HomeHero />
 			<HomeAbout />
 			<HomeProjects />
 			<HomeBlog uniqueLabels={uniqueLabels} />
-
-			<Footer />
 		</>
 	);
 }

@@ -2,23 +2,21 @@ import { useEffect, useState } from 'react';
 
 import BlogHead from '../../components/kp-blog/BlogHead';
 import BlogHero from '../../components/kp-blog/BlogHero';
-import BlogSearchBar from '../../components/kp-blog/BlogSearchBar';
-import BlogPost from '../../components/kp-blog/BlogPost';
-import Footer from '../../components/shared/Footer';
-
-import Link from 'next/link';
 
 import path from 'path';
 import { readdir } from 'fs/promises';
 import { platform } from 'os';
 
 import { read } from 'gray-matter';
-import NoArticleResults from '../../components/kp-blog/NoArticleResults';
+import BlogArticles from '../../components/kp-blog/BlogArticles';
+import filterBlogPostsBy from '../../lib/filterBlogPostsBy';
 
 function Blog({ filesMetadataArr }) {
 	const [blogPosts, setBlogPosts] = useState(filesMetadataArr);
 	const [filteredPosts, setFilteredPosts] = useState([]);
 	const [search, setSearch] = useState('');
+
+	const [filterBy, setFilterBy] = useState({ byTitle: false, byLabel: false, byAuthor: false });
 
 	const labels = filesMetadataArr.map(file => file.labels).flat();
 	const uniqueLabels = [...new Set(labels)];
@@ -32,73 +30,27 @@ function Blog({ filesMetadataArr }) {
 	useEffect(() => {
 		if (search === '') return setFilteredPosts([]);
 
-		const filtered = [...blogPosts].filter(post => {
-			return (
-				post.labels.includes(search.toUpperCase()) ||
-				post.title.toLowerCase().includes(search.toLowerCase())
-			);
-		});
+		if (filterBy.byTitle) return setFilteredPosts(filterBlogPostsBy('title', blogPosts, search));
+		if (filterBy.byLabel) return setFilteredPosts(filterBlogPostsBy('label', blogPosts, search));
+		if (filterBy.byAuthor)
+			return setFilteredPosts(filterBlogPostsBy('author', blogPosts, search));
 
-		setFilteredPosts(filtered);
-	}, [search]);
+		setFilteredPosts(filterBlogPostsBy('title', blogPosts, search));
+	}, [search, filterBy]);
 
 	return (
 		<>
 			<BlogHead uniqueLabels={uniqueLabels} url={BLOG_URL} />
+
 			<BlogHero />
-
-			<section className=' bg-main-light lg:px-0 lg:pt-24 lg:pb-32 px-4 pt-20 pb-24'>
-				<div className=' lg:max-w-3xl container text-gray-100'>
-					<BlogSearchBar search={search} setSearch={setSearch} />
-					<div className='mt-10'>
-						{search === '' &&
-							blogPosts.map(post => {
-								return (
-									<BlogPost
-										key={post.title}
-										title={post.title}
-										excerpt={post.excerpt}
-										date={new Date(post.date).toUTCString().slice(5, 16)}
-										author={post.author}
-										labels={post.labels}
-										url={post.url}
-									/>
-								);
-							})}
-
-						{search !== '' &&
-							filteredPosts.length !== 0 &&
-							filteredPosts.map(post => {
-								return (
-									<BlogPost
-										key={post.title}
-										title={post.title}
-										excerpt={post.excerpt}
-										date={new Date(post.date).toUTCString().slice(5, 16)}
-										author={post.author}
-										labels={post.labels}
-										url={post.url}
-									/>
-								);
-							})}
-
-						{search !== '' && filteredPosts.length === 0 && (
-							<NoArticleResults setSearch={setSearch} />
-						)}
-					</div>
-					<div className='mt-16 text-center'>
-						<Link href={`/`}>
-							<a
-								title='Go back to the main website'
-								className=' hover:underline hover:text-green-400 text-2xl font-semibold cursor-pointer'>
-								Back to Website{' '}
-							</a>
-						</Link>
-					</div>
-				</div>
-			</section>
-
-			<Footer />
+			<BlogArticles
+				blogPosts={blogPosts}
+				filteredPosts={filteredPosts}
+				search={search}
+				setSearch={setSearch}
+				filterBy={filterBy}
+				setFilterBy={setFilterBy}
+			/>
 		</>
 	);
 }
