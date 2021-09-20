@@ -2,6 +2,8 @@ function NoArticleResults({ setSearch, filterBy: { byTitle, byLabel, byAuthor } 
 	return (
 		<div className='text-center'>
 			<p className='text-2xl'>
+				{!byTitle && !byLabel && !byAuthor && 'No articles with that title'}
+
 				{byTitle && 'No articles with that title'}
 				{byLabel && 'No articles with that label'}
 				{byAuthor && 'No articles by that author'}
