@@ -9,7 +9,7 @@ url: 'javascript-promises-introduction'
 
 ## Introduction
 
-First of all, if you haven't done so, I recommend you read my article on **synchronous** and **asynchronous** code behaviour in Javascript. The article can be found [**here**](https://konstapascal.dev/blog/javascript-synchronous-and-asynchronous-code).
+First of all, if you haven't done so, I recommend you read my article on **synchronous** and **asynchronous** code behaviour in Javascript. The article can be found [here](https://konstapascal.dev/blog/javascript-synchronous-and-asynchronous-code).
 
 This will give you a good introduction to **asynchronous** behaviour, which is crucial to be familiar with when working with **promises**.
 
