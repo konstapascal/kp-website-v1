@@ -14,8 +14,8 @@ import filterBlogPostsBy from '../../lib/filterBlogPostsBy';
 function Blog({ filesMetadataArr }) {
 	const [blogPosts, setBlogPosts] = useState(filesMetadataArr);
 	const [filteredPosts, setFilteredPosts] = useState([]);
-	const [search, setSearch] = useState('');
 
+	const [search, setSearch] = useState('');
 	const [filterBy, setFilterBy] = useState({ byTitle: false, byLabel: false, byAuthor: false });
 
 	const labels = filesMetadataArr.map(file => file.labels).flat();
