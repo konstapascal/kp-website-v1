@@ -23,7 +23,7 @@ When working with functions that return promises, it is crucial to understand th
 
 An example of an asynchronous operation/function in Javascript that will return a promise, is the commonly used `fetch()`, available on the global object.
 
-Let's look at the followind code:
+Let's look at the following code:
 
 ```javascript
 const fetchResponsePromise = fetch('https://randomuser.me/api/');
@@ -33,7 +33,7 @@ console.log(fetchResponsePromise);
 // Promise {<pending>}
 ```
 
-This is happening because, the Javascript engine will execute code line by line. From the time the fetch function was fired off and until the next line, the fetch operation has not returned. Under the hood, fetch will excecute asynchronous code that will execute in a non-blocking way off the main thread.
+This is happening because, the Javascript engine will execute code line by line. From the time the fetch function was fired off and until the next line, the fetch operation has not finished. Under the hood, fetch will excecute asynchronous code that will execute in a non-blocking way off the main thread.
 
 It would be great if we can somehow log the result of fetch, the moment it has made its resolved value available. This is where the `then()` methods comes in.
 
