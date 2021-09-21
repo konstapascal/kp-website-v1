@@ -21,7 +21,7 @@ This will give you a good introduction to **asynchronous** behaviour, which is c
 
 The object provides us with ways and methods to work with that code. It allows us to know the status of the code, the resulting value and will keep track of its execution.
 
-When working with functions that return promises, it is crucial to understand that you cannot work with them synchronously, but will have to use specific Promise API methods such as `Promise.prototype.then()`, `Promise.prototype.catch()` and, the less used, `Promise.prototype.finally()`.
+When working with functions that return promises, it is crucial to understand that you cannot work with them synchronously, but will have to use specific instance Promise methods such as `then()`, `catch()` and, the less used, `finally()`.
 
 An example of an asynchronous operation/function in Javascript that will return a promise, is the commonly used `fetch()`, available on the global object.
 
@@ -41,7 +41,7 @@ It would be great if we can somehow log the result of fetch, the moment it has m
 
 ## Promise Methods
 
-### Promise.prototype.then()
+### then() method
 
 The `then()` method is a method part of any promises' prototype. This will take in a callback function, that it will attach to the promise for later execution. Once the asynchronous code within the promises finishes its execution, it is said that the promise is **settled**.
 
@@ -87,7 +87,7 @@ And this is how we can use `fetch()` and `then()` to correctly make an API reque
 
 **But what if something goes wrong?**
 
-### Promise.prototype.catch()
+### catch() method
 
 In the case of a promise rejection, we need a way to handle that error, and this is where the `catch()` method comes in.
 
@@ -141,7 +141,7 @@ Now, instead of the error getting thrown, we get a log of the value that resulte
 
 What is great about `catch()` is that no matter how many `then()` methods you may have chained in the sequence, the `catch()` will be able to intercept any rejection from any of those promises.
 
-### Promise.prototype.finally()
+### finally() method
 
 This method is a special one and its callback will run on **settlement**. We have seen how `then()` runs on fulfillment, `catch()` on rejection, and now, `finally()` will run after the promise has settled, meaning after either **fulfillment** or **rejection**.
 
