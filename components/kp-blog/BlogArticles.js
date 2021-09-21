@@ -21,6 +21,7 @@ function BlogArticles({ blogPosts, filteredPosts, search, setSearch, filterBy, s
 									key={post.title}
 									title={post.title}
 									excerpt={post.excerpt}
+									read_time={post.read_time}
 									date={new Date(post.date).toUTCString().slice(5, 16)}
 									author={post.author}
 									labels={post.labels}
@@ -37,6 +38,7 @@ function BlogArticles({ blogPosts, filteredPosts, search, setSearch, filterBy, s
 									key={post.title}
 									title={post.title}
 									excerpt={post.excerpt}
+									read_time={post.read_time}
 									date={new Date(post.date).toUTCString().slice(5, 16)}
 									author={post.author}
 									labels={post.labels}

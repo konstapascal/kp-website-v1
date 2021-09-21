@@ -1,7 +1,9 @@
 ---
 title: Javascript Promises Introduction
 excerpt: Asynchronicity and promises are closely tied to eachother and thus, people not fully grasping asynchronous code, usually have issues understanding promises too. In this article, we will introduce the Promise API and look at how it works.
+read_time: 5 mins
 date: '2021-09-20' # ISO Format
+last_edited: '2021-09-21'
 author: Konstantinos Pascal
 labels: ['JAVASCRIPT', 'ES6', 'PROMISE']
 url: 'javascript-promises-introduction'
@@ -11,7 +13,7 @@ url: 'javascript-promises-introduction'
 
 First of all, if you haven't done so, I recommend you read my article on **synchronous** and **asynchronous** code behaviour in Javascript. The article can be found [here](https://konstapascal.dev/blog/javascript-synchronous-and-asynchronous-code).
 
-This will give you a good introduction to **asynchronous** behaviour, which is crucial to be familiar with when working with **promises**.
+This will give you a good introduction to **asynchronous** behaviour, which is crucial to be familiar with when working with **promises** since both functions that return promises and callback functions handling the result of those promises, are asynchronous.
 
 ### Promise object
 

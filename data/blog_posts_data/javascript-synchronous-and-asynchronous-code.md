@@ -1,7 +1,9 @@
 ---
 title: Javascript Synchronous and Asynchronous Code
 excerpt: Asynchronous code is something you will eventually encounter when learning Javascript. It is a very confusing topic and difficult to grasp at first, especially when not having background with other programming languages.
+read_time: 4 mins
 date: '2021-06-25' # ISO Format
+last_edited: '2021-09-21'
 author: Konstantinos Pascal
 labels: ['JAVASCRIPT', 'ES6']
 url: 'javascript-synchronous-and-asynchronous-code'
@@ -41,13 +43,33 @@ Asynchronous code is not as straightforward though, this is what we will be look
 
 ## Asynchronous code
 
-Some examples of functions that perform asynchronous operations in Javascript are `fetch()`, `setTimeout()`, `setInterval()` or event handlers added by `addEventListener()`.
+Some examples of functions that perform asynchronous operations in Javascript are `fetch()`, the callback functions passed into `setTimeout()`, `setInterval()` or event handlers added by `addEventListener()`. Promise callbacks from `then()`, `catch()` or `finally()` are also executed asynchronously. On the Node side, I/O operations are the most common asynchronous operations.
+
+Note that not all callbacks are asynchronous, but this syntax is commonly used to represent that. It is easy to visualize that a callback function passed into a higher order function will be executed later, after the main functions result is available.
+
+Example of synchronous, blocking methods making use of a callbacks are Array instance methods `forEach()` and `map()`.
+
+```javascript
+console.log('script start');
+
+[1, 2, 3].forEach(el => console.log(el));
+
+console.log('script end');
+
+// Output:
+
+// script start
+// 1
+// 2
+// 3
+// script end
+```
 
 Asynchronous code is code that, will usually take some amount of time to finish, some time that we are not able to predict beforehand. The same asynchronous code operation may take 1s, 3s or 20s when ran multiple times, especially in the case of event handlers.
 
-Since Javascript is a single-threaded programming language, that means that it only has one main thread of execution. Asynchronous operations would lead to the complete blockage of this thread for the entire duration until their completion. If the main thread of execution in the browser is blocked, the whole page becomes unresponsive as nothing else would be allowed to execute.
+Since Javascript is a single-threaded programming language, that means that it only has one main thread of execution. Asynchronous operations would lead to the temporary blockage of this thread until their completion. If the main thread of execution in the browser is blocked, the whole page becomes unresponsive as nothing else would be allowed to execute.
 
-Because of this, Javascript is not equipped to deal with asynchronous code. The runtime environment in which the Javascript code runs, such as the browser, Node or Deno, will help with the execution of this code. This is precisely what happens with `setTimeout()` for example. Think of it as the operation being handed over for execution, and being handed back when it is finished.
+Because of this, Javascript is not equipped to deal with asynchronous code. The runtime environment in which the Javascript code runs, such as the browser, Node or Deno, will help with the execution of this code. This is precisely what happens with `setTimeout()` for example. Think of it as the operation being handed over for execution, and the result being put in a queue that will later be picked up at the right time.
 
 Let's look at the following code:
 

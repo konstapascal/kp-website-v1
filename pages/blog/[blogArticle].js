@@ -16,7 +16,10 @@ import ArticleProgressBar from '../../components/shared/ArticleProgressBar';
 import prism from 'prismjs';
 import BlogArticleHead from '../../components/kp-blog/BlogArticleHead';
 
-function Post({ postData: { title, excerpt, author, labels, date }, postContent }) {
+function Post({
+	postData: { title, excerpt, author, labels, date, last_edited, read_time },
+	postContent
+}) {
 	let BLOG_URL;
 
 	// make all a tags open new tab
@@ -58,6 +61,8 @@ function Post({ postData: { title, excerpt, author, labels, date }, postContent 
 			<ArticleProgressBar />
 			<BlogArticleHero
 				articleDetails={{
+					last_edited,
+					read_time,
 					title,
 					author,
 					date,
@@ -81,8 +86,6 @@ function Post({ postData: { title, excerpt, author, labels, date }, postContent 
 					</div>
 				</div>
 			</section>
-
-			<Footer />
 		</>
 	);
 }
