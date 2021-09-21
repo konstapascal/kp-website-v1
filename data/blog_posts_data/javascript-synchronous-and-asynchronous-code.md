@@ -45,9 +45,9 @@ Asynchronous code is not as straightforward though, this is what we will be look
 
 Some examples of functions that perform asynchronous operations in Javascript are `fetch()`, the callback functions passed into `setTimeout()`, `setInterval()` or event handlers added by `addEventListener()`. Promise callbacks from `then()`, `catch()` or `finally()` are also executed asynchronously. On the Node side, I/O operations are the most common asynchronous operations.
 
-Note that not all callbacks are asynchronous, but this syntax is commonly used to represent that. It is easy to visualize that a callback function passed into a higher order function will be executed later, after the main functions result is available.
+Note that not all callbacks are asynchronous, but this syntax is commonly used to represent that. It is easy to visualize that a callback function passed into a higher order function will be executed later, after the main functions result is available and passed to it as an argument.
 
-Example of synchronous, blocking methods making use of a callbacks are Array instance methods `forEach()` and `map()`.
+Example of synchronous, blocking methods making use of a callbacks are Array instance methods `forEach()` and `map()`, but also functions implemented by the programmer.
 
 ```javascript
 console.log('script start');
