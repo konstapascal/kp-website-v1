@@ -3,7 +3,7 @@ title: Javascript Promises Introduction
 excerpt: Asynchronicity and promises are closely tied to eachother and thus, people not fully grasping asynchronous code, usually have issues understanding promises too. In this article, we will introduce the Promise API and look at how it works.
 read_time: 5 mins
 date: '2021-09-20' # ISO Format
-last_edited: '2021-09-21'
+last_edited: '2021-09-25'
 author: Konstantinos Pascal
 labels: ['JAVASCRIPT', 'ES6', 'PROMISE']
 url: 'javascript-promises-introduction'
@@ -64,7 +64,7 @@ fetchResponsePromise.then(response => {
 
 Here we can see that the log is executed not immediatelly, but only after the result has come back. This is what is great about promises, giving you the ability to sequence asynchronous operations in a predictable manner.
 
-The `fetch()` functions resolved value will be a `Response` object. In order to further parse this into out desired JSON response from the API, we would have to make use of another promise fased method, namely `Response.json()`. In order to chain `then()` methods one after the initial one, you can simply return a promise from the previous ones.
+The `fetch()` functions resolved value will be a `Response` object. In order to further parse this into out desired JSON response from the API, we would have to make use of another promise based method, namely `Response.json()`. In order to chain `then()` methods one after the initial one, you can simply return a promise from the previous ones.
 
 This can be done like this:
 
@@ -108,7 +108,7 @@ fetchResponsePromise
 // Uncaught (in promise) TypeError: Failed to fetch
 ```
 
-A Javascript `Error` object will be thrown. If you late inspect the promise with a console log, you would see:
+A Javascript `Error` object will be thrown. If you later inspect the promise with a console log, you would see:
 
 ```javascript
 console.log(fetchResponsePromise);
