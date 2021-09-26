@@ -11,12 +11,19 @@ import { read } from 'gray-matter';
 import BlogArticles from '../../components/kp-blog/BlogArticles';
 import filterBlogPostsBy from '../../lib/filterBlogPostsBy';
 
+const initialFilterByState = {
+	byTitle: false,
+	byExcerpt: false,
+	byLabel: false,
+	byAuthor: false
+};
+
 function Blog({ filesMetadataArr }) {
 	const [blogPosts, setBlogPosts] = useState(filesMetadataArr);
 	const [filteredPosts, setFilteredPosts] = useState([]);
 
 	const [search, setSearch] = useState('');
-	const [filterBy, setFilterBy] = useState({ byTitle: false, byLabel: false, byAuthor: false });
+	const [filterBy, setFilterBy] = useState(initialFilterByState);
 
 	const labels = filesMetadataArr.map(file => file.labels).flat();
 	const uniqueLabels = [...new Set(labels)];
@@ -31,6 +38,8 @@ function Blog({ filesMetadataArr }) {
 		if (search === '') return setFilteredPosts([]);
 
 		if (filterBy.byTitle) return setFilteredPosts(filterBlogPostsBy('title', blogPosts, search));
+		if (filterBy.byExcerpt)
+			return setFilteredPosts(filterBlogPostsBy('excerpt', blogPosts, search));
 		if (filterBy.byLabel) return setFilteredPosts(filterBlogPostsBy('label', blogPosts, search));
 		if (filterBy.byAuthor)
 			return setFilteredPosts(filterBlogPostsBy('author', blogPosts, search));

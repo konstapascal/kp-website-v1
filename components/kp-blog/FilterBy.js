@@ -6,7 +6,12 @@ function FilterBy({ filterBy, setFilterBy }) {
 				{/* filter by title */}
 				<button
 					onClick={() =>
-						setFilterBy(prev => ({ byTitle: !prev.byTitle, byLabel: false, byAuthor: false }))
+						setFilterBy(prev => ({
+							byTitle: !prev.byTitle,
+							byExcerpt: false,
+							byLabel: false,
+							byAuthor: false
+						}))
 					}
 					className={
 						'px-2 py-1 text-sm font-semibold tracking-wide text-white uppercase rounded border-2 border-[#05875e] ' +
@@ -15,10 +20,32 @@ function FilterBy({ filterBy, setFilterBy }) {
 					Title
 				</button>
 
+				{/* filter by excerpt */}
+				<button
+					onClick={() =>
+						setFilterBy(prev => ({
+							byTitle: false,
+							byExcerpt: !prev.byExcerpt,
+							byLabel: false,
+							byAuthor: false
+						}))
+					}
+					className={
+						'px-2 py-1 text-sm ml-1 font-semibold tracking-wide text-white uppercase rounded border-2 border-[#05875e] ' +
+						(filterBy.byExcerpt && 'bg-[#05875e]')
+					}>
+					Excerpt
+				</button>
+
 				{/* filter by label */}
 				<button
 					onClick={() =>
-						setFilterBy(prev => ({ byTitle: false, byLabel: !prev.byLabel, byAuthor: false }))
+						setFilterBy(prev => ({
+							byTitle: false,
+							byExcerpt: false,
+							byLabel: !prev.byLabel,
+							byAuthor: false
+						}))
 					}
 					className={
 						'px-2 py-1 text-sm ml-1 font-semibold tracking-wide text-white uppercase rounded border-2 border-[#05875e] ' +
@@ -32,6 +59,7 @@ function FilterBy({ filterBy, setFilterBy }) {
 					onClick={() =>
 						setFilterBy(prev => ({
 							byTitle: false,
+							byExcerpt: false,
 							byLabel: false,
 							byAuthor: !prev.byAuthor
 						}))
