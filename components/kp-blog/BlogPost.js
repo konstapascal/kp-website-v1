@@ -24,7 +24,7 @@ function BlogPost({ title, excerpt, read_time, date, author, labels, url }) {
 					</span>
 					on <span>{formatDate(date)}</span>
 				</p>
-				<span className='sm:ml-6 sm:mt-0 flex items-center mt-1 ml-0'>
+				<span className='sm:ml-6 sm:mt-0 mt-1 ml-0'>
 					<ReadTime read_time={read_time} />
 				</span>
 			</div>
