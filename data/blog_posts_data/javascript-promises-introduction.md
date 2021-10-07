@@ -3,7 +3,7 @@ title: Javascript Promises Introduction
 excerpt: Asynchronicity and promises are closely tied to eachother and thus, people not fully grasping asynchronous code, usually have issues understanding promises too. In this article, we will introduce the Promise API and look at how it works.
 read_time: 5 mins
 date: '2021-09-20' # ISO Format
-last_edited: '2021-09-25'
+last_edited: '2021-10-05'
 author: Konstantinos Pascal
 labels: ['JAVASCRIPT', 'ES6', 'PROMISE']
 url: 'javascript-promises-introduction'
