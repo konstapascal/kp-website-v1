@@ -9,15 +9,6 @@ import { read as gmRead } from 'gray-matter';
 import { useEffect } from 'react';
 import HomeHead from '../components/kp-website/HomeHead';
 
-import Head from 'next/head';
-import GenericMetaTags from '../components/meta/GenericMetaTags';
-import TwitterMetaTags from '../components/meta/TwitterMetaTags';
-import FacebookMetaTags from '../components/meta/FacebookMetaTags';
-
-import metadata from '../data/metadata';
-
-const { title, description } = metadata.website;
-
 export default function Home({ uniqueLabels }) {
 	let BLOG_URL;
 
