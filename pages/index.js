@@ -3,13 +3,20 @@ import HomeAbout from '../components/kp-website/HomeAbout';
 import HomeProjects from '../components/kp-website/HomeProjects';
 import HomeBlog from '../components/kp-website/HomeBlog';
 
-import Footer from '../components/shared/Footer';
-
 import { join } from 'path';
 import { readdir } from 'fs/promises';
 import { read as gmRead } from 'gray-matter';
 import { useEffect } from 'react';
 import HomeHead from '../components/kp-website/HomeHead';
+
+import Head from 'next/head';
+import GenericMetaTags from '../components/meta/GenericMetaTags';
+import TwitterMetaTags from '../components/meta/TwitterMetaTags';
+import FacebookMetaTags from '../components/meta/FacebookMetaTags';
+
+import metadata from '../data/metadata';
+
+const { title, description } = metadata.website;
 
 export default function Home({ uniqueLabels }) {
 	let BLOG_URL;

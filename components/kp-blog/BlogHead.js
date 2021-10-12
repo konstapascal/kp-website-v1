@@ -12,7 +12,6 @@ function BlogHead({ uniqueLabels, url }) {
 	return (
 		<Head>
 			<title>kp-blog</title>
-			<link rel='icon' href='/favicon.png' />
 
 			<GenericMetaTags
 				description={description}

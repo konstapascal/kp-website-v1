@@ -10,6 +10,8 @@ import fadeOutElement from '../lib/fadeOutElement';
 import UpArrow from '../components/shared/UpArrow';
 import Footer from '../components/shared/Footer';
 
+import Head from 'next/head';
+
 function MyApp({ Component, pageProps }) {
 	useEffect(() => {
 		const button = document.querySelector('#go-up');
@@ -35,6 +37,12 @@ function MyApp({ Component, pageProps }) {
 	return (
 		<>
 			<Component {...pageProps} />
+
+			<Head>
+				<meta charSet='utf-8' />
+				<meta name='viewport' content='width=device-width, initial-scale=1' />
+				<link rel='icon' href='/favicon.png' />
+			</Head>
 
 			<Footer />
 			<UpArrow />

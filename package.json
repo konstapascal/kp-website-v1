@@ -9,21 +9,21 @@
 		"start": "next start"
 	},
 	"dependencies": {
-		"@tailwindcss/typography": "^0.4.0",
+		"@tailwindcss/typography": "^0.4.1",
 		"gray-matter": "^4.0.3",
-		"next": "^10.2.2",
-		"next-mdx-remote": "^3.0.1",
+		"next": "^11.1.2",
+		"next-mdx-remote": "^3.0.6",
 		"nprogress": "^0.2.0",
-		"prismjs": "^1.23.0",
+		"prismjs": "^1.25.0",
 		"react": "17.0.2",
 		"react-dom": "17.0.2",
-		"react-scroll": "^1.8.2",
+		"react-scroll": "^1.8.4",
 		"windups": "^1.1.9"
 	},
 	"devDependencies": {
-		"autoprefixer": "^10.2.5",
-		"postcss": "^8.2.9",
+		"autoprefixer": "^10.3.7",
+		"postcss": "^8.3.9",
 		"prettier-plugin-tailwind-css": "^1.5.0",
-		"tailwindcss": "^2.1.1"
+		"tailwindcss": "^2.2.16"
 	}
 }

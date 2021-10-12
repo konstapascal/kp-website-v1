@@ -12,10 +12,6 @@ function HomeHead({ url, labels }) {
 	return (
 		<Head>
 			<title>kp-website</title>
-			<link rel='icon' href='/favicon.png' />
-
-			<script async src='https://www.googletagmanager.com/gtag/js?id=G-Z2FSLL37JV' />
-			<script src='js/analytics.js' />
 
 			<GenericMetaTags
 				description={description}
