@@ -14,6 +14,7 @@ import ArticleProgressBar from '../../components/shared/ArticleProgressBar';
 
 import prism from 'prismjs';
 import BlogArticleHead from '../../components/kp-blog/BlogArticleHead';
+import Footer from '../../components/shared/Footer';
 
 function Post({
 	postData: { title, excerpt, author, labels, date, last_edited, read_time },
@@ -85,6 +86,8 @@ function Post({
 					</div>
 				</div>
 			</section>
+
+			<Footer />
 		</>
 	);
 }

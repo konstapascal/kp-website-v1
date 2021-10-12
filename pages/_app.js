@@ -8,7 +8,6 @@ import { useEffect } from 'react';
 import fadeInElement from '../lib/fadeInElement';
 import fadeOutElement from '../lib/fadeOutElement';
 import UpArrow from '../components/shared/UpArrow';
-import Footer from '../components/shared/Footer';
 
 import Head from 'next/head';
 
@@ -44,7 +43,6 @@ function MyApp({ Component, pageProps }) {
 				<link rel='icon' href='/favicon.png' />
 			</Head>
 
-			<Footer />
 			<UpArrow />
 		</>
 	);

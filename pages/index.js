@@ -6,15 +6,28 @@ import HomeBlog from '../components/kp-website/HomeBlog';
 import { join } from 'path';
 import { readdir } from 'fs/promises';
 import { read as gmRead } from 'gray-matter';
-import { useEffect } from 'react';
+import { useEffect, useState } from 'react';
+
 import HomeHead from '../components/kp-website/HomeHead';
+import Footer from '../components/shared/Footer';
 
 export default function Home({ uniqueLabels }) {
+	const [lang, setLang] = useState('en');
+
 	let BLOG_URL;
 
 	useEffect(() => {
 		BLOG_URL = window.location.href;
 	}, []);
+
+	// useEffect(() => {
+	// 	localStorage.getItem('lang') && setLang(localStorage.getItem('lang'));
+
+	// 	if (navigator.languages.includes('no')) {
+	// 		document.documentElement.lang = 'no';
+	// 		setLang('no');
+	// 	}
+	// }, []);
 
 	return (
 		<>
@@ -24,6 +37,8 @@ export default function Home({ uniqueLabels }) {
 			<HomeAbout />
 			<HomeProjects />
 			<HomeBlog uniqueLabels={uniqueLabels} />
+
+			<Footer lang={lang} />
 		</>
 	);
 }

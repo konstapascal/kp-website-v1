@@ -1,13 +1,17 @@
-function Footer() {
+function Footer({ lang }) {
 	return (
 		<footer className=' bg-main-dark pt-16 pb-20'>
 			<div className=' container max-w-3xl text-center text-gray-100'>
 				<p className='text-xl font-semibold text-gray-100'>
-					Find me on any of these platforms.{' '}
+					{lang === 'no'
+						? 'Du kan finne meg på disse platformene.'
+						: 'Find me on any of these platforms.'}
 				</p>
 				<div className=' flex justify-center my-6'>
 					<a
-						title='Link to my GitHub profile'
+						title={
+							lang === 'no' ? 'Lenke til min Github profil' : 'Link to my GitHub profile'
+						}
 						className='transform-gpu hover:scale-110 flex items-center mr-1 transition-transform duration-200'
 						href='https://github.com/konstapascal'
 						target='_blank'
@@ -20,7 +24,9 @@ function Footer() {
 						/>
 					</a>
 					<a
-						title='Link to my LinkedIn profile'
+						title={
+							lang === 'no' ? 'Lenke til min Github profil' : 'Link to my GitHub profile'
+						}
 						className=' transform-gpu hover:scale-110 flex items-center mx-1 transition-transform duration-200'
 						href='https://www.linkedin.com/in/konstapascal'
 						target='_blank'
@@ -43,7 +49,7 @@ function Footer() {
 				</div>
 
 				<p className='text-base font-semibold text-gray-400'>
-					Made by{' '}
+					{lang === 'no' ? 'Laget av ' : 'Made by '}
 					<a
 						title='Link to my main website'
 						href='https://konstapascal.dev'

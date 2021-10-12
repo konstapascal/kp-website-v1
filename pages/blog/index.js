@@ -10,6 +10,7 @@ import { platform } from 'os';
 import { read } from 'gray-matter';
 import BlogArticles from '../../components/kp-blog/BlogArticles';
 import filterBlogPostsBy from '../../lib/filterBlogPostsBy';
+import Footer from '../../components/shared/Footer';
 
 const initialFilterByState = {
 	byTitle: true,
@@ -60,6 +61,8 @@ function Blog({ filesMetadataArr }) {
 				filterBy={filterBy}
 				setFilterBy={setFilterBy}
 			/>
+
+			<Footer />
 		</>
 	);
 }
