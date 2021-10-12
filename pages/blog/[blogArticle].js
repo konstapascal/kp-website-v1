@@ -10,7 +10,6 @@ import { serialize } from 'next-mdx-remote/serialize';
 import { MDXRemote } from 'next-mdx-remote';
 
 import makeAnchorsOpenNewTab from '../../lib/makeAnchorsOpenNewTab';
-import Footer from '../../components/shared/Footer';
 import ArticleProgressBar from '../../components/shared/ArticleProgressBar';
 
 import prism from 'prismjs';
