@@ -12,7 +12,7 @@ import BlogArticles from '../../components/kp-blog/BlogArticles';
 import filterBlogPostsBy from '../../lib/filterBlogPostsBy';
 
 const initialFilterByState = {
-	byTitle: false,
+	byTitle: true,
 	byExcerpt: false,
 	byLabel: false,
 	byAuthor: false
