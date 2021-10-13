@@ -6,17 +6,17 @@ import HomeBlog from '../components/kp-website/HomeBlog';
 import { join } from 'path';
 import { readdir } from 'fs/promises';
 import { read as gmRead } from 'gray-matter';
-import { useContext, useEffect } from 'react';
+import { useEffect } from 'react';
 
 import HomeHead from '../components/kp-website/HomeHead';
-import LangContext from '../context/lang-context';
 
 export default function Home({ uniqueLabels }) {
-	const [lang, setLang] = useContext(LangContext);
-
 	let BLOG_URL;
 
 	useEffect(() => {
+		const lang = localStorage.getItem('lang');
+		if (lang) document.documentElement.lang = lang;
+
 		BLOG_URL = window.location.href;
 	}, []);
 

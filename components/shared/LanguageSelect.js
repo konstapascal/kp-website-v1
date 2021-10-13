@@ -7,6 +7,7 @@ function LanguageSelect() {
 	function selectOption(lang) {
 		setLang(lang);
 		localStorage.setItem('lang', lang);
+		document.documentElement.lang = lang;
 	}
 
 	return (

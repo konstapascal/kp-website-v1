@@ -1,9 +1,9 @@
 import Link from 'next/link';
-import Label from '../shared/Label';
+import { useContext } from 'react';
 
 import LangContext from '../../context/lang-context';
 import website from '../../data/website-contents/website-text';
-import { useContext } from 'react';
+import Label from '../shared/Label';
 
 function Blog({ uniqueLabels }) {
 	const [lang] = useContext(LangContext);

@@ -1,14 +1,12 @@
+import { readdir } from 'fs/promises';
+import { read } from 'gray-matter';
+import { platform } from 'os';
+import path from 'path';
 import { useEffect, useState } from 'react';
 
+import BlogArticles from '../../components/kp-blog/BlogArticles';
 import BlogHead from '../../components/kp-blog/BlogHead';
 import BlogHero from '../../components/kp-blog/BlogHero';
-
-import path from 'path';
-import { readdir } from 'fs/promises';
-import { platform } from 'os';
-
-import { read } from 'gray-matter';
-import BlogArticles from '../../components/kp-blog/BlogArticles';
 import filterBlogPostsBy from '../../lib/filterBlogPostsBy';
 
 const initialFilterByState = {
@@ -31,6 +29,9 @@ function Blog({ filesMetadataArr }) {
 	let BLOG_URL;
 
 	useEffect(() => {
+		const lang = localStorage.getItem('lang');
+		if (lang) document.documentElement.lang = lang;
+
 		BLOG_URL = window.location.href;
 	}, []);
 

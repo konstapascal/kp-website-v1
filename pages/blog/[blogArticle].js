@@ -1,20 +1,17 @@
-import React, { useEffect } from 'react';
-import BlogArticleHero from '../../components/kp-blog/BlogArticleHero';
-import Link from 'next/link';
-
 import { readdir } from 'fs/promises';
-import { join } from 'path';
-
 import { read as gmRead } from 'gray-matter';
-import { serialize } from 'next-mdx-remote/serialize';
 import { MDXRemote } from 'next-mdx-remote';
-
-import makeAnchorsOpenNewTab from '../../lib/makeAnchorsOpenNewTab';
-import ArticleProgressBar from '../../components/shared/ArticleProgressBar';
-
+import { serialize } from 'next-mdx-remote/serialize';
+import Link from 'next/link';
+import { join } from 'path';
 import prism from 'prismjs';
+import React, { useEffect } from 'react';
+
 import BlogArticleHead from '../../components/kp-blog/BlogArticleHead';
+import BlogArticleHero from '../../components/kp-blog/BlogArticleHero';
+import ArticleProgressBar from '../../components/shared/ArticleProgressBar';
 import Footer from '../../components/shared/Footer';
+import makeAnchorsOpenNewTab from '../../lib/makeAnchorsOpenNewTab';
 
 function Post({
 	postData: { title, excerpt, author, labels, date, last_edited, read_time },

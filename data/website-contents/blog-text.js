@@ -4,7 +4,7 @@ const blog = {
 			greeting: 'Welcome to my blog!',
 			am: 'I am ',
 			description:
-				'and this is my writing corner on the web. Here you can expect articles on Javascript and other random topics, for both begginers and advanced!'
+				' and this is my writing corner on the web. Here you can expect articles on Javascript and other random topics, for both begginers and advanced!'
 		},
 		articles: {
 			label: 'Search articles by title, excerpt, label or author',

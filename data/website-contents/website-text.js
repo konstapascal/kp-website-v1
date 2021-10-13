@@ -21,8 +21,8 @@ const website = {
 		},
 		blog: {
 			title: 'Articles',
-			description: 'I also write about Javascript and web development, check out my ',
-			description_2: 'What you can find there, are articles on subjects such as..',
+			paragraph: 'I also write about Javascript and web development, check out my ',
+			paragraph_2: 'What you can find there, are articles on subjects such as..',
 			blog: 'blog'
 		}
 	},
@@ -30,7 +30,7 @@ const website = {
 		hero: {
 			greeting: 'Hei, dette er..',
 			description:
-				'Jeg er en ny utvikler som alltid gleder seg til å lære! Mest interessert i webutvikling med en lidenskap for både ',
+				'Jeg er en ny utvikler som alltid gleder meg til å lære! Mest interessert i webutvikling med en lidenskap for både ',
 			and: 'og ',
 			blog: 'BLOGG',
 			watermark: 'UTVIKLER'
