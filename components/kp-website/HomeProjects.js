@@ -3,7 +3,14 @@ import ProjectCard from '../shared/ProjectCard';
 import projects from '../../data/projects';
 import { useEffect, useState } from 'react';
 
+import { useContext } from 'react';
+import LangContext from '../../context/lang-context';
+import website from '../../data/website-contents/website-text';
+
 function Projects() {
+	const [lang] = useContext(LangContext);
+	const { title, description, more, less } = website[lang].projects;
+
 	const [projectsHidden, setProjectsHidden] = useState(true);
 
 	useEffect(() => {
@@ -20,10 +27,10 @@ function Projects() {
 			<div className=' container flex flex-col items-center text-gray-100'>
 				<div className='lg:max-w-3xl container text-center'>
 					<p className='inline-block  text-4xl lg:text-5xl font-semibold text-green-400 uppercase rounded-[0.2rem]'>
-						Projects
+						{title}
 					</p>
 					<p className=' text-md md:text-lg lg:text-xl mt-8 mb-16 text-gray-100'>
-						Examples of some of the applications I have worked and created.
+						{description}
 					</p>
 				</div>
 
@@ -45,7 +52,7 @@ function Projects() {
 				<button
 					className='text-md hover:text-green-400 text-xl  mt-14 lg:mt-16  px-6 py-3 font-semibold tracking-wider   rounded-[0.2rem] cursor-pointer'
 					onClick={() => setProjectsHidden(prev => !prev)}>
-					{projectsHidden ? 'Show More' : 'Show Less'}
+					{projectsHidden ? more : less}
 				</button>
 			</div>
 		</section>

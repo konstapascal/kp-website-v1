@@ -10,7 +10,6 @@ import { platform } from 'os';
 import { read } from 'gray-matter';
 import BlogArticles from '../../components/kp-blog/BlogArticles';
 import filterBlogPostsBy from '../../lib/filterBlogPostsBy';
-import Footer from '../../components/shared/Footer';
 
 const initialFilterByState = {
 	byTitle: true,
@@ -61,13 +60,11 @@ function Blog({ filesMetadataArr }) {
 				filterBy={filterBy}
 				setFilterBy={setFilterBy}
 			/>
-
-			<Footer />
 		</>
 	);
 }
 export async function getStaticProps() {
-	const postsDirectory = path.join(process.cwd(), 'data/blog_posts_data');
+	const postsDirectory = path.join(process.cwd(), 'data/blog-posts-data');
 	const posts = await readdir(postsDirectory);
 
 	const tempArr = [];

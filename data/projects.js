@@ -2,9 +2,13 @@ const projects = [
 	{
 		id: 1,
 		title: 'KP Website',
-		subtitle: 'Personal website and blog',
-		description:
-			'My personal website and blog, written in React and Next. The website is generated entirely into vanilla HTML, CSS and JS files. Blog posts are written in Markdown and generated at build time.',
+		subtitle: { en: 'Personal website and blog', no: 'Personlig nettside og blogg' },
+		description: {
+			en:
+				'My personal website and blog, written in React and Next. The website is generated entirely into vanilla HTML, CSS and JS files. Blog posts are written in Markdown and generated at build time.',
+			no:
+				'Mitt personlige nettside og blogg, skrevet i React JS. Nettsiden er generert til statiske filer og har raske lastetider. Blogginnlegg er skrevet i Markdown og generert på build time.'
+		},
 		metadata: {
 			imgAlt: 'Image of my personal website project, featuring the hero section.'
 		},
@@ -18,9 +22,13 @@ const projects = [
 	{
 		id: 2,
 		title: 'The Wise Owl',
-		subtitle: 'Inspirational quotes generator',
-		description:
-			'Simple application in which you can generate and save your favorite quotes. Made with Next and styled entirely with Tailwind. Works by making use of the browsers local storage to preserve state.',
+		subtitle: { en: 'Inspirational quotes generator', no: 'Generator for inspirerende sitater' },
+		description: {
+			en:
+				'Simple application in which you can generate and save your favorite quotes. Made with Next and styled entirely with Tailwind. Works by making use of the browsers local storage to preserve state.',
+			no:
+				'Enkel applikasjon der du kan generere og lagre favoritt sitatene dine. Laget med Next og stylet helt med Tailwind. Fungerer ved å bruke nettleserens local storage for å bevare tilstanden.'
+		},
 		metadata: {
 			imgAlt: 'Image of The Wise Owl project, featuring the main page of the website'
 		},
@@ -35,9 +43,13 @@ const projects = [
 	{
 		id: 3,
 		title: 'URL Shortener',
-		subtitle: 'URL shortener for long links',
-		description:
-			'Simple URL shortener application created with the Create React App template, styled with Tailwind. Extremely useful for both shortening URLs and having them personalized to my own domain.',
+		subtitle: { en: 'URL shortener for long links', no: 'URL shortener for lange lenker' },
+		description: {
+			en:
+				'Simple URL shortener application created with the Create React App template, styled with Tailwind. Extremely useful for both shortening URLs and having them personalized to my own domain.',
+			no:
+				'URL-shortener app laget med Create React App og stylet med Tailwind. Nyttig for både forkortelse av lenker og tilpassing etter mitt eget domene. Mulighet for importerting og eksportering av lenker.'
+		},
 		metadata: {
 			imgAlt:
 				'Image of the URL shortener website project, featuring the main page of the website'
@@ -65,9 +77,16 @@ const projects = [
 	{
 		id: 5,
 		title: 'VSCode Theme',
-		subtitle: 'CLI application for managing VSC themes',
-		description:
-			'CLI application from which you can change and manage your VSC themes. Implemented in Node and with minimal use of additional third party libraries. Compatible with Windows, macOS and Linux.',
+		subtitle: {
+			en: 'CLI application for managing VSC themes',
+			no: 'CLI-applikasjon for administrasjon av VSC-temaer'
+		},
+		description: {
+			en:
+				'CLI application from which you can change and manage your VSC themes. Implemented in Node and with minimal use of additional third party libraries. Compatible with Windows, macOS and Linux.',
+			no:
+				'CLI-applikasjon som kan brukes til å endre og administrere VSC-temaene dine. Implementert i Node og med minimal bruk av flere tredjepartsbiblioteker. Kompatibel med Windows, macOS og Linux.'
+		},
 		metadata: {
 			imgAlt: 'Image of a terminal with some output from the VSCode Theme CLI application'
 		},

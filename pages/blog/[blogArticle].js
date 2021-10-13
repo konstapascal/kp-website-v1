@@ -93,7 +93,7 @@ function Post({
 }
 
 export async function getStaticPaths() {
-	const postsDirectory = join(process.cwd(), 'data/blog_posts_data');
+	const postsDirectory = join(process.cwd(), 'data/blog-posts-data');
 	const filenames = await readdir(postsDirectory);
 	const urls = filenames.map(filename => filename.replace('.md', ''));
 
@@ -108,7 +108,7 @@ export async function getStaticPaths() {
 }
 
 export async function getStaticProps({ params }) {
-	const postsDirectory = join(process.cwd(), 'data/blog_posts_data');
+	const postsDirectory = join(process.cwd(), 'data/blog-posts-data');
 	const filePath = join(postsDirectory, params.blogArticle + '.md');
 
 	const postData = gmRead(filePath);

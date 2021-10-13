@@ -1,14 +1,20 @@
+import { useContext } from 'react';
+import LangContext from '../../context/lang-context';
+import website from '../../data/website-contents/website-text';
+
 function About() {
+	const [lang] = useContext(LangContext);
+	const { title, description } = website[lang].about;
+
 	return (
 		<section className=' bg-main-light lg:pt-28 px-4 pt-16' id='about-section'>
 			<div className=' lg:max-w-3xl container text-center text-gray-100'>
 				<h3 className='lg:text-5xl inline-block text-4xl font-semibold text-green-400 uppercase'>
-					Skillset
+					{title}
 				</h3>
 
 				<p className='text-md md:text-lg lg:text-xl mt-8 leading-relaxed text-gray-100'>
-					Focusing on web development means I am very comfortable with the modern web
-					languages, frameworks and technologies.
+					{description}
 				</p>
 
 				<ul id='tech-list' className=' relative my-10'>

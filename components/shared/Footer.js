@@ -1,12 +1,15 @@
-function Footer({ lang }) {
+import { useContext } from 'react';
+import LangContext from '../../context/lang-context';
+import shared from '../../data/website-contents/shared-text';
+
+function Footer() {
+	const [lang] = useContext(LangContext);
+	const { paragraph, by } = shared[lang].footer;
+
 	return (
 		<footer className=' bg-main-dark pt-16 pb-20'>
 			<div className=' container max-w-3xl text-center text-gray-100'>
-				<p className='text-xl font-semibold text-gray-100'>
-					{lang === 'no'
-						? 'Du kan finne meg på disse platformene.'
-						: 'Find me on any of these platforms.'}
-				</p>
+				<p className='text-xl font-semibold text-gray-100'>{paragraph}</p>
 				<div className=' flex justify-center my-6'>
 					<a
 						title={
@@ -49,7 +52,7 @@ function Footer({ lang }) {
 				</div>
 
 				<p className='text-base font-semibold text-gray-400'>
-					{lang === 'no' ? 'Laget av ' : 'Made by '}
+					{by}
 					<a
 						title='Link to my main website'
 						href='https://konstapascal.dev'

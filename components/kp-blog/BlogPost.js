@@ -5,7 +5,15 @@ import Link from 'next/link';
 import formatDate from '../../lib/formatDate';
 import ReadTime from '../shared/ReadTime';
 
+import LangContext from '../../context/lang-context';
+import { useContext } from 'react';
+
+import blog from '../../data/website-contents/blog-text';
+
 function BlogPost({ title, excerpt, read_time, date, author, labels, url }) {
+	const [lang] = useContext(LangContext);
+	const { by, on } = blog[lang].articles;
+
 	return (
 		<div className=' first:mt-0 last:mb-0 my-14'>
 			<Link href={`/blog/${url}`}>
@@ -18,11 +26,11 @@ function BlogPost({ title, excerpt, read_time, date, author, labels, url }) {
 
 			<div className='sm:flex-row flex flex-col mt-2 text-gray-400'>
 				<p>
-					by
+					{by}
 					<span className='hover:underline font-semibold text-green-400 cursor-pointer'>
 						{` ${author} `}
 					</span>
-					on <span>{formatDate(date)}</span>
+					{on} <span>{formatDate(date, lang)}</span>
 				</p>
 				<span className='sm:ml-6 sm:mt-0 mt-1 ml-0'>
 					<ReadTime read_time={read_time} />

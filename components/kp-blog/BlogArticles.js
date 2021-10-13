@@ -1,9 +1,15 @@
 import Link from 'next/link';
+import LangContext from '../../context/lang-context';
 import BlogPost from './BlogPost';
 import BlogSearchBar from './BlogSearchBar';
 import NoArticleResults from './NoArticleResults';
+import blog from '../../data/website-contents/blog-text';
+import { useContext } from 'react';
 
 function BlogArticles({ blogPosts, filteredPosts, search, setSearch, filterBy, setFilterBy }) {
+	const [lang] = useContext(LangContext);
+	const { back } = blog[lang].articles;
+
 	return (
 		<section className=' bg-main-light lg:px-0 lg:pt-24 lg:pb-32 px-4 pt-20 pb-24'>
 			<div className=' lg:max-w-3xl container text-gray-100'>
@@ -56,7 +62,7 @@ function BlogArticles({ blogPosts, filteredPosts, search, setSearch, filterBy, s
 						<a
 							title='Go back to the main website'
 							className=' hover:underline hover:text-green-400 text-2xl font-semibold cursor-pointer'>
-							Back to Website{' '}
+							{back}
 						</a>
 					</Link>
 				</div>

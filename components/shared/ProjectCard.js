@@ -1,5 +1,8 @@
 import Label from './Label';
 
+import { useContext } from 'react';
+import LangContext from '../../context/lang-context';
+
 function ProjectCard({
 	title,
 	subtitle,
@@ -8,6 +11,8 @@ function ProjectCard({
 	urls: { imgPath, codeUrl, demoUrl = '', apiUrl = '' },
 	labels
 }) {
+	const [lang] = useContext(LangContext);
+
 	return (
 		<div className='bg-main-dark overflow-hidden mt-12 lg:mt-10 first:mt-0 md:shadow-2xl lg:flex-row-reverse xl:hover:scale-105 transform-gpu lg:max-w-7xl transition-transform flex flex-col max-w-[600px] duration-200 lg:border-l-4 border-green-400 border-opacity-60 rounded-md  shadow-md'>
 			<img
@@ -33,7 +38,7 @@ function ProjectCard({
 						</h1>
 					</a>
 					<p className=' xl:mt-2 mt-1 text-sm font-semibold text-gray-400 uppercase'>
-						{subtitle}
+						{subtitle[lang]}
 					</p>
 				</div>
 				<div className=' mt-2'>
@@ -48,7 +53,7 @@ function ProjectCard({
 				</div>
 
 				<p className='xl:mt-6 xl:mb-8 text-md lg:text-lg mt-4 mb-6 text-gray-100'>
-					{description}
+					{description[lang]}
 				</p>
 
 				<div className=' flex items-center justify-start'>
@@ -99,7 +104,7 @@ function ProjectCard({
 							width={35}
 							height={35}
 						/>
-						<p className=' ml-3 font-medium'>Source Code</p>
+						<p className=' ml-3 font-medium'>{lang === 'en' ? 'Source Code' : 'Kildekode'}</p>
 					</a>
 				</div>
 			</div>

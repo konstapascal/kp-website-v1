@@ -6,28 +6,19 @@ import HomeBlog from '../components/kp-website/HomeBlog';
 import { join } from 'path';
 import { readdir } from 'fs/promises';
 import { read as gmRead } from 'gray-matter';
-import { useEffect, useState } from 'react';
+import { useContext, useEffect } from 'react';
 
 import HomeHead from '../components/kp-website/HomeHead';
-import Footer from '../components/shared/Footer';
+import LangContext from '../context/lang-context';
 
 export default function Home({ uniqueLabels }) {
-	const [lang, setLang] = useState('en');
+	const [lang, setLang] = useContext(LangContext);
 
 	let BLOG_URL;
 
 	useEffect(() => {
 		BLOG_URL = window.location.href;
 	}, []);
-
-	// useEffect(() => {
-	// 	localStorage.getItem('lang') && setLang(localStorage.getItem('lang'));
-
-	// 	if (navigator.languages.includes('no')) {
-	// 		document.documentElement.lang = 'no';
-	// 		setLang('no');
-	// 	}
-	// }, []);
 
 	return (
 		<>
@@ -37,14 +28,12 @@ export default function Home({ uniqueLabels }) {
 			<HomeAbout />
 			<HomeProjects />
 			<HomeBlog uniqueLabels={uniqueLabels} />
-
-			<Footer lang={lang} />
 		</>
 	);
 }
 
 export async function getStaticProps() {
-	const postsDirectory = join(process.cwd(), 'data/blog_posts_data');
+	const postsDirectory = join(process.cwd(), 'data/blog-posts-data');
 	const posts = await readdir(postsDirectory);
 
 	let labels = [];

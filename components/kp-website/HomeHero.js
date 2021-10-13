@@ -1,13 +1,19 @@
-import React, { useEffect } from 'react';
+import React, { useContext, useEffect } from 'react';
 
 import { Link as ScrollLink } from 'react-scroll';
 import { WindupChildren, Pace } from 'windups';
 
-// import Logo from '../shared/Logo';
 import Button from '../shared/Button';
 import fadeInElement from '../../lib/fadeInElement';
+import LanguageSelect from '../shared/LanguageSelect';
+
+import LangContext from '../../context/lang-context';
+import website from '../../data/website-contents/website-text';
 
 function Hero() {
+	const [lang] = useContext(LangContext);
+	const { greeting, description, and, blog, watermark } = website[lang].hero;
+
 	useEffect(() => {
 		const head = document.querySelector('#heading');
 		const desc = document.querySelector('#description');
@@ -43,29 +49,27 @@ function Hero() {
 		<section>
 			<div className='bg-main-dark relative flex items-center justify-center min-h-screen overflow-hidden'>
 				{/* ---------- LOGO AND BLOG BUTTON / NAV ---------- */}
-				<nav className='md:pt-6 md:px-6 lg:pt-8 lg:px-8 absolute inset-x-0 top-0 flex items-center justify-end px-4 pt-4'>
-					{/* <Logo linkHref={'/'} content={'KP-WEBSITE'} /> */}
-					<Button linkTitle={'Link to the blog website'} linkHref={'/blog'} content={'BLOG'} />
+				<nav className='md:pt-6 md:px-6 lg:pt-8 lg:px-8 absolute inset-x-0 top-0 flex items-center justify-between px-4 pt-4'>
+					<LanguageSelect />
+					<Button linkTitle={'Link to the blog website'} linkHref={'/blog'} content={blog} />
 				</nav>
 
 				{/* ---------- BACKGROUND WATERMARK ---------- */}
 				<div
 					id='watermark'
-					className=' text-main-light transform -rotate-12 lg:rotate-0 whitespace-nowrap top-[25%] md:top-[22.5%] absolute text-8xl  sm:text-9xl md:text-[10rem] font-extrabold lg:top-[19%] lg:text-[16rem] text-center opacity-50 select-none'>
+					className=' text-main-light transform -rotate-12  lg:rotate-0 whitespace-nowrap top-[25%] md:top-[22.5%] absolute text-8xl  sm:text-9xl md:text-[10rem] font-extrabold lg:top-[19%] lg:text-[16rem] text-center opacity-50 select-none'>
 					<WindupChildren>
 						<Pace ms={25}>
 							<p>FULL STACK</p>
-							<p>DEVELOPER</p>
+							<p>{watermark}</p>
 						</Pace>
 					</WindupChildren>
 				</div>
 
 				{/* ---------- HEADINGS, DESCRIPTION, LINKS ---------- */}
-				<div className=' lg:max-w-3xl lg:text-left top-[17.5%] sm:top-1/4 container absolute px-4 text-center'>
+				<div className=' lg:max-w-3xl lg:text-left top-[17.5%]  sm:top-1/4 container absolute px-4 text-center'>
 					<div className=' invisible transition-opacity duration-1000 opacity-0' id='heading'>
-						<h1 className='lg:text-2xl text-xl font-semibold text-gray-100'>
-							Hello, this is..
-						</h1>
+						<h1 className='lg:text-2xl text-xl font-semibold text-gray-100'>{greeting}</h1>
 						<p className='lg:text-6xl text-5xl font-semibold text-green-400'>
 							Konstantinos Pasca
 							<span
@@ -79,10 +83,9 @@ function Hero() {
 					<p
 						id='description'
 						className='md:text-xl lg:text-xl lg:mt-6 lg:mb-12 invisible mt-4 mb-8 text-lg text-gray-100 transition-opacity duration-1000 opacity-0'>
-						I am a new developer always excited to learn! Most interested in web development
-						with a passion for both the{' '}
-						<span className=' font-bold text-green-400'>frontend</span> and the{' '}
-						<span className='font-bold text-green-400'>backend!</span>{' '}
+						{description}
+						<span className=' font-bold text-green-400'>frontend</span> {and}
+						<span className='font-bold text-green-400'>backend!</span>
 					</p>
 
 					{/* RESUME AND LINKS */}
@@ -92,7 +95,7 @@ function Hero() {
 						<a
 							title='Download link for my resume in pdf format'
 							className='text-md hover:scale-105 transform-gpu transition-transform duration-200 mt-8 sm:mt-0 sm:mr-5 lg:text-lg flex items-center px-4 py-2  font-semibold tracking-wider text-gray-100  border-2 border-green-400 rounded-[0.2rem]'
-							href='/files/kp-resume-en-ref-hidden.pdf'
+							href={`/files/kp-resume-${lang === 'en' ? 'en' : 'no'}-ref-hidden.pdf`}
 							download>
 							<img
 								alt='File download icon'

@@ -1,8 +1,14 @@
+import LangContext from '../../context/lang-context';
+import blog from '../../data/website-contents/blog-text';
+import { useContext } from 'react';
+
 function FilterBy({ filterBy, setFilterBy }) {
+	const [lang] = useContext(LangContext);
+	const { title, excerpt, label, author } = blog[lang].articles;
+
 	return (
-		<div className=' sm:h-12 sm:justify-start flex items-center justify-center h-8 mt-4'>
-			<p className='sm:text-xl text-lg'>Filter By</p>
-			<div className='sm:ml-4 ml-2'>
+		<div className=' sm:h-12 sm:justify-start h-8 mt-4'>
+			<div className=' sm:justify-start flex justify-center'>
 				{/* filter by title */}
 				<button
 					onClick={() =>
@@ -14,10 +20,10 @@ function FilterBy({ filterBy, setFilterBy }) {
 						}))
 					}
 					className={
-						'px-2 py-1 text-sm font-semibold tracking-wide text-white uppercase rounded border-2 border-[#05875e] ' +
+						'px-2 py-1 text-xs sm:text-sm font-semibold tracking-wide text-white uppercase rounded border-2 border-[#05875e] ' +
 						(filterBy.byTitle && 'bg-[#05875e]')
 					}>
-					Title
+					{title}
 				</button>
 
 				{/* filter by excerpt */}
@@ -31,10 +37,10 @@ function FilterBy({ filterBy, setFilterBy }) {
 						}))
 					}
 					className={
-						'px-2 py-1 text-sm ml-1 font-semibold tracking-wide text-white uppercase rounded border-2 border-[#05875e] ' +
+						'px-2 py-1 text-xs sm:text-sm ml-1 font-semibold tracking-wide text-white uppercase rounded border-2 border-[#05875e] ' +
 						(filterBy.byExcerpt && 'bg-[#05875e]')
 					}>
-					Excerpt
+					{excerpt}
 				</button>
 
 				{/* filter by label */}
@@ -48,10 +54,10 @@ function FilterBy({ filterBy, setFilterBy }) {
 						}))
 					}
 					className={
-						'px-2 py-1 text-sm ml-1 font-semibold tracking-wide text-white uppercase rounded border-2 border-[#05875e] ' +
+						'px-2 py-1 text-xs sm:text-sm ml-1 font-semibold tracking-wide text-white uppercase rounded border-2 border-[#05875e] ' +
 						(filterBy.byLabel && 'bg-[#05875e]')
 					}>
-					Label
+					{label}
 				</button>
 
 				{/* filter by author */}
@@ -65,14 +71,13 @@ function FilterBy({ filterBy, setFilterBy }) {
 						}))
 					}
 					className={
-						'px-2 py-1 text-sm ml-1 font-semibold tracking-wide text-white uppercase rounded border-2 border-[#05875e] ' +
+						'px-2 py-1 text-xs sm:text-sm ml-1 font-semibold tracking-wide text-white uppercase rounded border-2 border-[#05875e] ' +
 						(filterBy.byAuthor && 'bg-[#05875e]')
 					}>
-					Author
+					{author}
 				</button>
 			</div>
 		</div>
 	);
 }
-
 export default FilterBy;
