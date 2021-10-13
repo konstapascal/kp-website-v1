@@ -15,7 +15,9 @@ const blog = {
 			author: 'author',
 			by: 'by ',
 			on: ' on ',
-			back: 'Back to Website'
+			back: 'Back to Website',
+			go_back: 'Go Back',
+			edited: 'Edited '
 		}
 	},
 	no: {
@@ -34,7 +36,9 @@ const blog = {
 			author: 'Forfatter',
 			by: 'av ',
 			on: ' den ',
-			back: 'Tilbake til Nettside'
+			back: 'Tilbake til Hovedside',
+			go_back: 'Gå Tilbake',
+			edited: 'Endret '
 		}
 	}
 };

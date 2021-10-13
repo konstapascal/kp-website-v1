@@ -5,18 +5,23 @@ import { serialize } from 'next-mdx-remote/serialize';
 import Link from 'next/link';
 import { join } from 'path';
 import prism from 'prismjs';
-import React, { useEffect } from 'react';
+import React, { useContext, useEffect } from 'react';
 
 import BlogArticleHead from '../../components/kp-blog/BlogArticleHead';
 import BlogArticleHero from '../../components/kp-blog/BlogArticleHero';
 import ArticleProgressBar from '../../components/shared/ArticleProgressBar';
-import Footer from '../../components/shared/Footer';
 import makeAnchorsOpenNewTab from '../../lib/makeAnchorsOpenNewTab';
+
+import blog from '../../data/website-contents/blog-text';
+import LangContext from '../../context/lang-context';
 
 function Post({
 	postData: { title, excerpt, author, labels, date, last_edited, read_time },
 	postContent
 }) {
+	const [lang] = useContext(LangContext);
+	const { go_back } = blog[lang].articles;
+
 	let BLOG_URL;
 
 	// make all a tags open new tab
@@ -77,14 +82,12 @@ function Post({
 							<a
 								title='Go back to the main blog.'
 								className=' hover:underline hover:text-green-400 text-2xl font-semibold text-gray-100 cursor-pointer'>
-								Go Back{' '}
+								{go_back}
 							</a>
 						</Link>
 					</div>
 				</div>
 			</section>
-
-			<Footer />
 		</>
 	);
 }

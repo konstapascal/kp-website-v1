@@ -12,9 +12,7 @@ function Footer() {
 				<p className='text-xl font-semibold text-gray-100'>{paragraph}</p>
 				<div className=' flex justify-center my-6'>
 					<a
-						title={
-							lang === 'no' ? 'Lenke til min Github profil' : 'Link to my GitHub profile'
-						}
+						title={'Link to my GitHub profile'}
 						className='transform-gpu hover:scale-110 flex items-center mr-1 transition-transform duration-200'
 						href='https://github.com/konstapascal'
 						target='_blank'
@@ -27,9 +25,7 @@ function Footer() {
 						/>
 					</a>
 					<a
-						title={
-							lang === 'no' ? 'Lenke til min Github profil' : 'Link to my GitHub profile'
-						}
+						title={'Link to my GitHub profile'}
 						className=' transform-gpu hover:scale-110 flex items-center mx-1 transition-transform duration-200'
 						href='https://www.linkedin.com/in/konstapascal'
 						target='_blank'

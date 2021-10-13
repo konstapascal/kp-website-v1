@@ -1,7 +1,7 @@
 ---
 title: Object and Array Destructuring in Javascript
 excerpt: Object and array destructuring in JS is a very simple yet powerful feature of the language. It makes handling objects and arrays less tedious by allowing you to extract values and work with them easier.
-read_time: 3 mins
+read_time: 3 min
 date: '2021-09-20' # ISO Format
 last_edited: null
 author: Konstantinos Pascal

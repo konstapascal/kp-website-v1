@@ -2,6 +2,7 @@ import Label from './Label';
 
 import { useContext } from 'react';
 import LangContext from '../../context/lang-context';
+import website from '../../data/website-contents/website-text';
 
 function ProjectCard({
 	title,
@@ -12,6 +13,7 @@ function ProjectCard({
 	labels
 }) {
 	const [lang] = useContext(LangContext);
+	const { source } = website[lang].projects;
 
 	return (
 		<div className='bg-main-dark overflow-hidden mt-12 lg:mt-10 first:mt-0 md:shadow-2xl lg:flex-row-reverse xl:hover:scale-105 transform-gpu lg:max-w-7xl transition-transform flex flex-col max-w-[600px] duration-200 lg:border-l-4 border-green-400 border-opacity-60 rounded-md  shadow-md'>
@@ -104,7 +106,7 @@ function ProjectCard({
 							width={35}
 							height={35}
 						/>
-						<p className=' ml-3 font-medium'>{lang === 'en' ? 'Source Code' : 'Kildekode'}</p>
+						<p className=' ml-3 font-medium'>{source}</p>
 					</a>
 				</div>
 			</div>

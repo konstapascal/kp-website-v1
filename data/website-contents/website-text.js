@@ -17,7 +17,8 @@ const website = {
 			title: 'Projects',
 			description: 'Examples of some of the applications I have worked on to make.',
 			more: 'Show More',
-			less: 'Show Less'
+			less: 'Show Less',
+			source: 'Source Code'
 		},
 		blog: {
 			title: 'Articles',
@@ -30,7 +31,7 @@ const website = {
 		hero: {
 			greeting: 'Hei, dette er..',
 			description:
-				'Jeg er en ny utvikler som alltid gleder meg til å lære! Mest interessert i webutvikling med en lidenskap for både ',
+				'Jeg er en ny utvikler som alltid gleder seg til å lære! Mest interessert i webutvikling med en lidenskap for både ',
 			and: 'og ',
 			blog: 'BLOGG',
 			watermark: 'UTVIKLER'
@@ -44,7 +45,8 @@ const website = {
 			title: 'Prosjekter',
 			description: 'Eksempler på noen av applikasjonene jeg har jobbet med å lage.',
 			more: 'Vis Mer',
-			less: 'Vis Mindre'
+			less: 'Vis Mindre',
+			source: 'Kildekode'
 		},
 		blog: {
 			title: 'Artikler',

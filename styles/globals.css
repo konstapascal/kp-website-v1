@@ -16,29 +16,25 @@
 }
 
 .prose a {
-	color: #34d399;
-}
-
-.prose a {
-	color: #34d399;
+	color: #34d399 !important;
 }
 
 .prose strong,
 .prose blockquote {
-	color: #f3f4f6;
+	color: #f3f4f6 !important;
 }
 
 .prose h1,
 .prose h2,
 .prose h3,
 .prose h4 {
-	color: #34d399;
+	color: #34d399 !important;
 }
 
 .prose code,
 .prose code::before,
 .prose code::after {
-	color: #34d399;
+	color: #34d399 !important;
 }
 
 .prose li::before {
@@ -46,25 +42,21 @@
 }
 
 .prose ul > li::before {
-	background-color: #34d399;
+	background-color: #34d399 !important;
 }
 
 .prose ol > li::before {
-	color: #9ca3af;
+	color: #9ca3af !important;
 }
 
 .prose hr {
-	border-color: #34d399;
+	border-color: #34d399 !important;
 }
 
 .prose blockquote {
-	border-left-color: #34d399;
+	border-left-color: #34d399 !important;
 }
 
 #watermark {
 	line-height: 0.75;
-}
-
-option:hover {
-	background-color: yellow;
 }
