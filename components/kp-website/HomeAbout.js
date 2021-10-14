@@ -20,7 +20,7 @@ function About() {
 				<ul id='tech-list' className=' relative my-10'>
 					<li className='lg:text-2xl text-xl'>HTML5, CSS3, JS</li>
 					<li className='lg:text-2xl mt-1 text-xl'>Node, Express, React, Next JS</li>
-					<li className='lg:text-2xl mt-1 text-xl'>Tailwind CSS</li>
+					<li className='lg:text-2xl mt-1 text-xl'>Bootstrap, Tailwind CSS</li>
 				</ul>
 
 				<div className='flex justify-center'>

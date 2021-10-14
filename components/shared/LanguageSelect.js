@@ -1,4 +1,5 @@
 import { useContext } from 'react';
+
 import LangContext from '../../context/lang-context';
 
 function LanguageSelect() {
@@ -13,10 +14,10 @@ function LanguageSelect() {
 	return (
 		<div className='flex'>
 			<a className=' cursor-pointer' onClick={() => selectOption('en')}>
-				<img src='/svg/gb.svg' width={30} />
+				<img alt='English flag' src='/svg/gb.svg' width={30} />
 			</a>
 			<a className='ml-3 cursor-pointer' onClick={() => selectOption('no')}>
-				<img src='/svg/no.svg' width={30} />
+				<img alt='Norwegian flag' src='/svg/no.svg' width={30} />
 			</a>
 		</div>
 	);
