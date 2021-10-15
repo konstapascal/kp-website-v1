@@ -37,6 +37,12 @@
 	color: #34d399 !important;
 }
 
+.prose pre code,
+.prose pre code::before,
+.prose pre code::after {
+	color: #f3f4f6 !important;
+}
+
 .prose li::before {
 	color: #34d399 !important;
 }
