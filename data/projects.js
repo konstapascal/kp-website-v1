@@ -4,10 +4,8 @@ const projects = [
 		title: 'KP Website',
 		subtitle: { en: 'Personal website and blog', no: 'Personlig nettside og blogg' },
 		description: {
-			en:
-				'My personal website and blog, written in React and Next. The website is generated entirely into vanilla HTML, CSS and JS files. Blog posts are written in Markdown and generated at build time.',
-			no:
-				'Mitt personlige nettside og blogg, skrevet i React JS. Nettsiden er generert til statiske filer og har raske lastetider. Blogginnlegg er skrevet i Markdown og generert på build time.'
+			en: 'My personal website and blog, written in React and Next. The website is generated entirely into vanilla HTML, CSS and JS files. Blog posts are written in Markdown and generated at build time.',
+			no: 'Mitt personlige nettside og blogg, skrevet i React JS. Nettsiden er generert til statiske filer og har raske lastetider. Blogginnlegg er skrevet i Markdown og generert på build time.'
 		},
 		metadata: {
 			imgAlt: 'Image of my personal website project, featuring the hero section.'
@@ -24,10 +22,8 @@ const projects = [
 		title: 'The Wise Owl',
 		subtitle: { en: 'Inspirational quotes generator', no: 'Generator for inspirerende sitater' },
 		description: {
-			en:
-				'Simple application in which you can generate and save your favorite quotes. Made with Next and styled entirely with Tailwind. Works by making use of the browsers local storage to preserve state.',
-			no:
-				'Enkel applikasjon der du kan generere og lagre favoritt sitatene dine. Laget med Next og stylet helt med Tailwind. Fungerer ved å bruke nettleserens local storage for å bevare tilstanden.'
+			en: 'Simple application in which you can generate and save your favorite quotes. Made with Next and styled entirely with Tailwind. Works by making use of the browsers local storage to preserve state.',
+			no: 'Enkel applikasjon der du kan generere og lagre favoritt sitatene dine. Laget med Next og stylet helt med Tailwind. Fungerer ved å bruke nettleserens local storage for å bevare tilstanden.'
 		},
 		metadata: {
 			imgAlt: 'Image of The Wise Owl project, featuring the main page of the website'
@@ -45,10 +41,8 @@ const projects = [
 		title: 'URL Shortener',
 		subtitle: { en: 'URL shortener for long links', no: 'URL shortener for lange lenker' },
 		description: {
-			en:
-				'Simple URL shortener application created with the Create React App template, styled with Tailwind. Extremely useful for both shortening URLs and having them personalized to my own domain.',
-			no:
-				'URL-shortener app laget med Create React App og stylet med Tailwind. Nyttig for både forkortelse av lenker og tilpassing etter mitt eget domene. Mulighet for importerting og eksportering av lenker.'
+			en: 'Simple URL shortener application created with the Create React App template, styled with Tailwind. Extremely useful for both shortening URLs and having them personalized to my own domain.',
+			no: 'URL-shortener app laget med Create React App og stylet med Tailwind. Nyttig for både forkortelse av lenker og tilpassing etter mitt eget domene. Mulighet for importerting og eksportering av lenker.'
 		},
 		metadata: {
 			imgAlt:
@@ -56,7 +50,7 @@ const projects = [
 		},
 		urls: {
 			imgPath: '/img/url-shortener.webp',
-			demoUrl: 'https://sh.konstapascal.dev',
+			demoUrl: 'https://shortener.konstapascal.dev',
 			codeUrl: 'https://github.com/konstapascal/url-shortener'
 		},
 		labels: ['REACT', 'CRA', 'TAILWIND']
@@ -69,7 +63,7 @@ const projects = [
 	// 		'Calculator made with simplicity in mind. Made purely in vanilla JS and without the use of any third party libraries. Flex and Grid layout model have been used primarily to achieve the design.',
 	// 	urls: {
 	// 		imgPath: '/img/js-calculator.webp',
-	// 		demoUrl: 'https://calc.konstapascal.dev',
+	// 		demoUrl: 'https://calculator.konstapascal.dev',
 	// 		codeUrl: 'https://github.com/konstapascal/js-calculator'
 	// 	},
 	// 	labels: ['HTML', 'CSS', 'JS']
@@ -82,10 +76,8 @@ const projects = [
 			no: 'CLI-applikasjon for administrasjon av VSC-temaer'
 		},
 		description: {
-			en:
-				'CLI application from which you can change and manage your VSC themes. Implemented in Node and with minimal use of additional third party libraries. Compatible with Windows, macOS and Linux.',
-			no:
-				'CLI-applikasjon som kan brukes til å endre og administrere VSC-temaene dine. Implementert i Node og med minimal bruk av flere tredjepartsbiblioteker. Kompatibel med Windows, macOS og Linux.'
+			en: 'CLI application from which you can change and manage your VSC themes. Implemented in Node and with minimal use of additional third party libraries. Compatible with Windows, macOS and Linux.',
+			no: 'CLI-applikasjon som kan brukes til å endre og administrere VSC-temaene dine. Implementert i Node og med minimal bruk av flere tredjepartsbiblioteker. Kompatibel med Windows, macOS og Linux.'
 		},
 		metadata: {
 			imgAlt: 'Image of a terminal with some output from the VSCode Theme CLI application'
